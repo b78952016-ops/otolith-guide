@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea09" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1878a0"/>
+      <stop offset="50%" stop-color="#0e5070"/>
+      <stop offset="100%" stop-color="#082038"/>
+    </linearGradient>
+    <linearGradient id="rock09a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#504030"/>
+      <stop offset="100%" stop-color="#302018"/>
+    </linearGradient>
+    <linearGradient id="rock09b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#685040"/>
+      <stop offset="100%" stop-color="#504030"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Water body -->
+  <rect width="500" height="195" fill="url(#sea09)" rx="6"/>
+
+  <!-- Sunlight shafts from surface -->
+  <line x1="90"  y1="0" x2="50"  y2="140" stroke="#3abcd8" stroke-width="14" opacity="0.04"/>
+  <line x1="180" y1="0" x2="140" y2="145" stroke="#3abcd8" stroke-width="10" opacity="0.04"/>
+  <line x1="270" y1="0" x2="230" y2="140" stroke="#3abcd8" stroke-width="8"  opacity="0.03"/>
+
+  <!-- Surface shimmer -->
+  <path d="M0,7 Q80,4 160,7 Q240,10 320,7 Q400,4 500,7"
+        fill="none" stroke="#4ad0f0" stroke-width="1.5" opacity="0.60"/>
+  <path d="M0,16 Q90,12 185,16 Q275,20 365,16 Q435,12 500,16"
+        fill="none" stroke="#3abcd8" stroke-width="1.1" opacity="0.45"/>
+
+  <!-- Reef rock base (main spur, left-center) -->
+  <path d="M0,175 Q30,150 80,158 Q120,164 150,150 Q180,136 200,150 Q225,164 240,170 L240,195 L0,195 Z"
+        fill="url(#rock09a)"/>
+  <!-- Rock lit surface -->
+  <path d="M60,155 Q100,148 140,154 Q170,158 200,150"
+        fill="none" stroke="#806050" stroke-width="2" opacity="0.5"/>
+  <!-- Rock cracks -->
+  <line x1="85" y1="160" x2="90" y2="175" stroke="#201008" stroke-width="0.8" opacity="0.6"/>
+  <line x1="130" y1="152" x2="135" y2="168" stroke="#201008" stroke-width="0.7" opacity="0.6"/>
+
+  <!-- Cave / overhang (dark recess on right side of reef) -->
+  <path d="M195,150 Q220,140 250,148 Q265,152 270,165 L240,170 Q225,164 200,150 Z"
+        fill="#18100a" opacity="0.85"/>
+  <!-- Cave opening highlight -->
+  <path d="M200,150 Q225,142 250,148" fill="none" stroke="#7a6040" stroke-width="1" opacity="0.5"/>
+
+  <!-- Second reef spur (right side) -->
+  <path d="M320,175 Q360,155 400,162 Q430,168 460,158 Q480,152 500,158 L500,195 L320,195 Z"
+        fill="url(#rock09a)"/>
+  <path d="M350,160 Q390,152 430,158 Q455,162 475,156"
+        fill="none" stroke="#806050" stroke-width="1.5" opacity="0.45"/>
+  <line x1="380" y1="158" x2="385" y2="173" stroke="#201008" stroke-width="0.7" opacity="0.6"/>
+
+  <!-- Sandy groove between spurs -->
+  <path d="M240,170 Q280,182 320,175" fill="none" stroke="#a09060" stroke-width="8" opacity="0.30"/>
+
+  <!-- Branching coral (left reef) -->
+  <g stroke="#c06020" fill="none" stroke-width="1.2" opacity="0.85">
+    <line x1="110" y1="152" x2="110" y2="130"/>
+    <line x1="110" y1="142" x2="98"  y2="130"/>
+    <line x1="110" y1="138" x2="122" y2="126"/>
+    <line x1="98"  y1="130" x2="92"  y2="120"/>
+    <line x1="98"  y1="130" x2="104" y2="119"/>
+    <line x1="122" y1="126" x2="118" y2="115"/>
+    <line x1="122" y1="126" x2="130" y2="117"/>
+    <circle cx="92"  cy="120" r="1.8" fill="#e08040"/>
+    <circle cx="104" cy="119" r="1.8" fill="#e08040"/>
+    <circle cx="118" cy="115" r="1.8" fill="#e08040"/>
+    <circle cx="130" cy="117" r="1.8" fill="#e08040"/>
+    <circle cx="110" cy="130" r="1.5" fill="#e08040"/>
+  </g>
+
+  <!-- Massive coral (right reef) -->
+  <ellipse cx="385" cy="162" rx="22" ry="10" fill="#7a5828"/>
+  <path d="M365,162 Q375,156 385,155 Q395,156 405,162" fill="none" stroke="#a07040" stroke-width="1" opacity="0.6"/>
+  <circle cx="375" cy="158" r="2" fill="#8a6030"/>
+  <circle cx="390" cy="155" r="2" fill="#8a6030"/>
+  <circle cx="400" cy="160" r="1.5" fill="#8a6030"/>
+
+  <!-- Fish 1: 柏氏鋸鱗魚 — bright red, large eye, near cave -->
+  <g transform="translate(160,125) rotate(5)" opacity="0.91">
+    <!-- Body: deep-bodied, bright red -->
+    <ellipse cx="0" cy="0" rx="20" ry="11" fill="#b83020"/>
+    <!-- Belly slightly lighter -->
+    <ellipse cx="2" cy="4" rx="14" ry="6" fill="#c84030" opacity="0.50"/>
+    <!-- Spiny dorsal fin (very spiny, characteristic) -->
+    <path d="M-8,-11 L-5,-20 L-2,-22 L2,-23 L6,-21 L9,-20 L12,-11"
+          fill="none" stroke="#902010" stroke-width="1.4"/>
+    <!-- Soft dorsal continuation -->
+    <path d="M12,-11 Q16,-16 20,-11" fill="none" stroke="#902010" stroke-width="1.3"/>
+    <!-- Tail (rounded-forked) -->
+    <path d="M-20,0 L-31,-10" stroke="#902010" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-20,0 L-31, 10" stroke="#902010" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <!-- Pectoral fin -->
+    <path d="M9,8 Q16,15 21,10" fill="none" stroke="#902010" stroke-width="1.2" opacity="0.8"/>
+    <!-- Pelvic fin -->
+    <path d="M4,11 Q8,17 14,13" fill="none" stroke="#902010" stroke-width="1.1"/>
+    <!-- Anal fin -->
+    <path d="M-8,11 Q-2,17 6,11" fill="none" stroke="#902010" stroke-width="1.1"/>
+    <!-- Large eye (nocturnal adaptation) -->
+    <circle cx="17" cy="-1" r="6" fill="#181010"/>
+    <circle cx="19" cy="-2" r="2" fill="#a0b0c0" opacity="0.45"/>
+  </g>
+
+  <!-- Fish 2: smaller, hovering near right reef -->
+  <g transform="translate(345,140) rotate(175)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="16" ry="9" fill="#b83020"/>
+    <path d="M-6,-9 L-4,-17 L0,-19 L4,-18 L7,-17 L9,-9" fill="none" stroke="#902010" stroke-width="1.2"/>
+    <path d="M-16,0 L-24,-8" stroke="#902010" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M-16,0 L-24, 8" stroke="#902010" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <circle cx="13" cy="-0.5" r="4.5" fill="#181010"/>
+    <circle cx="14.5" cy="-1.5" r="1.5" fill="#a0b0c0" opacity="0.4"/>
+  </g>
+
+  <!-- Depth ruler (right side) -->
+  <!-- depth shown 0-25m -->
+  <line x1="478" y1="7" x2="478" y2="168" stroke="#3a5070" stroke-width="1"/>
+  <!-- 0 m -->
+  <line x1="474" y1="7" x2="478" y2="7" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="10" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <!-- 10 m -->
+  <line x1="474" y1="72" x2="478" y2="72" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="75" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">10</text>
+  <!-- 20 m -->
+  <line x1="474" y1="137" x2="478" y2="137" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="140" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">20</text>
+  <!-- 25 m -->
+  <line x1="474" y1="168" x2="478" y2="168" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="171" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">25</text>
+  <text x="481" y="25" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">珊瑚礁 ／ 礁岩區</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">≤25 m</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">白天棲洞穴，夜間出獵；眼大適應暗處</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">台灣・印度西太平洋</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

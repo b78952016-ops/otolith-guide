@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sky54" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3898d0"/>
+      <stop offset="100%" stop-color="#2880b8"/>
+    </linearGradient>
+    <linearGradient id="water54" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a8870"/>
+      <stop offset="55%" stop-color="#2a6050"/>
+      <stop offset="100%" stop-color="#183828"/>
+    </linearGradient>
+    <linearGradient id="mud54" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#786858"/>
+      <stop offset="100%" stop-color="#484030"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Estuarine / mangrove, brackish, shallow -->
+  <rect width="500" height="195" fill="url(#sky54)" rx="6"/>
+
+  <!-- Shoreline embankments -->
+  <path d="M0,0 L0,46 Q22,44 40,46" fill="#5a7840" opacity="0.80"/>
+  <path d="M500,0 L500,46 Q478,44 460,46" fill="#5a7840" opacity="0.78"/>
+  <!-- Mangrove prop roots (left) -->
+  <line x1="15" y1="46" x2="8"  y2="62" stroke="#4a5828" stroke-width="1.8" opacity="0.72"/>
+  <line x1="22" y1="46" x2="18" y2="62" stroke="#4a5828" stroke-width="1.8" opacity="0.68"/>
+  <line x1="30" y1="46" x2="28" y2="62" stroke="#4a5828" stroke-width="1.6" opacity="0.65"/>
+  <!-- Mangrove canopy hint -->
+  <ellipse cx="20" cy="38" rx="20" ry="9" fill="#3a6028" opacity="0.72"/>
+  <ellipse cx="40" cy="40" rx="16" ry="7" fill="#3a6028" opacity="0.65"/>
+  <!-- Right shore -->
+  <line x1="488" y1="46" x2="494" y2="62" stroke="#4a5828" stroke-width="1.8" opacity="0.70"/>
+  <line x1="476" y1="46" x2="480" y2="62" stroke="#4a5828" stroke-width="1.6" opacity="0.65"/>
+  <ellipse cx="482" cy="38" rx="20" ry="9" fill="#3a6028" opacity="0.70"/>
+
+  <!-- Water surface -->
+  <rect x="0" y="46" width="500" height="149" fill="url(#water54)"/>
+
+  <!-- Turbid surface ripples -->
+  <path d="M0,50 Q120,46 250,50 Q380,54 500,50" fill="none" stroke="#70b890" stroke-width="0.9" opacity="0.35"/>
+
+  <!-- Muddy bottom -->
+  <path d="M0,162 Q80,157 160,162 Q240,167 320,160 Q400,154 480,160 L500,160 L500,195 L0,195 Z"
+        fill="url(#mud54)"/>
+  <path d="M15,168 Q65,166 115,168" fill="none" stroke="#808060" stroke-width="0.6" opacity="0.38"/>
+  <path d="M165,170 Q215,168 265,170" fill="none" stroke="#808060" stroke-width="0.6" opacity="0.36"/>
+  <path d="M310,168 Q360,166 410,168" fill="none" stroke="#808060" stroke-width="0.6" opacity="0.35"/>
+
+  <!-- Fish: 小鯔蝦虎 Mugilogobius cavifrons (Mullet goby) -->
+  <!-- Gobiidae: small (~4 cm); elongated but stout; LARGE HEAD;
+       FUSED PELVIC FINS forming ventral suction disc (diagnostic!);
+       TWO dorsal fins; blunt snout; SITS ON BOTTOM (benthic);
+       brownish-olive mottled; brackish estuarine 0–1 m -->
+
+  <!-- Main fish (ON BOTTOM, resting) -->
+  <g transform="translate(238,158) rotate(0)" opacity="0.92">
+    <!-- Body: short elongated goby -->
+    <ellipse cx="0" cy="0" rx="20" ry="7" fill="#807058"/>
+    <!-- Mottled darker patches -->
+    <ellipse cx="-5"  cy="-2" rx="7"  ry="4" fill="#504030" opacity="0.48"/>
+    <ellipse cx="-15" cy="-1" rx="5"  ry="3.5" fill="#504030" opacity="0.40"/>
+    <ellipse cx="8"   cy="-2" rx="5"  ry="3" fill="#504030" opacity="0.38"/>
+    <!-- Paler belly -->
+    <ellipse cx="0" cy="4" rx="16" ry="3" fill="#c0b090" opacity="0.38"/>
+    <!-- Large head (disproportionately large) -->
+    <ellipse cx="16" cy="-1" rx="8" ry="7.5" fill="#706050"/>
+    <!-- Blunt rounded snout -->
+    <path d="M23,-2 Q25,0 23,3" fill="none" stroke="#504030" stroke-width="1.1" stroke-linecap="round"/>
+    <!-- Eye: large relative to head -->
+    <circle cx="16" cy="-3" r="3.0" fill="#181818"/>
+    <circle cx="17" cy="-4" r="1.0" fill="#90a080" opacity="0.38"/>
+    <!-- First dorsal fin (6 spines, short) -->
+    <path d="M8,-7 Q4,-13 0,-14 Q-4,-12 -6,-9" fill="none" stroke="#504030" stroke-width="1.1"/>
+    <!-- Second dorsal fin (soft rays) -->
+    <path d="M-6,-7 Q-10,-11 -14,-10 Q-16,-8 -17,-6" fill="none" stroke="#504030" stroke-width="1.0"/>
+    <!-- FUSED PELVIC DISC (sucker under body, touching bottom) -->
+    <ellipse cx="10" cy="7" rx="8" ry="2.5" fill="#504030" opacity="0.60"/>
+    <!-- Caudal fin (rounded) -->
+    <path d="M-20,0 Q-28,-6 -26,-1 Q-28,4 -20,0" fill="#706050" stroke="#504030" stroke-width="0.8" opacity="0.70"/>
+    <!-- Anal fin -->
+    <path d="M-6,7 Q-10,11 -14,9 Q-16,7 -17,5" fill="none" stroke="#504030" stroke-width="1.0"/>
+    <!-- Pectoral fin (broad fan) -->
+    <path d="M14,4 Q20,9 22,3" fill="none" stroke="#604838" stroke-width="1.1" opacity="0.68"/>
+  </g>
+
+  <!-- Fish 2 (also on bottom, different angle) -->
+  <g transform="translate(128,163) rotate(5)" opacity="0.78">
+    <ellipse cx="0" cy="0" rx="15" ry="5.5" fill="#807058"/>
+    <ellipse cx="-4" cy="-1.5" rx="5" ry="3" fill="#504030" opacity="0.45"/>
+    <ellipse cx="12" cy="-0.5" rx="6.5" ry="6" fill="#706050"/>
+    <circle cx="12" cy="-2" r="2.4" fill="#181818"/>
+    <path d="M6,-6 Q2,-11 -2,-12 Q-5,-10 -7,-7" fill="none" stroke="#504030" stroke-width="1.0"/>
+    <ellipse cx="8" cy="5.5" rx="6" ry="2" fill="#504030" opacity="0.55"/>
+    <path d="M-15,0 Q-21,-4 -20,0 Q-21,4 -15,0" fill="#706050" stroke="#504030" stroke-width="0.7" opacity="0.65"/>
+  </g>
+
+  <!-- Fish 3 (swimming near bottom) -->
+  <g transform="translate(390,152) rotate(-8)" opacity="0.68">
+    <ellipse cx="0" cy="0" rx="13" ry="5" fill="#807058"/>
+    <ellipse cx="10" cy="-0.5" rx="5.5" ry="5.5" fill="#706050"/>
+    <circle cx="10" cy="-2" r="2.2" fill="#181818"/>
+    <path d="M-13,0 Q-19,-4 -18,0 Q-19,4 -13,0" fill="#706050" stroke="#504030" stroke-width="0.7" opacity="0.62"/>
+  </g>
+
+  <!-- Labels (no depth ruler — very shallow) -->
+  <text x="55" y="18" fill="#d0f0ff" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">河口・紅樹林・魚塭底棲</text>
+  <text x="55" y="32" fill="#f0e060" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">0–1 m；腹鰭癒合成吸盤・大頭（診斷）</text>
+  <text x="55" y="45" fill="#c0e8d0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食底泥蠕蟲・無脊椎動物；廣鹽性</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">西太平洋（台灣沿岸紅樹林濕地）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

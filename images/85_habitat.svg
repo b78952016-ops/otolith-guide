@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sky85" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5898c8"/>
+      <stop offset="100%" stop-color="#3880b0"/>
+    </linearGradient>
+    <linearGradient id="water85" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#488870"/>
+      <stop offset="55%" stop-color="#285848"/>
+      <stop offset="100%" stop-color="#183028"/>
+    </linearGradient>
+    <linearGradient id="silt85" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#787060"/>
+      <stop offset="100%" stop-color="#484030"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky — lake/reservoir landscape -->
+  <rect width="500" height="195" fill="url(#sky85)" rx="6"/>
+
+  <!-- Gentle hillside (background) -->
+  <path d="M0,0 Q80,28 160,40 L0,40 Z" fill="#386028" opacity="0.60"/>
+  <path d="M500,0 Q420,30 340,42 L500,42 Z" fill="#386028" opacity="0.60"/>
+  <!-- Reeds / shore grass (left) -->
+  <line x1="25" y1="52" x2="22" y2="35" stroke="#507038" stroke-width="1.8" opacity="0.80"/>
+  <line x1="35" y1="52" x2="30" y2="30" stroke="#507038" stroke-width="1.8" opacity="0.75"/>
+  <line x1="45" y1="52" x2="38" y2="36" stroke="#507038" stroke-width="1.6" opacity="0.72"/>
+  <!-- Reeds (right) -->
+  <line x1="475" y1="52" x2="472" y2="34" stroke="#507038" stroke-width="1.8" opacity="0.80"/>
+  <line x1="462" y1="52" x2="460" y2="30" stroke="#507038" stroke-width="1.6" opacity="0.75"/>
+
+  <!-- Shallow freshwater lake/river water -->
+  <rect x="0" y="52" width="500" height="143" fill="url(#water85)"/>
+
+  <!-- Calm surface -->
+  <path d="M0,57 Q120,53 250,57 Q380,61 500,57" fill="none" stroke="#80b890" stroke-width="1.1" opacity="0.40"/>
+  <path d="M0,70 Q130,66 265,70 Q400,74 500,70" fill="none" stroke="#68a878" stroke-width="0.8" opacity="0.30"/>
+  <!-- Light surface reflection patches -->
+  <ellipse cx="150" cy="62" rx="40" ry="4" fill="#80c0a0" opacity="0.12"/>
+  <ellipse cx="360" cy="65" rx="35" ry="4" fill="#80c0a0" opacity="0.10"/>
+
+  <!-- Silty bottom -->
+  <path d="M0,162 Q80,157 160,162 Q240,167 320,160 Q400,154 480,160 L500,160 L500,195 L0,195 Z"
+        fill="url(#silt85)"/>
+  <path d="M18,168 Q70,166 122,168" fill="none" stroke="#909080" stroke-width="0.7" opacity="0.38"/>
+  <path d="M172,170 Q222,168 272,170" fill="none" stroke="#909080" stroke-width="0.7" opacity="0.36"/>
+
+  <!-- Fish: 陳氏新銀魚 Neosalanx tangkahkeii (Icefish / 水晶魚) -->
+  <!-- VERY small (max ~6cm), semi-transparent / milky-white, slender;
+       swims in dense schools near surface; large eyes relative to body size -->
+
+  <!-- Dense school of tiny icefish near surface -->
+  <!-- Fish body: very thin ellipse, near-transparent -->
+
+  <!-- Row 1 (near surface) -->
+  <g transform="translate(190,72) rotate(-3)" opacity="0.82">
+    <ellipse cx="0" cy="0" rx="10" ry="1.8" fill="#e8eeee" opacity="0.75"/>
+    <path d="M-10,0 L-13.5,-3" stroke="#d0d8d8" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <path d="M-10,0 L-13.5, 3" stroke="#d0d8d8" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <circle cx="9.5" cy="-0.5" r="1.0" fill="#181818" opacity="0.70"/>
+  </g>
+  <g transform="translate(210,75) rotate(-4)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="9.5" ry="1.7" fill="#e8eeee" opacity="0.72"/>
+    <path d="M-9.5,0 L-13,-2.8" stroke="#d0d8d8" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+    <path d="M-9.5,0 L-13, 2.8" stroke="#d0d8d8" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+    <circle cx="9" cy="-0.5" r="0.9" fill="#181818" opacity="0.68"/>
+  </g>
+  <g transform="translate(228,70) rotate(-2)" opacity="0.78">
+    <ellipse cx="0" cy="0" rx="9" ry="1.6" fill="#e8eeee" opacity="0.70"/>
+    <path d="M-9,0 L-12,-2.5" stroke="#d0d8d8" stroke-width="1.0" stroke-linecap="round" fill="none"/>
+    <path d="M-9,0 L-12, 2.5" stroke="#d0d8d8" stroke-width="1.0" stroke-linecap="round" fill="none"/>
+    <circle cx="8.5" cy="-0.5" r="0.9" fill="#181818" opacity="0.65"/>
+  </g>
+  <g transform="translate(248,73) rotate(-3)" opacity="0.78">
+    <ellipse cx="0" cy="0" rx="10" ry="1.8" fill="#e8eeee" opacity="0.72"/>
+    <path d="M-10,0 L-13.5,-3" stroke="#d0d8d8" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+    <path d="M-10,0 L-13.5, 3" stroke="#d0d8d8" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+    <circle cx="9.5" cy="-0.5" r="1.0" fill="#181818" opacity="0.65"/>
+  </g>
+  <g transform="translate(268,71) rotate(-2)" opacity="0.75">
+    <ellipse cx="0" cy="0" rx="8.5" ry="1.6" fill="#e8eeee" opacity="0.70"/>
+    <path d="M-8.5,0 L-11.5,-2.5" stroke="#d0d8d8" stroke-width="1.0" stroke-linecap="round" fill="none"/>
+    <path d="M-8.5,0 L-11.5, 2.5" stroke="#d0d8d8" stroke-width="1.0" stroke-linecap="round" fill="none"/>
+    <circle cx="8" cy="-0.5" r="0.8" fill="#181818" opacity="0.62"/>
+  </g>
+  <!-- Row 2 (slightly deeper) -->
+  <g transform="translate(175,83) rotate(-4)" opacity="0.70">
+    <ellipse cx="0" cy="0" rx="9" ry="1.6" fill="#e8eeee" opacity="0.65"/>
+    <path d="M-9,0 L-12,-2.5" stroke="#d0d8d8" stroke-width="1.0" stroke-linecap="round" fill="none"/>
+    <path d="M-9,0 L-12, 2.5" stroke="#d0d8d8" stroke-width="1.0" stroke-linecap="round" fill="none"/>
+    <circle cx="8.5" cy="-0.5" r="0.8" fill="#181818" opacity="0.60"/>
+  </g>
+  <g transform="translate(200,85) rotate(-3)" opacity="0.68">
+    <ellipse cx="0" cy="0" rx="10" ry="1.7" fill="#e8eeee" opacity="0.62"/>
+    <path d="M-10,0 L-13,-3" stroke="#d0d8d8" stroke-width="1.0" stroke-linecap="round" fill="none"/>
+    <path d="M-10,0 L-13, 3" stroke="#d0d8d8" stroke-width="1.0" stroke-linecap="round" fill="none"/>
+    <circle cx="9.5" cy="-0.5" r="0.9" fill="#181818" opacity="0.58"/>
+  </g>
+  <g transform="translate(222,82) rotate(-2)" opacity="0.65">
+    <ellipse cx="0" cy="0" rx="9" ry="1.6" fill="#e8eeee" opacity="0.60"/>
+    <path d="M-9,0 L-12,-2.5" stroke="#d0d8d8" stroke-width="1.0" stroke-linecap="round" fill="none"/>
+    <path d="M-9,0 L-12, 2.5" stroke="#d0d8d8" stroke-width="1.0" stroke-linecap="round" fill="none"/>
+    <circle cx="8.5" cy="-0.5" r="0.8" fill="#181818" opacity="0.55"/>
+  </g>
+  <g transform="translate(245,84) rotate(-3)" opacity="0.65">
+    <ellipse cx="0" cy="0" rx="9.5" ry="1.7" fill="#e8eeee" opacity="0.60"/>
+    <path d="M-9.5,0 L-12.5,-2.8" stroke="#d0d8d8" stroke-width="1.0" stroke-linecap="round" fill="none"/>
+    <path d="M-9.5,0 L-12.5, 2.8" stroke="#d0d8d8" stroke-width="1.0" stroke-linecap="round" fill="none"/>
+    <circle cx="9" cy="-0.5" r="0.9" fill="#181818" opacity="0.55"/>
+  </g>
+  <!-- Background cluster (deeper) -->
+  <g transform="translate(310,95) rotate(-2)" opacity="0.50">
+    <ellipse cx="0" cy="0" rx="9" ry="1.6" fill="#e8eeee" opacity="0.55"/>
+    <path d="M-9,0 L-12,-2.5" stroke="#d0d8d8" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+    <path d="M-9,0 L-12, 2.5" stroke="#d0d8d8" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+    <circle cx="8.5" cy="-0.5" r="0.8" fill="#181818" opacity="0.50"/>
+  </g>
+  <g transform="translate(332,92) rotate(-3)" opacity="0.48">
+    <ellipse cx="0" cy="0" rx="8.5" ry="1.5" fill="#e8eeee" opacity="0.52"/>
+    <path d="M-8.5,0 L-11.5,-2.2" stroke="#d0d8d8" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+    <path d="M-8.5,0 L-11.5, 2.2" stroke="#d0d8d8" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+    <circle cx="8" cy="-0.5" r="0.7" fill="#181818" opacity="0.48"/>
+  </g>
+
+  <!-- No depth ruler — very shallow water (0-2m) -->
+  <!-- Labels -->
+  <text x="80" y="18" fill="#d0f0ff" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">淡水湖泊・河口・水庫表層</text>
+  <text x="80" y="32" fill="#f0f060" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">0–2 m；半透明群游型</text>
+  <text x="80" y="45" fill="#c0e8d0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食浮游甲殼類；體透明乳白色（水晶魚）</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">東亞大陸（長江・黃河流域；台灣進口食用）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

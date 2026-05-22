@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea41" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1468a8"/>
+      <stop offset="40%" stop-color="#0a4878"/>
+      <stop offset="80%" stop-color="#062030"/>
+      <stop offset="100%" stop-color="#031018"/>
+    </linearGradient>
+    <linearGradient id="sand41" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a89870"/>
+      <stop offset="100%" stop-color="#706848"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Coastal sandy-mud sea, 10–40 m -->
+  <rect width="500" height="195" fill="url(#sea41)" rx="6"/>
+
+  <!-- Surface shimmer -->
+  <path d="M0,8 Q80,5 165,8 Q250,11 335,8 Q415,5 500,8"
+        fill="none" stroke="#58c8e8" stroke-width="1.2" opacity="0.50"/>
+
+  <!-- Light shafts -->
+  <line x1="155" y1="8" x2="126" y2="158" stroke="#c8eeff" stroke-width="10" opacity="0.055"/>
+  <line x1="375" y1="8" x2="350" y2="155" stroke="#c8eeff" stroke-width="7" opacity="0.04"/>
+
+  <!-- Sandy-mud bottom -->
+  <path d="M0,160 Q70,154 150,160 Q240,166 320,158 Q410,152 490,158 L500,158 L500,195 L0,195 Z"
+        fill="url(#sand41)"/>
+  <path d="M20,166 Q70,164 120,166" fill="none" stroke="#806858" stroke-width="0.7" opacity="0.40"/>
+  <path d="M165,168 Q215,166 265,168" fill="none" stroke="#806858" stroke-width="0.7" opacity="0.38"/>
+  <path d="M310,167 Q360,165 410,167" fill="none" stroke="#806858" stroke-width="0.7" opacity="0.38"/>
+
+  <!-- Fish: 紅牙䱛 Otolithes ruber (Tiger-toothed croaker) -->
+  <!-- Sciaenidae: elongated body; large CURVED CANINE TEETH (upper jaw diagnostic!);
+       silvery body with orange-reddish tinge on lower fins;
+       two dorsal fins; slightly forked tail; coastal sandy-mud 10–40 m -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(240,116) rotate(-5)" opacity="0.93">
+    <!-- Body: elongated oval (sciaenid) -->
+    <ellipse cx="0" cy="0" rx="37" ry="13" fill="#d0c8b8"/>
+    <!-- Dark olive-grey back -->
+    <ellipse cx="2" cy="-7" rx="30" ry="6" fill="#606870" opacity="0.52"/>
+    <!-- Silvery flanks sheen -->
+    <ellipse cx="4" cy="2" rx="28" ry="7" fill="#e0dcd0" opacity="0.38"/>
+    <!-- Caudal peduncle -->
+    <ellipse cx="-32" cy="0" rx="6.5" ry="10" fill="#b0a898" opacity="0.82"/>
+    <!-- Head: large, pointed snout -->
+    <ellipse cx="32" cy="0" rx="13" ry="13" fill="#b0a898"/>
+    <!-- Large oblique mouth (wide gape) -->
+    <path d="M44,-4 Q49,0 44,7" fill="none" stroke="#607080" stroke-width="1.6" stroke-linecap="round"/>
+    <!-- LARGE CANINE TEETH (diagnostic: upper jaw fang-like) -->
+    <path d="M45,0 L48,5" stroke="#e8e4d8" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <path d="M43,-1 L45,5" stroke="#e8e4d8" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+    <!-- Eye: medium-large -->
+    <circle cx="34" cy="-5" r="4.5" fill="#181818"/>
+    <circle cx="35" cy="-6" r="1.6" fill="#808898" opacity="0.38"/>
+    <!-- First dorsal (spiny) -->
+    <path d="M20,-13 Q12,-24 5,-26 Q-1,-24 -6,-19 Q-10,-14 -11,-12"
+          fill="none" stroke="#505868" stroke-width="1.4"/>
+    <!-- Second dorsal (soft) -->
+    <path d="M-11,-12 Q-17,-16 -24,-14 Q-29,-11 -30,-8"
+          fill="none" stroke="#505868" stroke-width="1.2"/>
+    <!-- Anal fin (orange-reddish tinge) -->
+    <path d="M-5,13 Q-14,19 -22,17 Q-27,14 -28,10"
+          fill="none" stroke="#c08040" stroke-width="1.3"/>
+    <!-- Pectoral fin -->
+    <path d="M24,8 Q35,16 39,9" fill="none" stroke="#c08848" stroke-width="1.3" opacity="0.72"/>
+    <!-- Slightly forked tail -->
+    <path d="M-38,0 L-50,-12" stroke="#505868" stroke-width="3.0" stroke-linecap="round" fill="none"/>
+    <path d="M-38,0 L-50, 12" stroke="#505868" stroke-width="3.0" stroke-linecap="round" fill="none"/>
+    <path d="M-50,-12 Q-54,0 -50,12" fill="none" stroke="#505868" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Lateral line (prominent) -->
+    <path d="M35,-7 Q18,-11 0,-9 Q-16,-7 -30,-4" fill="none" stroke="#9098a0" stroke-width="0.8" opacity="0.35"/>
+  </g>
+
+  <!-- Fish 2 (background) -->
+  <g transform="translate(126,140) rotate(-4)" opacity="0.76">
+    <ellipse cx="0" cy="0" rx="29" ry="10" fill="#d0c8b8"/>
+    <ellipse cx="2" cy="-6" rx="23" ry="5" fill="#606870" opacity="0.48"/>
+    <ellipse cx="25" cy="0" rx="10" ry="10" fill="#b0a898"/>
+    <!-- Canine teeth hint -->
+    <path d="M34,0 L36,4" stroke="#e8e4d8" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+    <circle cx="27" cy="-4" r="3.5" fill="#181818"/>
+    <path d="M14,-10 Q7,-19 0,-21 Q-4,-19 -8,-15 Q-11,-11 -11,-9" fill="none" stroke="#505868" stroke-width="1.1"/>
+    <path d="M-11,-9 Q-16,-12 -21,-11 Q-25,-9 -26,-7" fill="none" stroke="#505868" stroke-width="1.0"/>
+    <path d="M-31,0 L-41,-10" stroke="#505868" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M-31,0 L-41, 10" stroke="#505868" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M-41,-10 Q-45,0 -41,10" fill="none" stroke="#505868" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Depth ruler (0–40 m) -->
+  <line x1="478" y1="8" x2="478" y2="158" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="83"  x2="478" y2="83"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="86"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">20</text>
+  <line x1="474" y1="158" x2="478" y2="158" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="161" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">40</text>
+  <text x="481" y="24" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">沿岸砂泥底・中底層</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">10–40 m；大型彎曲犬齒（診斷）・銀體橙鰭</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食小魚・甲殼類；性凶猛活動力強</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">印度－西太平洋（台灣西部・南部沿岸）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

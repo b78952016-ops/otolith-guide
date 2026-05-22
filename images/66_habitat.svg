@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea66" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a2840"/>
+      <stop offset="30%" stop-color="#051420"/>
+      <stop offset="65%" stop-color="#020a10"/>
+      <stop offset="100%" stop-color="#010608"/>
+    </linearGradient>
+    <linearGradient id="mud66" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#585050"/>
+      <stop offset="100%" stop-color="#302828"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Very deep dark ocean (300-800m, no sunlight) -->
+  <rect width="500" height="195" fill="url(#sea66)" rx="6"/>
+
+  <!-- Barely visible surface shimmer (far up) -->
+  <path d="M0,5 Q250,3 500,5" fill="none" stroke="#1040608" stroke-width="0.8" opacity="0.20"/>
+
+  <!-- Bioluminescent particles (typical at depth) -->
+  <circle cx="60"  cy="38"  r="0.9" fill="#80f0c0" opacity="0.22"/>
+  <circle cx="180" cy="55"  r="0.8" fill="#80f0c0" opacity="0.18"/>
+  <circle cx="310" cy="42"  r="0.9" fill="#60d0ff" opacity="0.20"/>
+  <circle cx="420" cy="68"  r="0.7" fill="#80f0c0" opacity="0.17"/>
+  <circle cx="130" cy="100" r="0.7" fill="#60d0ff" opacity="0.14"/>
+  <circle cx="260" cy="88"  r="0.8" fill="#80f0c0" opacity="0.15"/>
+  <circle cx="390" cy="115" r="0.6" fill="#60d0ff" opacity="0.13"/>
+  <circle cx="75"  cy="135" r="0.7" fill="#80f0c0" opacity="0.12"/>
+  <circle cx="450" cy="148" r="0.6" fill="#60d0ff" opacity="0.11"/>
+
+  <!-- Sandy-mud deep bottom -->
+  <path d="M0,162 Q70,158 160,162 Q240,166 330,160 Q410,154 490,160 L500,160 L500,195 L0,195 Z"
+        fill="url(#mud66)"/>
+  <!-- Soft mud texture -->
+  <path d="M20,168 Q70,166 120,168" fill="none" stroke="#706060" stroke-width="0.6" opacity="0.38"/>
+  <path d="M170,170 Q220,168 270,170" fill="none" stroke="#706060" stroke-width="0.6" opacity="0.36"/>
+  <path d="M320,168 Q370,166 420,168" fill="none" stroke="#706060" stroke-width="0.6" opacity="0.36"/>
+
+  <!-- Small pebbles / debris on bottom -->
+  <ellipse cx="90"  cy="166" rx="8"  ry="3" fill="#484040" opacity="0.50"/>
+  <ellipse cx="220" cy="165" rx="6"  ry="2.5" fill="#484040" opacity="0.45"/>
+  <ellipse cx="360" cy="164" rx="7"  ry="2.5" fill="#484040" opacity="0.45"/>
+
+  <!-- Fish: 糯米鰻 type (Conger myriaster / deep conger eel) -->
+  <!-- Pale whitish eel, undulating body, large eyes -->
+
+  <!-- Main eel (partially buried in bottom, head elevated) -->
+  <g transform="translate(100,152)" opacity="0.88">
+    <!-- Eel sinuous body -->
+    <path d="M0,0 Q40,-12 80,-6 Q120,2 160,-4 Q190,-8 210,-5"
+          fill="none" stroke="#b0a898" stroke-width="11" stroke-linecap="round"/>
+    <!-- Belly lighter -->
+    <path d="M0,2 Q40,-8 80,-3 Q120,4 160,-2 Q190,-6 210,-3"
+          fill="none" stroke="#e0d8c8" stroke-width="4" stroke-linecap="round" opacity="0.40"/>
+    <!-- Dorsal fin ridge -->
+    <path d="M20,-6 Q60,-14 100,-8 Q140,-2 170,-8 Q190,-12 210,-8"
+          fill="none" stroke="#909080" stroke-width="0.9" opacity="0.50"/>
+    <!-- Head -->
+    <ellipse cx="210" cy="-5" rx="12" ry="7" fill="#b0a898"/>
+    <!-- Large eye (conger eels have large eyes) -->
+    <circle cx="219" cy="-8" r="3.2" fill="#181818"/>
+    <circle cx="220" cy="-9" r="1.0" fill="#806040" opacity="0.40"/>
+    <!-- Wide mouth -->
+    <path d="M220,-2 Q226,1 222,5" fill="none" stroke="#787060" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Second eel (background, only front portion visible) -->
+  <g transform="translate(310,158)" opacity="0.65">
+    <path d="M0,0 Q30,-8 60,-3 Q80,1 90,-1"
+          fill="none" stroke="#b0a898" stroke-width="9" stroke-linecap="round"/>
+    <path d="M0,2 Q30,-4 60,0 Q80,2 90,1"
+          fill="none" stroke="#e0d8c8" stroke-width="3.5" stroke-linecap="round" opacity="0.38"/>
+    <ellipse cx="90" cy="-1" rx="10" ry="6" fill="#b0a898"/>
+    <circle cx="97" cy="-3" r="2.5" fill="#181818"/>
+  </g>
+
+  <!-- Depth ruler (0-800m) -->
+  <line x1="478" y1="8" x2="478" y2="162" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="47"  x2="478" y2="47"  stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="50"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">200</text>
+  <line x1="474" y1="86"  x2="478" y2="86"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="89"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">400</text>
+  <line x1="474" y1="124" x2="478" y2="124" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="127" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">600</text>
+  <line x1="474" y1="162" x2="478" y2="162" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="165" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">800</text>
+  <text x="481" y="25" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">深海砂泥底・大陸坡</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">300–800 m；底棲夜行性</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">伏底獵食；食多毛類・甲殼類</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">西北太平洋（日本・韓國・台灣北部外海）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

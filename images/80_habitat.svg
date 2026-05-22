@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea80" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e3060"/>
+      <stop offset="30%" stop-color="#061828"/>
+      <stop offset="65%" stop-color="#030c14"/>
+      <stop offset="100%" stop-color="#010608"/>
+    </linearGradient>
+    <linearGradient id="rock80" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#484050"/>
+      <stop offset="100%" stop-color="#201820"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep dark rocky reef (希氏姬鯛 habitat: 80-500m rocky slope) -->
+  <rect width="500" height="195" fill="url(#sea80)" rx="6"/>
+
+  <!-- Almost no light at this depth -->
+  <path d="M0,4 Q250,2 500,4" fill="none" stroke="#182038" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- Sparse bioluminescence -->
+  <circle cx="50"  cy="32"  r="0.7" fill="#60c0ff" opacity="0.16"/>
+  <circle cx="175" cy="50"  r="0.6" fill="#80e0d8" opacity="0.14"/>
+  <circle cx="305" cy="38"  r="0.7" fill="#60c0ff" opacity="0.14"/>
+  <circle cx="420" cy="58"  r="0.6" fill="#80e0d8" opacity="0.12"/>
+  <circle cx="115" cy="92"  r="0.6" fill="#60c0ff" opacity="0.11"/>
+  <circle cx="365" cy="102" r="0.5" fill="#80e0d8" opacity="0.10"/>
+
+  <!-- Deep rocky reef bottom — jagged prominent rocks -->
+  <path d="M0,150 Q30,135 75,145 Q115,155 160,135 Q205,115 255,135 Q305,155 355,135 Q405,115 450,135 Q475,145 500,140 L500,195 L0,195 Z"
+        fill="url(#rock80)"/>
+  <!-- Large rock outcrops -->
+  <ellipse cx="70"  cy="148" rx="28" ry="10" fill="#302838" opacity="0.70"/>
+  <ellipse cx="200" cy="138" rx="24" ry="9"  fill="#302838" opacity="0.65"/>
+  <ellipse cx="340" cy="138" rx="22" ry="8"  fill="#302838" opacity="0.65"/>
+  <ellipse cx="460" cy="142" rx="20" ry="7"  fill="#302838" opacity="0.60"/>
+  <!-- Rock texture crevices -->
+  <path d="M50,152 Q75,144 105,150" fill="none" stroke="#504858" stroke-width="1.2" opacity="0.40"/>
+  <path d="M175,140 Q210,132 245,138" fill="none" stroke="#504858" stroke-width="1.0" opacity="0.38"/>
+  <path d="M315,140 Q345,132 375,138" fill="none" stroke="#504858" stroke-width="1.0" opacity="0.36"/>
+  <!-- Deep-water sea fans / gorgonians on rock -->
+  <g stroke="#806880" fill="none" stroke-width="0.9" opacity="0.42">
+    <line x1="130" y1="145" x2="128" y2="118"/>
+    <line x1="128" y1="135" x2="118" y2="122"/>
+    <line x1="128" y1="128" x2="138" y2="118"/>
+    <line x1="128" y1="122" x2="122" y2="112"/>
+  </g>
+  <g stroke="#806880" fill="none" stroke-width="0.8" opacity="0.36">
+    <line x1="410" y1="142" x2="408" y2="120"/>
+    <line x1="408" y1="134" x2="398" y2="120"/>
+    <line x1="408" y1="128" x2="416" y2="116"/>
+  </g>
+
+  <!-- Fish: 希氏姬鯛 Pristipomoides sieboldii (Lavender jobfish) -->
+  <!-- Lutjanidae (snapper family); slender elongated body; purplish-lavender/pinkish-violet;
+       large eye (deep water adaptation); deeply forked caudal fin;
+       deep rocky reef slope 80-500m; schools or scattered groups -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(245,108) rotate(-7)" opacity="0.92">
+    <!-- Body: elongated, moderately compressed -->
+    <ellipse cx="0" cy="0" rx="38" ry="13" fill="#b090b8"/>
+    <!-- Darker purplish-lavender back -->
+    <ellipse cx="-3" cy="-7" rx="32" ry="6" fill="#806890" opacity="0.58"/>
+    <!-- Pinkish-silver lower body -->
+    <ellipse cx="3" cy="7" rx="28" ry="5" fill="#d8c0d8" opacity="0.45"/>
+    <!-- Head: moderate, slightly pointed snout -->
+    <ellipse cx="33" cy="0" rx="12" ry="11" fill="#a07fa8"/>
+    <!-- Mouth (slightly oblique) -->
+    <path d="M44,-1 Q47,2 44,5" fill="none" stroke="#806080" stroke-width="1.1" stroke-linecap="round"/>
+    <!-- Large eye (deep water) -->
+    <circle cx="36" cy="-3" r="5.5" fill="#181818"/>
+    <circle cx="37" cy="-4" r="1.8" fill="#b090b8" opacity="0.32"/>
+    <!-- Lateral line -->
+    <path d="M35,-6 Q15,-10 -8,-7 Q-24,-4 -36,-1" fill="none" stroke="#9870a0" stroke-width="0.6" opacity="0.28"/>
+    <!-- Continuous dorsal fin (slight notch between spiny/soft sections) -->
+    <path d="M12,-13 Q6,-22 0,-24 Q-6,-22 -12,-18 Q-18,-14 -22,-10" fill="none" stroke="#806080" stroke-width="1.3"/>
+    <path d="M-22,-10 Q-28,-13 -34,-12 Q-36,-9 -36,-5" fill="none" stroke="#806080" stroke-width="1.2"/>
+    <!-- Anal fin -->
+    <path d="M-10,13 Q-16,18 -24,16 Q-30,14 -32,9" fill="none" stroke="#806080" stroke-width="1.1"/>
+    <!-- Pectoral fin -->
+    <path d="M22,6 Q32,14 36,7" fill="none" stroke="#806080" stroke-width="1.3" opacity="0.72"/>
+    <!-- Deeply forked caudal fin -->
+    <path d="M-38,0 L-52,-16" stroke="#806080" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-38,0 L-52, 16" stroke="#806080" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-52,-16 Q-57,0 -52,16" fill="none" stroke="#806080" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish 2 -->
+  <g transform="translate(112,128) rotate(-5)" opacity="0.75">
+    <ellipse cx="0" cy="0" rx="30" ry="10.5" fill="#b090b8"/>
+    <ellipse cx="-2" cy="-6" rx="25" ry="5" fill="#806890" opacity="0.52"/>
+    <ellipse cx="26" cy="0" rx="10" ry="9" fill="#a07fa8"/>
+    <circle cx="28" cy="-2" r="4.5" fill="#181818"/>
+    <path d="M9,-10 Q4,-17 -1,-18 Q-7,-16 -12,-12" fill="none" stroke="#806080" stroke-width="1.2"/>
+    <path d="M-30,0 L-42,-12" stroke="#806080" stroke-width="3.0" stroke-linecap="round" fill="none"/>
+    <path d="M-30,0 L-42, 12" stroke="#806080" stroke-width="3.0" stroke-linecap="round" fill="none"/>
+    <path d="M-42,-12 Q-46,0 -42,12" fill="none" stroke="#806080" stroke-width="2.0" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish 3 -->
+  <g transform="translate(400,118) rotate(-6)" opacity="0.60">
+    <ellipse cx="0" cy="0" rx="25" ry="9" fill="#b090b8"/>
+    <ellipse cx="21" cy="0" rx="8.5" ry="7.5" fill="#a07fa8"/>
+    <circle cx="23" cy="-2" r="3.8" fill="#181818"/>
+    <path d="M-25,0 L-35,-10" stroke="#806080" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M-25,0 L-35, 10" stroke="#806080" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Depth ruler (80–500 m) -->
+  <line x1="478" y1="8" x2="478" y2="150" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">80</text>
+  <line x1="474" y1="55"  x2="478" y2="55"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="58"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">200</text>
+  <line x1="474" y1="100" x2="478" y2="100" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="103" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">350</text>
+  <line x1="474" y1="150" x2="478" y2="150" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="153" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">500</text>
+  <text x="481" y="25" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#a8b8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">深水岩礁斜坡・大陸棚邊緣</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">80–500 m；紫藍體色・大眼・深叉尾</text>
+  <text x="12" y="55" fill="#a890b8" font-size="9" font-family="Microsoft JhengHei,sans-serif">食深水甲殼類・小魚；笛鯛科深水種</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">印度－西太平洋（台灣周邊礁斜坡）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

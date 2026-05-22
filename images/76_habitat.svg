@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea76" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1888c0"/>
+      <stop offset="35%" stop-color="#0e6090"/>
+      <stop offset="100%" stop-color="#062848"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Warm nearshore coastal water -->
+  <rect width="500" height="195" fill="url(#sea76)" rx="6"/>
+
+  <!-- Choppy surface (nearshore open water) -->
+  <path d="M0,8 Q60,5 130,9 Q200,13 270,9 Q340,5 415,9 Q460,12 500,9"
+        fill="none" stroke="#60d0f0" stroke-width="1.5" opacity="0.58"/>
+  <path d="M0,20 Q70,15 148,20 Q226,25 305,20 Q384,15 500,20"
+        fill="none" stroke="#48b8d8" stroke-width="1.0" opacity="0.44"/>
+  <!-- Wave crests -->
+  <path d="M80,8  Q92,5  104,8"  fill="none" stroke="#d0eef8" stroke-width="0.9" opacity="0.60"/>
+  <path d="M310,9 Q322,6 334,9" fill="none" stroke="#d0eef8" stroke-width="0.9" opacity="0.55"/>
+
+  <!-- Light shafts -->
+  <line x1="160" y1="8" x2="132" y2="130" stroke="#d0f0ff" stroke-width="12" opacity="0.06"/>
+  <line x1="400" y1="8" x2="378" y2="140" stroke="#d0f0ff" stroke-width="8"  opacity="0.04"/>
+
+  <!-- Fish: 康氏馬加鰆 (King mackerel) — large swift mackerel, torpedo-shaped -->
+  <!-- Shiny silver body, dark blue-green back, pointed snout, deeply forked tail -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(240,90) rotate(-6)" opacity="0.93">
+    <!-- Body: very elongated torpedo -->
+    <ellipse cx="0" cy="0" rx="46" ry="10" fill="#a8b8c0"/>
+    <!-- Dark blue-green back -->
+    <ellipse cx="0" cy="-7" rx="40" ry="4" fill="#1a3858" opacity="0.75"/>
+    <!-- Brilliant silver belly -->
+    <ellipse cx="5" cy="6" rx="38" ry="3.5" fill="#e8f0f8" opacity="0.55"/>
+    <!-- Lateral line (straight in mackerel) -->
+    <path d="M-40,0 L40,0" fill="none" stroke="#6888a8" stroke-width="0.7" opacity="0.40" stroke-dasharray="3,3"/>
+    <!-- First dorsal fin (spiny, triangular) -->
+    <path d="M-8,-10 L0,-20 L10,-21 L18,-12" fill="none" stroke="#1a3858" stroke-width="1.4"/>
+    <!-- Second dorsal + finlets -->
+    <path d="M18,-10 Q28,-14 34,-10" fill="none" stroke="#1a3858" stroke-width="1.2"/>
+    <ellipse cx="38" cy="-9" rx="2" ry="3" fill="#1a3858" opacity="0.60"/>
+    <ellipse cx="42" cy="-8" rx="1.5" ry="2" fill="#1a3858" opacity="0.50"/>
+    <!-- Anal fin + finlets -->
+    <path d="M18,10 Q28,14 34,10" fill="none" stroke="#1a3858" stroke-width="1.2"/>
+    <ellipse cx="38" cy="9" rx="2" ry="2.5" fill="#1a3858" opacity="0.55"/>
+    <ellipse cx="42" cy="8" rx="1.5" ry="2" fill="#1a3858" opacity="0.48"/>
+    <!-- Deeply forked tail (lunate) -->
+    <path d="M-46,0 L-60,-18" stroke="#1a3858" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M-46,0 L-60, 18" stroke="#1a3858" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <!-- Sharp pointed snout -->
+    <path d="M46,0 L56,-2" stroke="#889898" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M46,0 L56, 2" stroke="#889898" stroke-width="1.0" stroke-linecap="round"/>
+    <!-- Eye -->
+    <circle cx="44" cy="-1" r="3" fill="#181818"/>
+    <circle cx="45" cy="-1.5" r="1.0" fill="#8898a8" opacity="0.45"/>
+  </g>
+
+  <!-- Fish 2 (background) -->
+  <g transform="translate(120,115) rotate(-5)" opacity="0.78">
+    <ellipse cx="0" cy="0" rx="38" ry="8" fill="#a8b8c0"/>
+    <ellipse cx="0" cy="-5" rx="32" ry="3.5" fill="#1a3858" opacity="0.70"/>
+    <path d="M-4,-8 L2,-16 L9,-17 L15,-10" fill="none" stroke="#1a3858" stroke-width="1.3"/>
+    <path d="M-38,0 L-50,-15" stroke="#1a3858" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-38,0 L-50, 15" stroke="#1a3858" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <circle cx="36" cy="-0.5" r="2.5" fill="#181818"/>
+  </g>
+
+  <!-- Fish 3 (deeper) -->
+  <g transform="translate(380,130) rotate(-4)" opacity="0.68">
+    <ellipse cx="0" cy="0" rx="32" ry="7" fill="#a8b8c0"/>
+    <ellipse cx="0" cy="-4.5" rx="28" ry="3" fill="#1a3858" opacity="0.65"/>
+    <path d="M-32,0 L-42,-12" stroke="#1a3858" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-32,0 L-42, 12" stroke="#1a3858" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="30" cy="-0.5" r="2" fill="#181818"/>
+  </g>
+
+  <!-- Depth ruler -->
+  <line x1="478" y1="8" x2="478" y2="168" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="68"  x2="478" y2="68"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="71"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">25</text>
+  <line x1="474" y1="128" x2="478" y2="128" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="131" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">50</text>
+  <line x1="474" y1="168" x2="478" y2="168" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="171" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">70</text>
+  <text x="481" y="25" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">近海暖水中上層</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">10–70 m；小群高速游泳</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食沙丁・鯷魚等群游魚類</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">印度－西太平洋（台灣周邊・日本南部）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

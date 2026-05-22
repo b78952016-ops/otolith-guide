@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>照片類型審核</title>
+<style>
+body { background:#111; color:#eee; font-family:monospace; padding:1rem; }
+h2 { color:#c9a84c; border-bottom:1px solid #333; padding-bottom:.3rem; margin-top:2rem; }
+.group { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:1rem; }
+.item { text-align:center; }
+.item img { width:220px; height:165px; object-fit:cover; border:2px solid #333; display:block; }
+.item img:hover { border-color:#c9a84c; }
+.label { font-size:11px; margin-top:4px; padding:2px 6px; border-radius:3px; }
+.otolith { background:#1a3a5c; color:#7ab8e8; }
+.fish    { background:#1a4a1a; color:#7ae87a; }
+.cooking { background:#4a2a00; color:#e8a87a; }
+</style>
+</head>
+<body>
+<h1 style="color:#c9a84c">照片類型審核 — 黑底+硬幣=耳石 / 素背景=生魚 / 複雜=料理</h1>
+<script>
+const files = [
+  "01_otolith","02_otolith",
+  "03_otolith","03_cooking",
+  "04_otolith","04_cooking",
+  "05_otolith","05_cooking",
+  "06_otolith","06_fish","06_cooking",
+  "10_otolith","10_fish","10_cooking",
+  "13_otolith","13_fish","13_cooking",
+  "14_otolith","14_fish","14_cooking",
+  "15_otolith","15_fish","15_cooking",
+  "16_otolith","16_fish","16_cooking",
+  "17_otolith","17_fish","17_cooking",
+  "18_fish","18_cooking",
+  "19_fish","19_cooking",
+  "20_otolith","20_fish","20_cooking",
+  "21_fish","21_cooking",
+  "22_otolith","22_fish","22_cooking",
+  "23_otolith","23_cooking",
+  "26_otolith","26_fish","26_cooking",
+  "27_otolith","27_fish","27_cooking",
+  "28_otolith","28_fish","28_cooking",
+  "29_otolith","29_fish","29_cooking",
+  "30_otolith","30_fish","30_cooking",
+  "31_otolith","31_fish","31_cooking",
+  "32_otolith","32_fish","32_cooking",
+  "33_otolith","33_fish","33_cooking",
+  "34_otolith","34_fish","34_cooking",
+  "35_otolith","35_fish","35_cooking",
+  "36_otolith","36_fish","36_cooking",
+  "37_otolith","37_fish","37_cooking",
+  "38_otolith","38_fish","38_cooking",
+  "39_otolith","39_fish","39_cooking",
+  "40_otolith","40_fish","40_cooking",
+  "41_otolith","41_fish","41_cooking",
+  "42_otolith","42_fish","42_cooking",
+  "43_otolith","43_fish","43_cooking",
+  "44_otolith","44_fish","44_cooking",
+  "45_otolith","45_fish","45_cooking",
+  "46_otolith","46_fish","46_cooking",
+  "47_otolith","47_fish","47_cooking",
+  "57_otolith","57_fish","57_cooking",
+  "58_fish","58_cooking",
+  "59_otolith","59_fish","59_cooking",
+  "60_otolith","60_fish","60_cooking",
+  "61_otolith","61_fish","61_cooking",
+  "62_otolith","62_fish",
+  "63_otolith","63_fish",
+  "64_otolith","64_cooking",
+  "65_cooking",
+  "66_otolith","66_fish","66_cooking",
+  "67_otolith","67_fish","67_cooking",
+  "68_otolith","68_fish","68_cooking",
+  "69_otolith","69_fish","69_cooking",
+  "70_otolith","70_fish","70_cooking",
+  "71_otolith","71_fish","71_cooking",
+  "72_otolith","72_fish","72_cooking",
+  "73_otolith","73_fish","73_cooking",
+  "74_otolith","74_fish","74_cooking",
+  "75_otolith","75_fish","75_cooking",
+  "76_otolith","76_fish","76_cooking",
+  "77_otolith","77_fish","77_cooking",
+  "78_otolith","78_fish","78_cooking",
+  "79_otolith","79_fish","79_cooking",
+  "80_otolith","80_fish","80_cooking",
+  "81_fish","81_cooking",
+  "82_otolith","82_fish","82_cooking",
+  "91_fish","91_cooking",
+  "102_otolith","102_fish","102_cooking","102_cooking2",
+  "103_otolith","103_fish","103_fish2","103_cooking","103_cooking2",
+  "106_otolith","106_fish","106_fish2","106_cooking","106_cooking2"
+];
+
+// Group by ID
+const groups = {};
+files.forEach(f => {
+  const id = f.match(/^(\d+)/)[1];
+  if (!groups[id]) groups[id] = [];
+  groups[id].push(f);
+});
+
+const typeClass = n => n.includes('otolith') ? 'otolith' : n.includes('fish') ? 'fish' : 'cooking';
+
+const ids = Object.keys(groups).sort((a,b) => +a - +b);
+ids.forEach(id => {
+  const sec = document.createElement('div');
+  sec.innerHTML = `<h2>ID ${id}</h2><div class="group" id="g${id}"></div>`;
+  document.body.appendChild(sec);
+  const g = document.getElementById('g'+id);
+  groups[id].forEach(f => {
+    const div = document.createElement('div');
+    div.className = 'item';
+    const tc = typeClass(f);
+    div.innerHTML = `<img src="images/${f}.jpg" title="${f}" loading="lazy">
+      <div class="label ${tc}">${f}</div>`;
+    g.appendChild(div);
+  });
+});
+</script>
+</body>
+</html>

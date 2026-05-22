@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sky07" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3050"/>
+      <stop offset="100%" stop-color="#2a5878"/>
+    </linearGradient>
+    <linearGradient id="mtn07" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a3040"/>
+      <stop offset="100%" stop-color="#1a2030"/>
+    </linearGradient>
+    <linearGradient id="lake07" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e5878"/>
+      <stop offset="55%" stop-color="#112e50"/>
+      <stop offset="100%" stop-color="#081828"/>
+    </linearGradient>
+    <linearGradient id="silt07" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#504840"/>
+      <stop offset="100%" stop-color="#383028"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="500" height="195" fill="url(#sky07)" rx="6"/>
+
+  <!-- Mountain silhouettes -->
+  <polygon points="0,68 55,10 110,68" fill="url(#mtn07)"/>
+  <polygon points="90,68 168,4 246,68" fill="#222830" opacity="0.9"/>
+  <polygon points="295,68 390,16 460,68" fill="#1e2430" opacity="0.85"/>
+  <!-- Snow caps -->
+  <polygon points="55,10 43,28 67,28" fill="#d8e8f0" opacity="0.55"/>
+  <polygon points="168,4 153,26 183,26" fill="#d8e8f0" opacity="0.55"/>
+  <polygon points="390,16 376,36 404,36" fill="#d8e8f0" opacity="0.48"/>
+
+  <!-- Lake water -->
+  <rect x="0" y="68" width="500" height="127" fill="url(#lake07)"/>
+
+  <!-- Calm lake surface (gentle ripples, not rushing stream) -->
+  <path d="M0,74 Q100,71 200,74 Q300,77 400,74 Q450,72 500,74"
+        fill="none" stroke="#4ab8d8" stroke-width="1.3" opacity="0.50"/>
+  <path d="M0,84 Q110,80 220,84 Q330,88 440,84 Q470,82 500,84"
+        fill="none" stroke="#3aa8c8" stroke-width="1.0" opacity="0.38"/>
+  <path d="M0,100 Q120,96 240,100 Q360,104 480,100"
+        fill="none" stroke="#2898b8" stroke-width="0.8" opacity="0.28"/>
+
+  <!-- Light rays penetrating lake surface -->
+  <line x1="130" y1="68" x2="90" y2="145" stroke="#b0e0f8" stroke-width="8" opacity="0.04"/>
+  <line x1="230" y1="68" x2="190" y2="155" stroke="#b0e0f8" stroke-width="6" opacity="0.04"/>
+  <line x1="330" y1="68" x2="300" y2="150" stroke="#b0e0f8" stroke-width="5" opacity="0.03"/>
+
+  <!-- Silty lake bottom -->
+  <path d="M0,172 Q80,167 160,173 Q240,179 320,171 Q400,163 480,172 Q490,173 500,172 L500,195 L0,195 Z"
+        fill="url(#silt07)"/>
+  <!-- Sediment texture -->
+  <path d="M20,181 Q70,179 120,181" fill="none" stroke="#605850" stroke-width="1" opacity="0.5"/>
+  <path d="M150,184 Q200,182 250,184" fill="none" stroke="#605850" stroke-width="1" opacity="0.5"/>
+  <path d="M280,180 Q340,178 400,180" fill="none" stroke="#605850" stroke-width="1" opacity="0.5"/>
+  <path d="M420,183 Q460,181 490,183" fill="none" stroke="#605850" stroke-width="1" opacity="0.5"/>
+  <!-- Small pebbles -->
+  <ellipse cx="55" cy="178" rx="8" ry="4" fill="#484040" opacity="0.7"/>
+  <ellipse cx="155" cy="177" rx="6" ry="3" fill="#504848" opacity="0.65"/>
+  <ellipse cx="255" cy="176" rx="9" ry="4" fill="#484040" opacity="0.70"/>
+  <ellipse cx="365" cy="177" rx="7" ry="3" fill="#504848" opacity="0.65"/>
+  <ellipse cx="445" cy="178" rx="8" ry="4" fill="#484040" opacity="0.70"/>
+
+  <!-- Fish 1: 姬鱒 — torpedo-shaped, blue-silver landlocked sockeye -->
+  <g transform="translate(210,118) rotate(-3)" opacity="0.91">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="30" ry="8.5" fill="#506880"/>
+    <!-- Silver-white belly highlight -->
+    <ellipse cx="3" cy="3" rx="22" ry="3.5" fill="#c8d8e8" opacity="0.28"/>
+    <!-- Dorsal fin -->
+    <path d="M-5,-8.5 Q2,-18 14,-8.5" fill="none" stroke="#3a5870" stroke-width="1.5"/>
+    <!-- Adipose fin (small bump near tail) -->
+    <path d="M-22,-4 Q-27,-10 -21,-7" fill="#506880" stroke="#3a5870" stroke-width="0.8"/>
+    <!-- Forked tail -->
+    <path d="M-30,0 L-44,-13" stroke="#3a5870" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-30,0 L-44, 13" stroke="#3a5870" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- Pectoral fin -->
+    <path d="M13,6 Q21,13 27,8" fill="none" stroke="#3a5870" stroke-width="1.3" opacity="0.8"/>
+    <!-- Anal fin -->
+    <path d="M-12,8.5 Q-2,15 9,8.5" fill="none" stroke="#3a5870" stroke-width="1.2"/>
+    <!-- Eye -->
+    <circle cx="26" cy="-1" r="3.5" fill="#181810"/>
+    <circle cx="27" cy="-1.5" r="1.1" fill="#8090a8" opacity="0.5"/>
+  </g>
+
+  <!-- Fish 2: smaller, slightly deeper -->
+  <g transform="translate(365,136) rotate(-2)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="23" ry="6.5" fill="#506880"/>
+    <ellipse cx="2" cy="2.5" rx="17" ry="3" fill="#c8d8e8" opacity="0.25"/>
+    <path d="M-4,-6.5 Q2,-14 11,-6.5" fill="none" stroke="#3a5870" stroke-width="1.3"/>
+    <path d="M-17,-3 Q-21,-9 -16,-5.5" fill="#506880" stroke="#3a5870" stroke-width="0.7"/>
+    <path d="M-23,0 L-34,-10" stroke="#3a5870" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-23,0 L-34, 10" stroke="#3a5870" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="19" cy="-0.5" r="2.8" fill="#181810"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">淡水湖泊 ／ 日本山地高地</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">陸封型紅鮭（姬鱒）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">以浮游生物・底棲生物為食，繁殖後死亡</text>
+  <text x="250" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">日本（東北・北海道）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

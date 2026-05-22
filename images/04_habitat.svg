@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="w04" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#1a6080"/>
+      <stop offset="55%"  stop-color="#0e3855"/>
+      <stop offset="100%" stop-color="#082030"/>
+    </linearGradient>
+    <linearGradient id="rock04a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#3c3220"/>
+      <stop offset="100%" stop-color="#1e1810"/>
+    </linearGradient>
+    <linearGradient id="rock04b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#504428"/>
+      <stop offset="100%" stop-color="#302418"/>
+    </linearGradient>
+    <linearGradient id="sand04" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#2c2418"/>
+      <stop offset="100%" stop-color="#161008"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 熱帶水體 -->
+  <rect width="500" height="195" fill="url(#w04)" rx="6"/>
+
+  <!-- 光線透射 -->
+  <path d="M100,38 L72,118" stroke="#3abcd8" stroke-width="10" opacity="0.04"/>
+  <path d="M220,38 L200,125" stroke="#3abcd8" stroke-width="8" opacity="0.04"/>
+  <path d="M360,38 L342,120" stroke="#3abcd8" stroke-width="9" opacity="0.035"/>
+
+  <!-- 水面波紋 -->
+  <path d="M0,38 Q26,32 52,38 Q78,44 104,38 Q130,32 156,38 Q182,44 208,38 Q234,32 260,38 Q286,44 312,38 Q338,32 364,38 Q390,44 416,38 Q442,32 468,38 Q484,42 500,38"
+        fill="none" stroke="#3abcd8" stroke-width="1.5" opacity="0.72"/>
+
+  <!-- ── 沙質海底（Groove 基底） ── -->
+  <path d="M0,170 Q80,166 150,170 Q230,174 310,170 Q390,166 460,170 Q480,172 500,170 L500,195 L0,195 Z"
+        fill="url(#sand04)"/>
+  <path d="M 65,174 Q 90,172 115,174" fill="none" stroke="#3a3020" stroke-width="0.9" opacity="0.50"/>
+  <path d="M188,172 Q215,170 242,172"  fill="none" stroke="#3a3020" stroke-width="0.9" opacity="0.50"/>
+  <path d="M330,172 Q358,170 386,172"  fill="none" stroke="#3a3020" stroke-width="0.9" opacity="0.50"/>
+
+  <!-- ── 珊瑚礁岩塊（三大圓頂 Spur） ── -->
+
+  <!-- Spur 1（左，中心 x≈72，頂 y≈122） -->
+  <path d="M 10,170 C 14,148 38,126 72,122 C 106,126 134,150 148,170 Z"
+        fill="url(#rock04a)"/>
+  <!-- 受光亮面 -->
+  <path d="M 42,128 C 58,122 86,120 108,128 C 116,134 114,144 104,150
+           C 84,138 58,132 42,128 Z"
+        fill="url(#rock04b)" opacity="0.58"/>
+  <!-- 裂縫 -->
+  <line x1="55"  y1="126" x2="50"  y2="148" stroke="#100c06" stroke-width="1.8" opacity="0.55"/>
+  <line x1="88"  y1="123" x2="84"  y2="145" stroke="#100c06" stroke-width="1.5" opacity="0.50"/>
+  <!-- 頂部突出 -->
+  <polygon points="73,122 63,112 84,114" fill="#2a2014" opacity="0.78"/>
+
+  <!-- Spur 2（中，中心 x≈228，頂 y≈114，最大） -->
+  <path d="M 148,170 C 152,148 176,120 228,114 C 282,120 306,148 308,170 Z"
+        fill="url(#rock04a)"/>
+  <!-- 受光亮面 -->
+  <path d="M 178,118 C 202,112 254,112 278,118 C 286,126 284,136 272,142
+           C 252,128 206,118 178,118 Z"
+        fill="url(#rock04b)" opacity="0.58"/>
+  <!-- 裂縫 -->
+  <line x1="194" y1="118" x2="189" y2="142" stroke="#100c06" stroke-width="1.8" opacity="0.55"/>
+  <line x1="258" y1="116" x2="254" y2="140" stroke="#100c06" stroke-width="1.5" opacity="0.50"/>
+  <!-- 頂部突出 -->
+  <polygon points="228,113 218,102 240,104" fill="#2a2014" opacity="0.80"/>
+
+  <!-- Spur 3（右，中心 x≈372，頂 y≈120） -->
+  <path d="M 312,170 C 316,150 338,124 372,120 C 408,124 432,150 436,170 Z"
+        fill="url(#rock04a)"/>
+  <!-- 受光亮面 -->
+  <path d="M 342,124 C 362,118 384,118 408,124 C 416,132 414,142 402,148
+           C 382,132 360,124 342,124 Z"
+        fill="url(#rock04b)" opacity="0.58"/>
+  <!-- 裂縫 -->
+  <line x1="352" y1="124" x2="347" y2="146" stroke="#100c06" stroke-width="1.6" opacity="0.52"/>
+  <line x1="394" y1="122" x2="390" y2="144" stroke="#100c06" stroke-width="1.4" opacity="0.48"/>
+  <!-- 頂部突出 -->
+  <polygon points="373,120 363,110 384,112" fill="#2a2014" opacity="0.78"/>
+
+  <!-- 右側邊緣礁岩（延伸至框線） -->
+  <path d="M 450,162 C 455,148 466,134 484,128 L500,126 L500,172 Z"
+        fill="url(#rock04a)" opacity="0.75"/>
+
+  <!-- ── 珊瑚（生長在礁岩頂部） ── -->
+  <!-- 枝狀珊瑚 1（Spur 1 頂） -->
+  <g transform="translate(82,123)" stroke="#c06020" fill="none">
+    <line x1="0" y1="0"   x2="0"   y2="-30" stroke-width="3.5"/>
+    <line x1="0" y1="-18" x2="-14" y2="-36" stroke-width="2.2"/>
+    <line x1="0" y1="-18" x2=" 14" y2="-36" stroke-width="2.2"/>
+    <line x1="-14" y1="-36" x2="-20" y2="-47" stroke-width="1.6"/>
+    <line x1="-14" y1="-36" x2=" -7" y2="-48" stroke-width="1.6"/>
+    <line x1=" 14" y1="-36" x2="  6" y2="-48" stroke-width="1.6"/>
+    <line x1=" 14" y1="-36" x2=" 20" y2="-47" stroke-width="1.6"/>
+    <circle cx="-20" cy="-47" r="2.3" fill="#e08040" stroke="none"/>
+    <circle cx=" -7" cy="-48" r="2.3" fill="#e08040" stroke="none"/>
+    <circle cx="  6" cy="-48" r="2.3" fill="#e08040" stroke="none"/>
+    <circle cx=" 20" cy="-47" r="2.3" fill="#e08040" stroke="none"/>
+    <circle cx="  0" cy="-30" r="2"   fill="#e08040" stroke="none"/>
+  </g>
+
+  <!-- 枝狀珊瑚 2（Spur 2 頂） -->
+  <g transform="translate(238,114)" stroke="#b85818" fill="none">
+    <line x1="0" y1="0"   x2="0"   y2="-34" stroke-width="4"/>
+    <line x1="0" y1="-21" x2="-17" y2="-42" stroke-width="2.5"/>
+    <line x1="0" y1="-21" x2=" 17" y2="-42" stroke-width="2.5"/>
+    <line x1="-17" y1="-42" x2="-24" y2="-54" stroke-width="1.8"/>
+    <line x1="-17" y1="-42" x2="-10" y2="-55" stroke-width="1.8"/>
+    <line x1=" 17" y1="-42" x2="  8" y2="-55" stroke-width="1.8"/>
+    <line x1=" 17" y1="-42" x2=" 24" y2="-54" stroke-width="1.8"/>
+    <circle cx="-24" cy="-54" r="2.5" fill="#d87030" stroke="none"/>
+    <circle cx="-10" cy="-55" r="2.5" fill="#d87030" stroke="none"/>
+    <circle cx="  8" cy="-55" r="2.5" fill="#d87030" stroke="none"/>
+    <circle cx=" 24" cy="-54" r="2.5" fill="#d87030" stroke="none"/>
+  </g>
+
+  <!-- 塊狀珊瑚（Spur 3 頂） -->
+  <g transform="translate(382,120)">
+    <ellipse cx="0" cy="-16" rx="30" ry="20" fill="#7a5828" opacity="0.88"/>
+    <path d="M-25,-16 Q-15,-38 0,-42 Q15,-38 25,-16" fill="none" stroke="#a07040" stroke-width="1.5" opacity="0.6"/>
+    <path d="M-17,-14 Q-8,-34 0,-36 Q8,-34 17,-14" fill="none" stroke="#a07040" stroke-width="1" opacity="0.5"/>
+    <circle cx="-11" cy="-30" r="2.8" fill="#8a6030" opacity="0.7"/>
+    <circle cx="  0" cy="-38" r="3.2" fill="#8a6030" opacity="0.7"/>
+    <circle cx=" 11" cy="-30" r="2.8" fill="#8a6030" opacity="0.7"/>
+  </g>
+
+  <!-- ── 魚 ── -->
+  <!-- 魚 1：白緣星鱠（壯碩石斑） -->
+  <g transform="translate(285,100) rotate(-5)" opacity="0.92">
+    <ellipse cx="0" cy="0" rx="28" ry="14" fill="#a83020"/>
+    <path d="M-13,-14 Q-4,-24 14,-14" fill="none" stroke="#882010" stroke-width="1.8"/>
+    <path d="M-28,0 L-41,-15" stroke="#882010" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M-28,0 L-41, 15" stroke="#882010" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M-36,-14 L-41,-15" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.92"/>
+    <path d="M-36, 14 L-41, 15" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.92"/>
+    <path d="M8,9 Q18,19 25,12" fill="none" stroke="#882010" stroke-width="1.5" opacity="0.8"/>
+    <path d="M-15,14 Q-5,23 8,14" fill="none" stroke="#882010" stroke-width="1.3"/>
+    <circle cx="24" cy="-2" r="4.2" fill="#1a0808"/>
+    <circle cx="25" cy="-3" r="1.4" fill="#6a2020" opacity="0.5"/>
+    <circle cx="-5"  cy="-3" r="2.8" fill="#c04028" opacity="0.38"/>
+    <circle cx="  8" cy=" 3" r="2.4" fill="#c04028" opacity="0.35"/>
+    <circle cx="-17" cy=" 5" r="2.2" fill="#c04028" opacity="0.32"/>
+  </g>
+
+  <!-- 魚 2（較小，靠近礁岩） -->
+  <g transform="translate(165,107) rotate(-8)" opacity="0.82">
+    <ellipse cx="0" cy="0" rx="22" ry="11" fill="#a83020"/>
+    <path d="M-10,-11 Q-3,-20 12,-11" fill="none" stroke="#882010" stroke-width="1.5"/>
+    <path d="M-22,0 L-33,-12" stroke="#882010" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-22,0 L-33, 12" stroke="#882010" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-29,-11 L-33,-12" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" opacity="0.9"/>
+    <path d="M-29, 11 L-33, 12" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" opacity="0.9"/>
+    <circle cx="18" cy="-1" r="3.3" fill="#1a0808"/>
+  </g>
+
+  <!-- 深度尺 -->
+  <line x1="478" y1="38"  x2="478" y2="168" stroke="#8a9bb0" stroke-width="1" opacity="0.6"/>
+  <line x1="474" y1=" 38" x2="478" y2=" 38" stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1=" 71" x2="478" y2=" 71" stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="103" x2="478" y2="103" stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="168" x2="478" y2="168" stroke="#8a9bb0" stroke-width="1"/>
+  <text x="480" y="42"  fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">  0 m</text>
+  <text x="480" y="75"  fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif"> 50 m</text>
+  <text x="480" y="107" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">100 m</text>
+  <text x="480" y="172" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">200 m</text>
+
+  <!-- 標籤 -->
+  <text x="12"  y="22"  fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">熱帶珊瑚礁 ／ 岩礁區</text>
+  <text x="12"  y="58"  fill="#c9a84c" font-size="9"   font-family="Microsoft JhengHei,sans-serif">4–200 m</text>
+  <text x="240" y="188" fill="#b09040" font-size="9"   font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">台灣南部 ／ 離島</text>
+
+  <!-- 框線 -->
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea12" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3858"/>
+      <stop offset="35%" stop-color="#0e2038"/>
+      <stop offset="100%" stop-color="#040e1e"/>
+    </linearGradient>
+    <linearGradient id="ice12" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f4ff"/>
+      <stop offset="100%" stop-color="#b8d8f0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cold subarctic ocean -->
+  <rect width="500" height="195" fill="url(#sea12)" rx="6"/>
+
+  <!-- Pack ice floes at surface -->
+  <ellipse cx="60"  cy="10" rx="55" ry="12" fill="url(#ice12)" opacity="0.88"/>
+  <ellipse cx="200" cy="8"  rx="70" ry="10" fill="url(#ice12)" opacity="0.85"/>
+  <ellipse cx="360" cy="11" rx="80" ry="13" fill="url(#ice12)" opacity="0.88"/>
+  <ellipse cx="490" cy="9"  rx="40" ry="10" fill="url(#ice12)" opacity="0.82"/>
+  <!-- Ice underwater edges -->
+  <ellipse cx="60"  cy="18" rx="50" ry="8" fill="#a0c8e8" opacity="0.35"/>
+  <ellipse cx="200" cy="16" rx="65" ry="7" fill="#a0c8e8" opacity="0.32"/>
+  <ellipse cx="360" cy="19" rx="74" ry="9" fill="#a0c8e8" opacity="0.35"/>
+
+  <!-- Cold water waves / surface sheen -->
+  <path d="M0,26 Q80,22 160,26 Q240,30 320,26 Q400,22 500,26"
+        fill="none" stroke="#4888b8" stroke-width="1.2" opacity="0.45"/>
+  <path d="M0,36 Q90,31 180,36 Q270,41 360,36 Q430,31 500,36"
+        fill="none" stroke="#3878a8" stroke-width="0.9" opacity="0.35"/>
+
+  <!-- Marine snow particles -->
+  <circle cx="80"  cy="60"  r="1.0" fill="#ffffff" opacity="0.22"/>
+  <circle cx="150" cy="85"  r="0.8" fill="#ffffff" opacity="0.18"/>
+  <circle cx="230" cy="50"  r="1.1" fill="#ffffff" opacity="0.20"/>
+  <circle cx="320" cy="75"  r="0.9" fill="#ffffff" opacity="0.18"/>
+  <circle cx="400" cy="55"  r="1.0" fill="#ffffff" opacity="0.22"/>
+  <circle cx="440" cy="90"  r="0.7" fill="#ffffff" opacity="0.15"/>
+
+  <!-- School of 毛鱗魚 (capelin) — slender silver fish near surface -->
+  <!-- Group 1: main school, upper-mid layer -->
+  <g opacity="0.88">
+    <g transform="translate(130,70) rotate(-5)">
+      <ellipse cx="0" cy="0" rx="18" ry="4" fill="#7898b0"/>
+      <ellipse cx="2" cy="1" rx="14" ry="2" fill="#c8e0f0" opacity="0.45"/>
+      <path d="M-18,0 L-25,-6" stroke="#607888" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+      <path d="M-18,0 L-25, 6" stroke="#607888" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+      <circle cx="15" cy="0" r="2" fill="#181818"/>
+    </g>
+    <g transform="translate(175,82) rotate(-3)">
+      <ellipse cx="0" cy="0" rx="18" ry="4" fill="#7898b0"/>
+      <ellipse cx="2" cy="1" rx="14" ry="2" fill="#c8e0f0" opacity="0.45"/>
+      <path d="M-18,0 L-25,-6" stroke="#607888" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+      <path d="M-18,0 L-25, 6" stroke="#607888" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+      <circle cx="15" cy="0" r="2" fill="#181818"/>
+    </g>
+    <g transform="translate(155,95) rotate(-6)">
+      <ellipse cx="0" cy="0" rx="17" ry="3.8" fill="#7898b0"/>
+      <ellipse cx="2" cy="1" rx="13" ry="2" fill="#c8e0f0" opacity="0.45"/>
+      <path d="M-17,0 L-24,-5.5" stroke="#607888" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M-17,0 L-24, 5.5" stroke="#607888" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <circle cx="14" cy="0" r="1.8" fill="#181818"/>
+    </g>
+    <g transform="translate(110,86) rotate(-4)">
+      <ellipse cx="0" cy="0" rx="17" ry="3.8" fill="#7898b0"/>
+      <ellipse cx="2" cy="1" rx="13" ry="2" fill="#c8e0f0" opacity="0.40"/>
+      <path d="M-17,0 L-24,-5.5" stroke="#607888" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M-17,0 L-24, 5.5" stroke="#607888" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <circle cx="14" cy="0" r="1.8" fill="#181818"/>
+    </g>
+  </g>
+  <!-- Group 2: deeper school, background -->
+  <g opacity="0.65">
+    <g transform="translate(310,100) rotate(-4)">
+      <ellipse cx="0" cy="0" rx="15" ry="3.5" fill="#607888"/>
+      <path d="M-15,0 L-21,-5" stroke="#506878" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      <path d="M-15,0 L-21, 5" stroke="#506878" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      <circle cx="12" cy="0" r="1.5" fill="#181818"/>
+    </g>
+    <g transform="translate(350,112) rotate(-2)">
+      <ellipse cx="0" cy="0" rx="15" ry="3.5" fill="#607888"/>
+      <path d="M-15,0 L-21,-5" stroke="#506878" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      <path d="M-15,0 L-21, 5" stroke="#506878" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      <circle cx="12" cy="0" r="1.5" fill="#181818"/>
+    </g>
+    <g transform="translate(330,124) rotate(-5)">
+      <ellipse cx="0" cy="0" rx="14" ry="3.2" fill="#607888"/>
+      <path d="M-14,0 L-20,-4.5" stroke="#506878" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+      <path d="M-14,0 L-20, 4.5" stroke="#506878" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+      <circle cx="11" cy="0" r="1.4" fill="#181818"/>
+    </g>
+  </g>
+
+  <!-- Depth ruler (right side) — 0-200m -->
+  <line x1="478" y1="26" x2="478" y2="175" stroke="#3a5070" stroke-width="1"/>
+  <!-- 0 m -->
+  <line x1="474" y1="26" x2="478" y2="26" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="29" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <!-- 50 m -->
+  <line x1="474" y1="63" x2="478" y2="63" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="66" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">50</text>
+  <!-- 100 m -->
+  <line x1="474" y1="100" x2="478" y2="100" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="103" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">100</text>
+  <!-- 150 m -->
+  <line x1="474" y1="137" x2="478" y2="137" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="140" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">150</text>
+  <!-- 200 m -->
+  <line x1="474" y1="175" x2="478" y2="175" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="178" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">200</text>
+  <text x="481" y="42" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">北極至北太平洋 ／ 中上層大洋</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">0–200 m（偶至 700 m）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">群游，以磷蝦・橈腳類為食；繁殖期洄游近岸</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">北大西洋・北太平洋（環極性）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea72" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a2840"/>
+      <stop offset="30%" stop-color="#051420"/>
+      <stop offset="65%" stop-color="#020a10"/>
+      <stop offset="100%" stop-color="#010608"/>
+    </linearGradient>
+    <linearGradient id="mud72" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#585050"/>
+      <stop offset="100%" stop-color="#302828"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Very deep dark ocean (200-600m) -->
+  <rect width="500" height="195" fill="url(#sea72)" rx="6"/>
+
+  <!-- Barely visible surface shimmer -->
+  <path d="M0,5 Q250,3 500,5" fill="none" stroke="#204060" stroke-width="0.8" opacity="0.25"/>
+
+  <!-- Bioluminescent particles -->
+  <circle cx="60"  cy="38"  r="0.9" fill="#80f0c0" opacity="0.22"/>
+  <circle cx="180" cy="55"  r="0.8" fill="#80f0c0" opacity="0.18"/>
+  <circle cx="310" cy="42"  r="0.9" fill="#60d0ff" opacity="0.20"/>
+  <circle cx="420" cy="68"  r="0.7" fill="#80f0c0" opacity="0.17"/>
+  <circle cx="130" cy="100" r="0.7" fill="#60d0ff" opacity="0.14"/>
+  <circle cx="260" cy="88"  r="0.8" fill="#80f0c0" opacity="0.15"/>
+  <circle cx="390" cy="115" r="0.6" fill="#60d0ff" opacity="0.13"/>
+  <circle cx="75"  cy="135" r="0.7" fill="#80f0c0" opacity="0.12"/>
+  <circle cx="450" cy="148" r="0.6" fill="#60d0ff" opacity="0.11"/>
+
+  <!-- Sandy-mud deep bottom -->
+  <path d="M0,162 Q70,158 160,162 Q240,166 330,160 Q410,154 490,160 L500,160 L500,195 L0,195 Z"
+        fill="url(#mud72)"/>
+  <!-- Soft mud texture -->
+  <path d="M20,168 Q70,166 120,168" fill="none" stroke="#706060" stroke-width="0.6" opacity="0.38"/>
+  <path d="M170,170 Q220,168 270,170" fill="none" stroke="#706060" stroke-width="0.6" opacity="0.36"/>
+  <path d="M320,168 Q370,166 420,168" fill="none" stroke="#706060" stroke-width="0.6" opacity="0.36"/>
+  <!-- Detritus -->
+  <ellipse cx="90"  cy="166" rx="8"  ry="3" fill="#484040" opacity="0.50"/>
+  <ellipse cx="220" cy="165" rx="6"  ry="2.5" fill="#484040" opacity="0.45"/>
+  <ellipse cx="360" cy="164" rx="7"  ry="2.5" fill="#484040" opacity="0.45"/>
+
+  <!-- Fish: 東海腔吻鱈 Coelorinchus kishinouyei (Rattail / Grenadier) -->
+  <!-- Distinctive tadpole shape: large rounded head with big eyes; body tapers sharply
+       to a very long, thin whip-like tail; rough spinulose scales; brownish-reddish -->
+
+  <!-- Main fish (resting on bottom, head slightly elevated) -->
+  <g transform="translate(195,148) rotate(-8)" opacity="0.90">
+    <!-- Large round head -->
+    <ellipse cx="75" cy="-3" rx="24" ry="18" fill="#705848"/>
+    <!-- Snout projection (coelorinchus = hollow snout) -->
+    <path d="M99,-5 Q106,-8 108,-3 Q106,2 99,-1" fill="#705848" stroke="#504030" stroke-width="0.7"/>
+    <!-- Eye: very large -->
+    <circle cx="90" cy="-10" r="7" fill="#181818"/>
+    <circle cx="88" cy="-12" r="2.5" fill="#806040" opacity="0.38"/>
+    <!-- Body: tapers from head to very thin tail -->
+    <path d="M56,0 Q30,-6 0,-5 Q-30,-4 -60,-2 Q-100,-1 -130,0 Q-160,0.5 -185,1"
+          fill="none" stroke="#705848" stroke-width="13" stroke-linecap="round"/>
+    <path d="M56,6 Q30,0 0,-1 Q-30,0 -60,1.5 Q-100,2 -130,1.5 Q-160,1 -185,1"
+          fill="none" stroke="#856858" stroke-width="5" stroke-linecap="round" opacity="0.30"/>
+    <!-- Belly/ventral surface lighter -->
+    <path d="M56,4 Q30,2 0,2 Q-40,2 -80,1.5 Q-120,1 -150,0.5"
+          fill="none" stroke="#907060" stroke-width="4" stroke-linecap="round" opacity="0.25"/>
+    <!-- Spinulose scale texture (rows of tiny dots) -->
+    <circle cx="20" cy="-2" r="0.7" fill="#504030" opacity="0.30"/>
+    <circle cx="5"  cy="-3" r="0.7" fill="#504030" opacity="0.28"/>
+    <circle cx="-10" cy="-2" r="0.7" fill="#504030" opacity="0.26"/>
+    <circle cx="-25" cy="-1" r="0.6" fill="#504030" opacity="0.24"/>
+    <!-- Dorsal fin spines (first dorsal with long spine) -->
+    <path d="M55,-6 L60,-22 L65,-6" fill="none" stroke="#504030" stroke-width="1.2"/>
+    <path d="M65,-6 Q70,-10 75,-6" fill="none" stroke="#504030" stroke-width="1.0"/>
+    <!-- Ventral fins -->
+    <path d="M60,6 L64,16 L70,6" fill="none" stroke="#504030" stroke-width="1.0"/>
+    <!-- Suborbital ridge (characteristic snout feature) -->
+    <path d="M98,-16 Q104,-8 104,2" fill="none" stroke="#504030" stroke-width="0.8" opacity="0.55"/>
+  </g>
+
+  <!-- Second fish (background, only head+anterior visible) -->
+  <g transform="translate(350,155) rotate(-5)" opacity="0.58">
+    <ellipse cx="40" cy="-2" rx="18" ry="14" fill="#705848"/>
+    <path d="M58,-4 Q64,-7 66,-2 Q64,3 58,0" fill="#705848"/>
+    <!-- Body tapers away -->
+    <path d="M26,0 Q10,-4 -20,-3 Q-60,-2 -90,-1"
+          fill="none" stroke="#705848" stroke-width="10" stroke-linecap="round"/>
+    <!-- Large eye -->
+    <circle cx="50" cy="-8" r="5.5" fill="#181818"/>
+    <circle cx="49" cy="-10" r="2" fill="#806040" opacity="0.35"/>
+  </g>
+
+  <!-- Depth ruler (0-600m) -->
+  <line x1="478" y1="8" x2="478" y2="162" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="59"  x2="478" y2="59"  stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="62"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">200</text>
+  <line x1="474" y1="110" x2="478" y2="110" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="113" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">400</text>
+  <line x1="474" y1="162" x2="478" y2="162" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="165" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">600</text>
+  <text x="481" y="25" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">深海砂泥底・大陸坡</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">200–600 m；大頭長鞭尾（腔吻鱈型）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食甲殼類・多毛類；底棲活動</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">西北太平洋（台灣東北部・東海外海）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

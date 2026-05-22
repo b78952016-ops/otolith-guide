@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="h-water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b4878"/>
+      <stop offset="100%" stop-color="#071420"/>
+    </linearGradient>
+    <linearGradient id="h-sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a6545"/>
+      <stop offset="100%" stop-color="#504030"/>
+    </linearGradient>
+    <linearGradient id="h-estuary" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#153040"/>
+      <stop offset="100%" stop-color="#1b4878" stop-opacity="0"/>
+    </linearGradient>
+    <marker id="h-arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <polygon points="0,0 6,3 0,6" fill="#c9a84c"/>
+    </marker>
+  </defs>
+
+  <!-- Water background -->
+  <rect width="500" height="195" fill="url(#h-water)" rx="6"/>
+
+  <!-- Estuary tint (left zone) -->
+  <rect x="0" y="0" width="160" height="195" fill="url(#h-estuary)" rx="0"/>
+
+  <!-- ── Mangrove prop roots in water ── -->
+  <!-- Cluster 1 (x≈18): trunk from top, roots arch into water -->
+  <g stroke="#7a5230" stroke-linecap="round" fill="none">
+    <line x1="18" y1="0" x2="18" y2="65" stroke-width="5.5"/>
+    <line x1="18" y1="18" x2="32" y2="4"  stroke-width="3.5"/>
+    <line x1="18" y1="14" x2=" 6" y2="3"  stroke-width="3"/>
+    <!-- prop roots -->
+    <path d="M15,56 Q-2,80  1,118"  stroke-width="2.8"/>
+    <path d="M17,60 Q10,84 11,118"  stroke-width="2.8"/>
+    <path d="M19,60 Q26,84 25,118"  stroke-width="2.8"/>
+    <path d="M21,56 Q38,80 35,118"  stroke-width="2.8"/>
+  </g>
+
+  <!-- Cluster 2 (x≈52) -->
+  <g stroke="#7a5230" stroke-linecap="round" fill="none" opacity="0.88">
+    <line x1="52" y1="0" x2="52" y2="60" stroke-width="4.5"/>
+    <line x1="52" y1="16" x2="63" y2="5"  stroke-width="3"/>
+    <line x1="52" y1="20" x2="42" y2="8"  stroke-width="2.8"/>
+    <!-- prop roots -->
+    <path d="M50,52 Q34,74 35,108"  stroke-width="2.4"/>
+    <path d="M51,55 Q44,76 44,108"  stroke-width="2.4"/>
+    <path d="M53,55 Q60,76 60,108"  stroke-width="2.4"/>
+    <path d="M54,52 Q70,74 68,108"  stroke-width="2.4"/>
+  </g>
+
+  <!-- Cluster 3 (x≈80, smaller / background) -->
+  <g stroke="#7a5230" stroke-linecap="round" fill="none" opacity="0.65">
+    <line x1="80" y1="0" x2="80" y2="54" stroke-width="3.5"/>
+    <line x1="80" y1="15" x2="89" y2="6"  stroke-width="2.5"/>
+    <!-- prop roots -->
+    <path d="M78,46 Q66,65 67,96"  stroke-width="2"/>
+    <path d="M79,49 Q74,67 74,96"  stroke-width="2"/>
+    <path d="M81,49 Q86,67 86,96"  stroke-width="2"/>
+    <path d="M82,46 Q93,65 92,96"  stroke-width="2"/>
+  </g>
+
+  <!-- Water surface wave -->
+  <path d="M0,44 Q26,37 52,44 Q78,51 104,44 Q130,37 156,44 Q182,51 208,44 Q234,37 260,44 Q286,51 312,44 Q338,37 364,44 Q390,51 416,44 Q442,37 468,44 Q484,48 500,44"
+        fill="none" stroke="#4a9abc" stroke-width="1.5" opacity="0.75"/>
+
+  <!-- Sandy bottom -->
+  <path d="M0,154 Q80,148 150,156 Q240,165 340,167 Q420,169 500,167 L500,195 L0,195 Z" fill="url(#h-sand)"/>
+  <!-- Sand ripple marks -->
+  <path d="M155,159 Q175,156 195,159" fill="none" stroke="#a09070" stroke-width="0.8" opacity="0.55"/>
+  <path d="M255,163 Q275,160 295,163" fill="none" stroke="#a09070" stroke-width="0.8" opacity="0.55"/>
+  <path d="M370,165 Q390,162 410,165" fill="none" stroke="#a09070" stroke-width="0.8" opacity="0.55"/>
+
+  <!-- Depth ruler -->
+  <line x1="478" y1="44" x2="478" y2="167" stroke="#8a9bb0" stroke-width="1" opacity="0.6"/>
+  <line x1="474" y1=" 44" x2="478" y2=" 44" stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1=" 85" x2="478" y2=" 85" stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="126" x2="478" y2="126" stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="167" x2="478" y2="167" stroke="#8a9bb0" stroke-width="1"/>
+  <text x="480" y="48"  fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif"> 0 m</text>
+  <text x="480" y="89"  fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">20 m</text>
+  <text x="480" y="130" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">40 m</text>
+  <text x="480" y="171" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">60 m</text>
+
+  <!-- Fish 1: swimming near bottom -->
+  <g transform="translate(245,146) rotate(-4)" opacity="0.88">
+    <ellipse cx="0" cy="0" rx="23" ry="5.5" fill="#ccd6e4"/>
+    <path d="M-23,0 L-33,-8" stroke="#a8b8cc" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-23,0 L-33, 8" stroke="#a8b8cc" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-8,-5.5 Q3,-11 14,-5.5" fill="none" stroke="#a8b8cc" stroke-width="1.2"/>
+    <ellipse cx="21" cy="0" rx="5.5" ry="4.5" fill="#c0cad8"/>
+    <circle cx="23" cy="-1" r="2"   fill="#081420"/>
+    <circle cx="23.5" cy="-1.5" r="0.6" fill="#7aaac8" opacity="0.6"/>
+    <path d="M-10,4 Q3,6.5 16,4" fill="none" stroke="#e0eaf8" stroke-width="0.8" opacity="0.45"/>
+  </g>
+
+  <!-- Fish 2: swimming, offset -->
+  <g transform="translate(360,150) rotate(-2)" opacity="0.82">
+    <ellipse cx="0" cy="0" rx="21" ry="5" fill="#ccd6e4"/>
+    <path d="M-21,0 L-30,-7" stroke="#a8b8cc" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-21,0 L-30, 7" stroke="#a8b8cc" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-7,-5 Q2,-10 12,-5" fill="none" stroke="#a8b8cc" stroke-width="1.2"/>
+    <ellipse cx="19" cy="0" rx="5" ry="4" fill="#c0cad8"/>
+    <circle cx="21" cy="-1" r="1.8" fill="#081420"/>
+    <circle cx="21.5" cy="-1.4" r="0.5" fill="#7aaac8" opacity="0.6"/>
+  </g>
+
+  <!-- Fish 3: half-buried (埋沙) -->
+  <g transform="translate(168,158)" opacity="0.85">
+    <ellipse cx="0" cy="-3" rx="20" ry="5" fill="#ccd6e4"/>
+    <path d="M-20,-3 L-29,-10" stroke="#a8b8cc" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M-20,-3 L-29,  4" stroke="#a8b8cc" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M-7,-8 Q1,-13 12,-8" fill="none" stroke="#a8b8cc" stroke-width="1.1"/>
+    <ellipse cx="18" cy="-3" rx="4.5" ry="4" fill="#c0cad8"/>
+    <circle cx="20" cy="-4" r="1.7" fill="#081420"/>
+    <!-- sand covering lower half -->
+    <ellipse cx="0" cy="2" rx="24" ry="5.5" fill="#7a6545"/>
+    <path d="M-26,0 Q-10,-4 0,0 Q12,4 26,0"
+          fill="none" stroke="#a09070" stroke-width="0.8" opacity="0.65"/>
+  </g>
+
+  <!-- Annotation: 埋沙躲避天敵 -->
+  <line x1="168" y1="140" x2="168" y2="152"
+        stroke="#c9a84c" stroke-width="1.3" stroke-dasharray="3,2"
+        marker-end="url(#h-arr)"/>
+  <text x="108" y="134" fill="#c9a84c" font-size="9" font-family="Microsoft JhengHei,sans-serif">遇危險埋沙躲避</text>
+  <line x1="160" y1="133" x2="140" y2="131"
+        stroke="#c9a84c" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.7"/>
+
+  <!-- Labels -->
+  <text x="100" y="28" fill="#9abca0" font-size="9" font-family="Microsoft JhengHei,sans-serif">紅樹林河口</text>
+  <text x="100" y="78" fill="#7ab8d8" font-size="9" font-family="Microsoft JhengHei,sans-serif">河口 ／ 半鹹水</text>
+  <text x="100" y="90" fill="#7ab8d8" font-size="9" font-family="Microsoft JhengHei,sans-serif">潟湖 ／ 內灣</text>
+  <text x="370" y="78" fill="#5a88b0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">近海沿岸</text>
+  <text x="240" y="185" fill="#b09868" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">沙泥底質</text>
+
+  <!-- Frame -->
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

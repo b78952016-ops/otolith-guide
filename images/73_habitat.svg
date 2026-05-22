@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea73" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1878b8"/>
+      <stop offset="40%" stop-color="#0e5890"/>
+      <stop offset="80%" stop-color="#063848"/>
+      <stop offset="100%" stop-color="#031c26"/>
+    </linearGradient>
+    <linearGradient id="rock73" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4e5660"/>
+      <stop offset="100%" stop-color="#1e2428"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Coastal reef water -->
+  <rect width="500" height="195" fill="url(#sea73)" rx="6"/>
+
+  <!-- Surface shimmer -->
+  <path d="M0,8 Q80,5 165,8 Q250,11 335,8 Q415,5 500,8"
+        fill="none" stroke="#60d0f0" stroke-width="1.4" opacity="0.55"/>
+
+  <!-- Light shafts -->
+  <line x1="155" y1="8" x2="126" y2="158" stroke="#c8eeff" stroke-width="12" opacity="0.06"/>
+  <line x1="390" y1="8" x2="364" y2="158" stroke="#c8eeff" stroke-width="8"  opacity="0.04"/>
+
+  <!-- Rocky reef bottom -->
+  <path d="M0,158 Q40,143 88,152 Q135,162 185,142 Q232,122 285,142 Q335,162 385,142 Q430,122 478,140 L500,137 L500,195 L0,195 Z"
+        fill="url(#rock73)"/>
+  <ellipse cx="62"  cy="154" rx="28" ry="10" fill="#3c4450" opacity="0.72"/>
+  <ellipse cx="196" cy="143" rx="25" ry="9"  fill="#3c4450" opacity="0.68"/>
+  <ellipse cx="330" cy="140" rx="23" ry="8"  fill="#3c4450" opacity="0.65"/>
+  <ellipse cx="462" cy="142" rx="20" ry="7.5" fill="#3c4450" opacity="0.62"/>
+  <!-- Sandy patches between rocks -->
+  <ellipse cx="128" cy="157" rx="22" ry="5" fill="#787060" opacity="0.40"/>
+  <ellipse cx="260" cy="155" rx="20" ry="4.5" fill="#787060" opacity="0.38"/>
+
+  <!-- Fish: 鰺屬 Caranx sp. (Jack / Trevally) -->
+  <!-- Carangidae: moderately deep, somewhat compressed oval-elongated body;
+       dark blue-green back, bright silver sides;
+       BLACK SPOT at upper edge of operculum (many Caranx spp. diagnostic!);
+       elongated falcate second dorsal and anal fin lobes;
+       SCUTES (hard keeled scales) along rear lateral line;
+       deeply forked caudal fin; coastal reef schooling fish -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(240,105) rotate(-6)" opacity="0.93">
+    <!-- Body: moderately deep, oval-elongated -->
+    <ellipse cx="0" cy="0" rx="31" ry="16" fill="#b8c8d8"/>
+    <!-- Dark blue-green back -->
+    <ellipse cx="-2" cy="-9" rx="25" ry="6" fill="#1a4060" opacity="0.72"/>
+    <!-- Bright silver flanks -->
+    <ellipse cx="4" cy="3" rx="24" ry="10" fill="#dceaf5" opacity="0.50"/>
+    <!-- Caudal peduncle -->
+    <ellipse cx="-28" cy="0" rx="5" ry="12" fill="#9ab0c0" opacity="0.78"/>
+    <!-- Head: pointed, slightly concave profile -->
+    <ellipse cx="27" cy="0" rx="11" ry="14" fill="#1a4060"/>
+    <!-- Slightly oblique terminal mouth -->
+    <path d="M37,-2 Q41,1 37,5" fill="none" stroke="#0e2a40" stroke-width="1.1" stroke-linecap="round"/>
+    <!-- Eye -->
+    <circle cx="29" cy="-4" r="4.5" fill="#181818"/>
+    <circle cx="30" cy="-5" r="1.5" fill="#406080" opacity="0.40"/>
+    <!-- BLACK OPERCULAR SPOT (diagnostic for many Caranx!) -->
+    <circle cx="20" cy="-10" r="3.5" fill="#101010" opacity="0.85"/>
+    <!-- Scutes along lateral line near tail -->
+    <path d="M-14,-2 Q-18,-2 -22,-1 Q-26,-0.5 -28,0" fill="none" stroke="#8898a8" stroke-width="2.0" opacity="0.60"/>
+    <!-- Lateral line -->
+    <path d="M27,-7 Q10,-10 -8,-7 Q-20,-4 -28,-2" fill="none" stroke="#90a8b8" stroke-width="0.7" opacity="0.30"/>
+    <!-- Second dorsal (with elongated front lobe — falcate) -->
+    <path d="M-4,-16 Q-2,-24 0,-26 Q4,-24 8,-17"
+          fill="none" stroke="#2860a0" stroke-width="1.5"/>
+    <path d="M8,-17 Q12,-20 16,-16 Q18,-13 18,-9" fill="none" stroke="#2860a0" stroke-width="1.3"/>
+    <!-- First dorsal (spiny, small) -->
+    <path d="M14,-14 Q16,-19 18,-20 Q22,-18 24,-13" fill="none" stroke="#2860a0" stroke-width="1.2"/>
+    <!-- Anal fin (falcate, mirrors second dorsal) -->
+    <path d="M-4,16 Q-2,24 0,26 Q4,24 8,17"
+          fill="none" stroke="#2860a0" stroke-width="1.5"/>
+    <path d="M8,17 Q12,20 16,15 Q18,12 18,9" fill="none" stroke="#2860a0" stroke-width="1.3"/>
+    <!-- Pectoral fin -->
+    <path d="M20,7 Q30,14 34,7" fill="none" stroke="#2860a0" stroke-width="1.3" opacity="0.70"/>
+    <!-- Deeply forked caudal fin -->
+    <path d="M-32,0 L-44,-22" stroke="#2860a0" stroke-width="3.8" stroke-linecap="round" fill="none"/>
+    <path d="M-32,0 L-44, 22" stroke="#2860a0" stroke-width="3.8" stroke-linecap="round" fill="none"/>
+    <path d="M-44,-22 Q-34,0 -44,22" fill="none" stroke="#2860a0" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish 2 (background) -->
+  <g transform="translate(118,125) rotate(-5)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="25" ry="13" fill="#b8c8d8"/>
+    <ellipse cx="-2" cy="-8" rx="20" ry="5" fill="#1a4060" opacity="0.68"/>
+    <ellipse cx="22" cy="0" rx="9" ry="11" fill="#1a4060"/>
+    <!-- Black opercular spot -->
+    <circle cx="16" cy="-8" r="2.8" fill="#101010" opacity="0.80"/>
+    <circle cx="23" cy="-3" r="3.8" fill="#181818"/>
+    <path d="M-2,-13 Q-4,-20 -6,-21 Q-8,-19 -12,-15 Q-15,-12 -16,-9" fill="none" stroke="#2860a0" stroke-width="1.3"/>
+    <path d="M-26,0 L-36,-17" stroke="#2860a0" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-26,0 L-36, 17" stroke="#2860a0" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-36,-17 Q-28,0 -36,17" fill="none" stroke="#2860a0" stroke-width="2.0" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish 3 (right) -->
+  <g transform="translate(400,122) rotate(-4)" opacity="0.65">
+    <ellipse cx="0" cy="0" rx="21" ry="11" fill="#b8c8d8"/>
+    <ellipse cx="18" cy="0" rx="7.5" ry="9.5" fill="#1a4060"/>
+    <circle cx="13" cy="-7" r="2.2" fill="#101010" opacity="0.78"/>
+    <circle cx="19" cy="-3" r="3.2" fill="#181818"/>
+    <path d="M-22,0 L-30,-15" stroke="#2860a0" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M-22,0 L-30, 15" stroke="#2860a0" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Depth ruler (0–100 m) -->
+  <line x1="478" y1="8" x2="478" y2="158" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="58"  x2="478" y2="58"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="61"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">30</text>
+  <line x1="474" y1="108" x2="478" y2="108" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="111" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">65</text>
+  <line x1="474" y1="158" x2="478" y2="158" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="161" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">100</text>
+  <text x="481" y="25" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">沿岸礁區・礁沙交界帶</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">0–100 m；鰓蓋上黑斑・鐮刀形鰭・尾柄稜鱗（診斷）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食小魚・甲殼類；鰺科鰺屬高位捕食者</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">熱帶至亞熱帶各大洋（台灣各地沿岸）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

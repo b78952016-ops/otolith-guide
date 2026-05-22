@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="h-water-02" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a4a78"/>
+      <stop offset="100%" stop-color="#0a1e38"/>
+    </linearGradient>
+    <linearGradient id="h-sand-02" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a6a50"/>
+      <stop offset="100%" stop-color="#504035"/>
+    </linearGradient>
+    <linearGradient id="h-shore-02" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5a7060"/>
+      <stop offset="100%" stop-color="#1a4a78" stop-opacity="0"/>
+    </linearGradient>
+    <marker id="h-arr-02" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <polygon points="0,0 6,3 0,6" fill="#c9a84c"/>
+    </marker>
+  </defs>
+
+  <!-- Water background — shallower, brighter blue -->
+  <rect width="500" height="195" fill="url(#h-water-02)" rx="6"/>
+
+  <!-- Sandy shore slope on left -->
+  <polygon points="0,0 90,0 90,44 60,90 0,140" fill="url(#h-shore-02)" opacity="0.7"/>
+  <!-- Shore texture -->
+  <path d="M0,50 Q30,45 60,58" fill="none" stroke="#8a9870" stroke-width="1.2" opacity="0.5"/>
+  <path d="M0,70 Q25,65 50,75" fill="none" stroke="#8a9870" stroke-width="1" opacity="0.4"/>
+
+  <!-- Water surface wave -->
+  <path d="M0,44 Q26,38 52,44 Q78,50 104,44 Q130,38 156,44 Q182,50 208,44 Q234,38 260,44 Q286,50 312,44 Q338,38 364,44 Q390,50 416,44 Q442,38 468,44 Q484,48 500,44"
+        fill="none" stroke="#4a9abc" stroke-width="1.5" opacity="0.80"/>
+
+  <!-- Sandy bottom -->
+  <path d="M0,162 Q80,156 170,164 Q260,172 360,170 Q430,169 500,168 L500,195 L0,195 Z" fill="url(#h-sand-02)"/>
+  <!-- Sand ripple marks -->
+  <path d="M180,167 Q200,164 220,167" fill="none" stroke="#a09070" stroke-width="0.8" opacity="0.55"/>
+  <path d="M290,169 Q310,166 330,169" fill="none" stroke="#a09070" stroke-width="0.8" opacity="0.55"/>
+  <path d="M395,168 Q415,165 435,168" fill="none" stroke="#a09070" stroke-width="0.8" opacity="0.55"/>
+
+  <!-- Fish group (5 fish, mid-water, y=85–120) — almost circular body -->
+  <!-- Fish 1 -->
+  <g transform="translate(175,92) rotate(-5)" opacity="0.88">
+    <ellipse cx="0" cy="0" rx="19" ry="17" fill="#d8e8f0"/>
+    <!-- Long dorsal fin along top -->
+    <path d="M-14,-17 Q-4,-26 12,-17" fill="none" stroke="#b0c8dc" stroke-width="1.5"/>
+    <!-- Long anal fin along bottom -->
+    <path d="M-12,17 Q-2,25 10,17" fill="none" stroke="#b0c8dc" stroke-width="1.3"/>
+    <!-- Forked tail -->
+    <path d="M-19,0 L-30,-11" stroke="#b0c8dc" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-19,0 L-30, 11" stroke="#b0c8dc" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <!-- Eye -->
+    <circle cx="16" cy="-2" r="3" fill="#1a2a3a"/>
+    <circle cx="17" cy="-2.5" r="1" fill="#6a9ab8" opacity="0.5"/>
+    <!-- Silvery sheen line -->
+    <path d="M-12,2 Q0,4 14,2" fill="none" stroke="#e8f4ff" stroke-width="0.9" opacity="0.5"/>
+  </g>
+
+  <!-- Fish 2 -->
+  <g transform="translate(255,105) rotate(-3)" opacity="0.85">
+    <ellipse cx="0" cy="0" rx="17" ry="15" fill="#d8e8f0"/>
+    <path d="M-12,-15 Q-3,-23 10,-15" fill="none" stroke="#b0c8dc" stroke-width="1.4"/>
+    <path d="M-10,15 Q-2,22 9,15" fill="none" stroke="#b0c8dc" stroke-width="1.2"/>
+    <path d="M-17,0 L-27,-10" stroke="#b0c8dc" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M-17,0 L-27, 10" stroke="#b0c8dc" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <circle cx="14" cy="-2" r="2.8" fill="#1a2a3a"/>
+    <circle cx="15" cy="-2.5" r="0.9" fill="#6a9ab8" opacity="0.5"/>
+    <path d="M-10,2 Q0,3.5 12,2" fill="none" stroke="#e8f4ff" stroke-width="0.8" opacity="0.5"/>
+  </g>
+
+  <!-- Fish 3 -->
+  <g transform="translate(320,88) rotate(2)" opacity="0.82">
+    <ellipse cx="0" cy="0" rx="16" ry="14" fill="#d8e8f0"/>
+    <path d="M-11,-14 Q-3,-21 9,-14" fill="none" stroke="#b0c8dc" stroke-width="1.3"/>
+    <path d="M-9,14 Q-2,20 8,14" fill="none" stroke="#b0c8dc" stroke-width="1.1"/>
+    <path d="M-16,0 L-25,-9" stroke="#b0c8dc" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M-16,0 L-25,  9" stroke="#b0c8dc" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <circle cx="13" cy="-1" r="2.5" fill="#1a2a3a"/>
+  </g>
+
+  <!-- Fish 4 -->
+  <g transform="translate(390,110) rotate(-4)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="18" ry="16" fill="#d0e0ea"/>
+    <path d="M-13,-16 Q-3,-24 11,-16" fill="none" stroke="#a8c0d8" stroke-width="1.4"/>
+    <path d="M-11,16 Q-2,23 10,16" fill="none" stroke="#a8c0d8" stroke-width="1.2"/>
+    <path d="M-18,0 L-28,-10" stroke="#a8c0d8" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M-18,0 L-28, 10" stroke="#a8c0d8" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <circle cx="15" cy="-2" r="2.8" fill="#1a2a3a"/>
+  </g>
+
+  <!-- Fish 5 -->
+  <g transform="translate(210,120) rotate(-6)" opacity="0.75">
+    <ellipse cx="0" cy="0" rx="15" ry="13" fill="#d0e0ea"/>
+    <path d="M-10,-13 Q-3,-19 8,-13" fill="none" stroke="#a8c0d8" stroke-width="1.2"/>
+    <path d="M-8,13 Q-2,18 7,13" fill="none" stroke="#a8c0d8" stroke-width="1.0"/>
+    <path d="M-15,0 L-23,-8" stroke="#a8c0d8" stroke-width="2.3" stroke-linecap="round" fill="none"/>
+    <path d="M-15,0 L-23,  8" stroke="#a8c0d8" stroke-width="2.3" stroke-linecap="round" fill="none"/>
+    <circle cx="12" cy="-1" r="2.2" fill="#1a2a3a"/>
+  </g>
+
+  <!-- Migration arrow + label toward shore -->
+  <line x1="170" y1="78" x2="100" y2="60"
+        stroke="#c9a84c" stroke-width="1.3" stroke-dasharray="4,3"
+        marker-end="url(#h-arr-02)"/>
+  <text x="82"  y="55" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">春夏靠岸</text>
+  <text x="82"  y="66" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">群游產卵</text>
+
+  <!-- Depth ruler -->
+  <line x1="478" y1="44" x2="478" y2="168" stroke="#8a9bb0" stroke-width="1" opacity="0.6"/>
+  <line x1="474" y1=" 44" x2="478" y2=" 44" stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1=" 84" x2="478" y2=" 84" stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="127" x2="478" y2="127" stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="168" x2="478" y2="168" stroke="#8a9bb0" stroke-width="1"/>
+  <text x="480" y="48"  fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">  0 m</text>
+  <text x="480" y="88"  fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif"> 30 m</text>
+  <text x="480" y="131" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif"> 60 m</text>
+  <text x="480" y="172" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">110 m</text>
+
+  <!-- Labels -->
+  <text x="110" y="26" fill="#8a9bb0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">沿岸砂泥底質</text>
+  <text x="380" y="26" fill="#7ab8d8" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">近海沿岸</text>
+  <text x="240" y="187" fill="#b09868" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">砂泥底</text>
+
+  <!-- Frame -->
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

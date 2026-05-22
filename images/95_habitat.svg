@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea95" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a7068"/>
+      <stop offset="40%" stop-color="#1a5048"/>
+      <stop offset="100%" stop-color="#0a2820"/>
+    </linearGradient>
+    <linearGradient id="sand95" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#888070"/>
+      <stop offset="100%" stop-color="#504838"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Murky coastal/estuarine water -->
+  <rect width="500" height="195" fill="url(#sea95)" rx="6"/>
+
+  <!-- Turbid surface -->
+  <path d="M0,6 Q100,3 210,6 Q320,9 430,6 Q465,4 500,6"
+        fill="none" stroke="#60a890" stroke-width="1.3" opacity="0.45"/>
+  <path d="M0,16 Q90,12 195,16 Q300,20 410,16 Q460,13 500,16"
+        fill="none" stroke="#4a8878" stroke-width="0.9" opacity="0.32"/>
+
+  <!-- Dim light shafts (turbid water) -->
+  <line x1="180" y1="6" x2="148" y2="140" stroke="#c0e0d0" stroke-width="16" opacity="0.040"/>
+  <line x1="380" y1="6" x2="355" y2="145" stroke="#c0e0d0" stroke-width="10" opacity="0.028"/>
+
+  <!-- Sandy-mud coastal bottom -->
+  <path d="M0,162 Q80,156 170,162 Q260,168 350,160 Q430,152 500,160 L500,195 L0,195 Z"
+        fill="url(#sand95)"/>
+  <!-- Mud ripples -->
+  <path d="M20,170 Q75,168 130,170" fill="none" stroke="#a09870" stroke-width="0.7" opacity="0.38"/>
+  <path d="M190,173 Q248,171 306,173" fill="none" stroke="#a09870" stroke-width="0.7" opacity="0.35"/>
+  <path d="M355,169 Q408,167 460,169" fill="none" stroke="#a09870" stroke-width="0.7" opacity="0.35"/>
+  <!-- Detritus dots -->
+  <circle cx="100" cy="168" r="1.2" fill="#807860" opacity="0.30"/>
+  <circle cx="250" cy="172" r="1.0" fill="#807860" opacity="0.28"/>
+  <circle cx="420" cy="167" r="1.1" fill="#807860" opacity="0.25"/>
+
+  <!-- Fish: 曳絲鑽嘴魚 Gerres filamentosus (Whipfin silver-biddy) -->
+  <!-- Key features: high-bodied oval, silver; second dorsal spine extremely elongated;
+       small protractile mouth pointing slightly downward; faint vertical bars -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(275,108) rotate(-5)" opacity="0.92">
+    <!-- Body: high-bodied oval, silver -->
+    <ellipse cx="0" cy="0" rx="33" ry="21" fill="#cad6dc"/>
+    <!-- Dark blue-grey dorsal zone -->
+    <ellipse cx="-2" cy="-12" rx="26" ry="9" fill="#3a5868" opacity="0.52"/>
+    <!-- Near-white silver belly -->
+    <ellipse cx="2"  cy="13"  rx="26" ry="7"  fill="#e8f0f8" opacity="0.48"/>
+    <!-- Faint vertical bars -->
+    <line x1="10"  y1="-19" x2="10"  y2="19" stroke="#506878" stroke-width="0.7" opacity="0.17"/>
+    <line x1="0"   y1="-21" x2="0"   y2="21" stroke="#506878" stroke-width="0.7" opacity="0.14"/>
+    <line x1="-11" y1="-20" x2="-11" y2="20" stroke="#506878" stroke-width="0.7" opacity="0.14"/>
+    <line x1="-21" y1="-17" x2="-21" y2="17" stroke="#506878" stroke-width="0.7" opacity="0.12"/>
+    <!-- Spiny dorsal fin (first, anterior) -->
+    <path d="M-20,-21 Q-12,-34 -3,-36 Q3,-35 7,-30 Q10,-27 12,-21"
+          fill="none" stroke="#3a5868" stroke-width="1.4"/>
+    <!-- SECOND DORSAL SPINE — extremely elongated filament (曳絲 = trailing filament) -->
+    <line x1="-10" y1="-33" x2="-3" y2="-83" stroke="#3a5868" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Soft dorsal fin (posterior, lower profile) -->
+    <path d="M12,-21 Q22,-28 33,-21" fill="none" stroke="#3a5868" stroke-width="1.3"/>
+    <!-- Anal fin -->
+    <path d="M-5,21 Q8,28 18,21" fill="none" stroke="#3a5868" stroke-width="1.2"/>
+    <!-- Moderately forked caudal fin -->
+    <path d="M-33,0 L-46,-15" stroke="#3a5868" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M-33,0 L-46, 15" stroke="#3a5868" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M-46,-15 Q-51,0 -46,15" fill="none" stroke="#3a5868" stroke-width="3.2" stroke-linecap="round"/>
+    <!-- Pectoral fin -->
+    <path d="M20,10 Q30,18 33,10" fill="none" stroke="#3a5868" stroke-width="1.2" opacity="0.75"/>
+    <!-- Eye: moderate size -->
+    <circle cx="28" cy="-5" r="3.8" fill="#181818"/>
+    <circle cx="29.2" cy="-6.2" r="1.2" fill="#607080" opacity="0.35"/>
+    <!-- Protractile mouth: small, pointing slightly downward-forward (診斷特徵：可大幅伸縮) -->
+    <path d="M33,1 Q36,5 33,8" fill="none" stroke="#506878" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Operculum line -->
+    <path d="M20,-14 Q24,0 20,14" fill="none" stroke="#3a5868" stroke-width="0.8" opacity="0.38"/>
+  </g>
+
+  <!-- Fish 2 (smaller, background) -->
+  <g transform="translate(130,132) rotate(-3)" opacity="0.68">
+    <ellipse cx="0" cy="0" rx="24" ry="15" fill="#cad6dc"/>
+    <ellipse cx="-2" cy="-8"  rx="19" ry="7" fill="#3a5868" opacity="0.48"/>
+    <!-- Second dorsal filament (smaller fish) -->
+    <line x1="-7" y1="-24" x2="-2" y2="-60" stroke="#3a5868" stroke-width="1.4" stroke-linecap="round"/>
+    <!-- Spiny dorsal -->
+    <path d="M-14,-15 Q-7,-25 0,-26 Q5,-25 7,-21 Q9,-18 10,-15"
+          fill="none" stroke="#3a5868" stroke-width="1.1"/>
+    <!-- Soft dorsal -->
+    <path d="M10,-15 Q17,-20 24,-15" fill="none" stroke="#3a5868" stroke-width="1.1"/>
+    <!-- Tail -->
+    <path d="M-24,0 L-34,-11" stroke="#3a5868" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M-24,0 L-34, 11" stroke="#3a5868" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M-34,-11 Q-38,0 -34,11" fill="none" stroke="#3a5868" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="21" cy="-4" r="2.8" fill="#181818"/>
+    <!-- Anal fin -->
+    <path d="M-3,15 Q5,20 12,15" fill="none" stroke="#3a5868" stroke-width="1.0"/>
+  </g>
+
+  <!-- Depth ruler: 0–30 m -->
+  <line x1="478" y1="8" x2="478" y2="168" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="62"  x2="478" y2="62"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="65"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">10</text>
+  <line x1="474" y1="115" x2="478" y2="115" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="118" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">20</text>
+  <line x1="474" y1="168" x2="478" y2="168" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="171" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">30</text>
+  <text x="481" y="25" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#80c0a0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">沿岸砂泥底・河口潮間帶</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">1–30 m；第二背鰭棘延長呈絲狀</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食底棲無脊椎動物；口可大幅前伸</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">印度－西太平洋（台灣西部・南部沿岸）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

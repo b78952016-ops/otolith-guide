@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea51" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1888b8"/>
+      <stop offset="40%" stop-color="#0e5888"/>
+      <stop offset="100%" stop-color="#0a2848"/>
+    </linearGradient>
+    <linearGradient id="sand51" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b8a870"/>
+      <stop offset="100%" stop-color="#786840"/>
+    </linearGradient>
+    <linearGradient id="rock51" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#585050"/>
+      <stop offset="100%" stop-color="#302828"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Coastal water 10-50m depth -->
+  <rect width="500" height="195" fill="url(#sea51)" rx="6"/>
+
+  <!-- Surface shimmer -->
+  <path d="M0,8 Q80,5 165,8 Q250,11 335,8 Q415,5 500,8"
+        fill="none" stroke="#70d0f0" stroke-width="1.4" opacity="0.58"/>
+  <path d="M0,18 Q90,13 185,18 Q280,23 370,18 Q440,13 500,18"
+        fill="none" stroke="#58c0d8" stroke-width="1.0" opacity="0.44"/>
+
+  <!-- Light shafts (moderately clear coastal water) -->
+  <line x1="130" y1="8" x2="100" y2="130" stroke="#d0f0ff" stroke-width="10" opacity="0.05"/>
+  <line x1="360" y1="8" x2="335" y2="140" stroke="#d0f0ff" stroke-width="8"  opacity="0.04"/>
+
+  <!-- Sandy-mud bottom (main habitat) -->
+  <path d="M0,168 Q80,162 160,168 Q240,174 320,166 Q400,158 480,166 Q490,167 500,167 L500,195 L0,195 Z"
+        fill="url(#sand51)"/>
+  <!-- Sand ripples -->
+  <path d="M20,175 Q80,173 140,175" fill="none" stroke="#d0c080" stroke-width="0.7" opacity="0.48"/>
+  <path d="M185,178 Q245,176 305,178" fill="none" stroke="#d0c080" stroke-width="0.7" opacity="0.48"/>
+  <path d="M355,175 Q415,173 470,175" fill="none" stroke="#d0c080" stroke-width="0.7" opacity="0.45"/>
+
+  <!-- Reef patch (right, secondary habitat) -->
+  <path d="M360,158 Q400,145 445,152 Q475,158 500,152 L500,195 L360,195 Z"
+        fill="url(#rock51)"/>
+  <path d="M372,152 Q408,142 445,148 Q472,153 500,148"
+        fill="none" stroke="#706050" stroke-width="1.3" opacity="0.40"/>
+  <!-- Branching coral on reef -->
+  <g stroke="#d06820" fill="none" stroke-width="1.0" opacity="0.72">
+    <line x1="418" y1="152" x2="418" y2="134"/>
+    <line x1="418" y1="143" x2="409" y2="131"/>
+    <line x1="418" y1="140" x2="427" y2="128"/>
+    <circle cx="409" cy="131" r="1.4" fill="#e08040"/>
+    <circle cx="427" cy="128" r="1.4" fill="#e08040"/>
+  </g>
+  <!-- Coralline algae -->
+  <ellipse cx="388" cy="153" rx="14" ry="4" fill="#d07080" opacity="0.28"/>
+
+  <!-- Fish 1: 真鯛 (Pagrus major, red seabream) — deep oval, pinkish-red with blue spots -->
+  <g transform="translate(225,115) rotate(-5)" opacity="0.92">
+    <!-- Body: deep oval, characteristic seabream form -->
+    <ellipse cx="0" cy="0" rx="28" ry="15" fill="#d86058"/>
+    <!-- Pinkish-red upper flank with metallic sheen -->
+    <ellipse cx="0" cy="-7" rx="24" ry="7" fill="#b84040" opacity="0.45"/>
+    <!-- Silver-white belly -->
+    <ellipse cx="4" cy="8" rx="20" ry="5.5" fill="#f0e8e0" opacity="0.35"/>
+    <!-- Blue metallic spots (diagnostic for 真鯛) -->
+    <circle cx="12" cy="-4" r="1.5" fill="#4080c0" opacity="0.65"/>
+    <circle cx="3"  cy="-6" r="1.4" fill="#4080c0" opacity="0.62"/>
+    <circle cx="-8" cy="-5" r="1.5" fill="#4080c0" opacity="0.60"/>
+    <circle cx="-18" cy="-3" r="1.3" fill="#4080c0" opacity="0.58"/>
+    <circle cx="18" cy="-2" r="1.3" fill="#4080c0" opacity="0.60"/>
+    <!-- Dorsal fin (spiny + soft sections) -->
+    <path d="M-16,-15 Q-8,-22 0,-24 Q8,-22 16,-15" fill="none" stroke="#a03030" stroke-width="1.4"/>
+    <!-- Anal fin -->
+    <path d="M-8,15 Q0,20 8,15" fill="none" stroke="#a03030" stroke-width="1.3"/>
+    <!-- Forked tail -->
+    <path d="M-28,0 L-40,-14" stroke="#a03030" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-28,0 L-40, 14" stroke="#a03030" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- Pectoral fin -->
+    <path d="M18,10 Q26,18 30,12" fill="none" stroke="#a03030" stroke-width="1.3" opacity="0.8"/>
+    <!-- Eye -->
+    <circle cx="24" cy="-2" r="3.5" fill="#181818"/>
+    <circle cx="25" cy="-2.5" r="1.1" fill="#d08090" opacity="0.5"/>
+  </g>
+
+  <!-- Fish 2: background -->
+  <g transform="translate(380,130) rotate(-4)" opacity="0.78">
+    <ellipse cx="0" cy="0" rx="22" ry="12" fill="#d86058"/>
+    <ellipse cx="0" cy="-5" rx="18" ry="5" fill="#b84040" opacity="0.40"/>
+    <circle cx="8"  cy="-3" r="1.2" fill="#4080c0" opacity="0.58"/>
+    <circle cx="-4" cy="-4" r="1.1" fill="#4080c0" opacity="0.55"/>
+    <path d="M-12,-12 Q-5,-18 4,-12" fill="none" stroke="#a03030" stroke-width="1.2"/>
+    <path d="M-22,0 L-31,-12" stroke="#a03030" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-22,0 L-31, 12" stroke="#a03030" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="19" cy="-1.5" r="2.8" fill="#181818"/>
+  </g>
+
+  <!-- Fish 3: near sand (bottom-resting typical behavior) -->
+  <g transform="translate(110,155) rotate(-3)" opacity="0.82">
+    <ellipse cx="0" cy="0" rx="24" ry="13" fill="#d86058"/>
+    <ellipse cx="0" cy="-6" rx="20" ry="6" fill="#b84040" opacity="0.38"/>
+    <circle cx="10" cy="-4" r="1.3" fill="#4080c0" opacity="0.58"/>
+    <circle cx="-2" cy="-5" r="1.2" fill="#4080c0" opacity="0.55"/>
+    <path d="M-14,-13 Q-7,-20 2,-13" fill="none" stroke="#a03030" stroke-width="1.3"/>
+    <path d="M-24,0 L-34,-13" stroke="#a03030" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-24,0 L-34, 13" stroke="#a03030" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <circle cx="21" cy="-2" r="3" fill="#181818"/>
+  </g>
+
+  <!-- Depth ruler -->
+  <line x1="478" y1="8" x2="478" y2="168" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="69"  x2="478" y2="69"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="72"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">20</text>
+  <line x1="474" y1="119" x2="478" y2="119" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="122" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">40</text>
+  <line x1="474" y1="168" x2="478" y2="168" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="171" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">60</text>
+  <text x="481" y="25" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">砂泥底大陸棚／沿岸礁區</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">10–50 m；繁殖季北移淺海</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食棘皮・軟體・甲殼類；高經濟魚種</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">西北太平洋（台灣西部・澎湖・日本）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

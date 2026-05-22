@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sky36" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1880e0"/>
+      <stop offset="100%" stop-color="#0a60b8"/>
+    </linearGradient>
+    <linearGradient id="water36" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1898d0"/>
+      <stop offset="50%" stop-color="#0e70a8"/>
+      <stop offset="100%" stop-color="#0a3868"/>
+    </linearGradient>
+    <linearGradient id="sand36" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b0a068"/>
+      <stop offset="100%" stop-color="#786840"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky (above water surface y=72) -->
+  <rect width="500" height="195" fill="url(#sky36)" rx="6"/>
+
+  <!-- Sun (upper right, keeping left clear for labels) -->
+  <circle cx="448" cy="22" r="15" fill="#f0d860" opacity="0.50"/>
+  <circle cx="448" cy="22" r="10" fill="#f8e890" opacity="0.68"/>
+
+  <!-- Water body (surface at y=72) -->
+  <rect x="0" y="72" width="500" height="123" fill="url(#water36)"/>
+
+  <!-- Water surface line and ripples -->
+  <path d="M0,73 Q80,69 165,73 Q250,77 335,73 Q415,69 500,73"
+        fill="none" stroke="#80e8f8" stroke-width="1.5" opacity="0.70"/>
+  <path d="M0,83 Q90,78 185,83 Q280,88 375,83 Q440,78 500,83"
+        fill="none" stroke="#60d0e8" stroke-width="1.0" opacity="0.50"/>
+
+  <!-- Wake/splash where flying fish emerged from water -->
+  <path d="M222,73 Q228,65 238,69 Q248,67 253,73" fill="none" stroke="#a0f0f8" stroke-width="1.3" opacity="0.72"/>
+  <circle cx="238" cy="71" r="4"   fill="none" stroke="#a0f0f8" stroke-width="0.9" opacity="0.58"/>
+  <circle cx="238" cy="71" r="8"   fill="none" stroke="#a0f0f8" stroke-width="0.6" opacity="0.38"/>
+  <circle cx="238" cy="71" r="13"  fill="none" stroke="#a0f0f8" stroke-width="0.4" opacity="0.22"/>
+
+  <!-- Sandy bottom (visible at depth) -->
+  <path d="M0,172 Q80,166 160,172 Q240,178 320,170 Q400,162 480,170 Q490,171 500,171 L500,195 L0,195 Z"
+        fill="url(#sand36)"/>
+
+  <!-- Light shafts through clear tropical water -->
+  <line x1="150" y1="72" x2="115" y2="155" stroke="#d0f4ff" stroke-width="8" opacity="0.05"/>
+  <line x1="380" y1="72" x2="350" y2="160" stroke="#d0f4ff" stroke-width="6" opacity="0.04"/>
+
+  <!-- FLYING FISH above water surface (spread pectoral fin "wings") -->
+  <g transform="translate(300,36) rotate(-20)" opacity="0.95">
+    <!-- Body: streamlined elongated -->
+    <ellipse cx="0" cy="0" rx="30" ry="6" fill="#4878a0"/>
+    <!-- Dark blue-green back -->
+    <ellipse cx="0" cy="-3.5" rx="26" ry="2.5" fill="#283c60" opacity="0.80"/>
+    <!-- Silver belly -->
+    <ellipse cx="3" cy="3" rx="24" ry="2.5" fill="#d0e8f8" opacity="0.60"/>
+    <!-- LEFT WING (upper pectoral fin, spread wide — DIAGNOSTIC) -->
+    <path d="M14,2 Q22,-10 36,-20 Q46,-26 52,-22 Q49,-13 38,-6 Q27,0 14,4 Z"
+          fill="#7092b8" opacity="0.78" stroke="#3060a0" stroke-width="0.7"/>
+    <!-- Wing vein lines -->
+    <path d="M18,0 Q32,-14 48,-22" fill="none" stroke="#2850a0" stroke-width="0.7" opacity="0.55"/>
+    <path d="M20,-1 Q36,-16 50,-22" fill="none" stroke="#2850a0" stroke-width="0.5" opacity="0.42"/>
+    <!-- RIGHT WING (lower pectoral, slightly smaller) -->
+    <path d="M14,3 Q21,14 32,22 Q42,28 47,24 Q44,15 33,9 Q22,3 14,3 Z"
+          fill="#6080a8" opacity="0.68" stroke="#3060a0" stroke-width="0.6"/>
+    <!-- Small ventral/pelvic fins also spread (smaller auxiliary wings) -->
+    <path d="M5,5 Q10,14 18,18 Q24,20 25,17 Q22,11 14,8 Q8,5 5,5 Z"
+          fill="#5070a0" opacity="0.55" stroke="#3060a0" stroke-width="0.5"/>
+    <!-- Dorsal fin (low, near mid-back) -->
+    <path d="M-6,-6 Q-2,-12 4,-6" fill="none" stroke="#3060a0" stroke-width="1.1"/>
+    <!-- Forked tail (lower lobe longer — hypocercal, helps gliding) -->
+    <path d="M-30,0 L-44, 14" stroke="#3060a0" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-30,0 L-40,-6"  stroke="#3060a0" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <!-- Lower jaw slightly elongated -->
+    <path d="M28,2 L35,4" stroke="#3060a0" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+    <!-- Eye -->
+    <circle cx="25" cy="-1" r="3" fill="#181818"/>
+    <circle cx="26" cy="-1.5" r="0.9" fill="#8090b0" opacity="0.5"/>
+  </g>
+
+  <!-- Fish below water surface — flying fish swimming -->
+  <g transform="translate(165,112) rotate(-5)" opacity="0.85">
+    <ellipse cx="0" cy="0" rx="26" ry="5.5" fill="#4878a0"/>
+    <ellipse cx="0" cy="-3" rx="22" ry="2" fill="#283c60" opacity="0.75"/>
+    <ellipse cx="2" cy="2.5" rx="20" ry="2" fill="#d0e8f8" opacity="0.55"/>
+    <!-- Folded pectoral fins (wings in swim position) -->
+    <path d="M14,2 Q20,8 25,5" fill="none" stroke="#3060a0" stroke-width="1.2" opacity="0.75"/>
+    <path d="M-26,0 L-36,-8" stroke="#3060a0" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M-26,0 L-36, 8" stroke="#3060a0" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <circle cx="22" cy="-0.5" r="2.2" fill="#181818"/>
+  </g>
+
+  <!-- Another fish below, background -->
+  <g transform="translate(380,130) rotate(-4)" opacity="0.72">
+    <ellipse cx="0" cy="0" rx="20" ry="4.5" fill="#4878a0"/>
+    <path d="M-20,0 L-28,-7" stroke="#3060a0" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+    <path d="M-20,0 L-28, 7" stroke="#3060a0" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+    <circle cx="17" cy="0" r="1.8" fill="#181818"/>
+  </g>
+
+  <!-- Depth ruler (in water zone y=72–172, spans 0-20m) -->
+  <line x1="478" y1="72" x2="478" y2="172" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="72"  x2="478" y2="72"  stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="75"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="122" x2="478" y2="122" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="125" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">10</text>
+  <line x1="474" y1="172" x2="478" y2="172" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="175" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">20</text>
+  <text x="481" y="88" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#d0e8f8" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">大洋表水層／近岸海域</text>
+  <text x="12" y="32" fill="#f0d860" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">0–20 m；以特化胸鰭滑翔飛行</text>
+  <text x="12" y="54" fill="#c0d8f0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食浮游甲殼類；卵具黏絲附漂流物</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">熱帶及亞熱帶大洋（台灣東部・蘭嶼）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

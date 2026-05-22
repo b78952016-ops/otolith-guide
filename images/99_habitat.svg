@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea99" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e58a0"/>
+      <stop offset="40%" stop-color="#083060"/>
+      <stop offset="80%" stop-color="#041428"/>
+      <stop offset="100%" stop-color="#02080e"/>
+    </linearGradient>
+    <linearGradient id="sand99" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9a9070"/>
+      <stop offset="100%" stop-color="#605840"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep continental shelf water -->
+  <rect width="500" height="195" fill="url(#sea99)" rx="6"/>
+
+  <!-- Faint surface shimmer -->
+  <path d="M0,6 Q120,3 250,6 Q380,9 500,6"
+        fill="none" stroke="#4880b8" stroke-width="1.2" opacity="0.38"/>
+  <path d="M0,16 Q100,12 215,16 Q330,20 440,16 Q470,14 500,16"
+        fill="none" stroke="#3868a0" stroke-width="0.8" opacity="0.26"/>
+
+  <!-- Weak light shafts (deep water) -->
+  <line x1="160" y1="6" x2="124" y2="145" stroke="#c8e0ff" stroke-width="10" opacity="0.035"/>
+  <line x1="390" y1="6" x2="360" y2="155" stroke="#c8e0ff" stroke-width="7"  opacity="0.025"/>
+
+  <!-- Sandy-mud shelf bottom -->
+  <path d="M0,158 Q85,152 175,158 Q265,164 345,156 Q425,148 490,156 L500,157 L500,195 L0,195 Z"
+        fill="url(#sand99)"/>
+  <!-- Sand ripples -->
+  <path d="M18,167 Q72,165 126,167" fill="none" stroke="#c0b068" stroke-width="0.7" opacity="0.44"/>
+  <path d="M185,171 Q238,169 292,171" fill="none" stroke="#c0b068" stroke-width="0.7" opacity="0.40"/>
+  <path d="M340,167 Q394,165 448,167" fill="none" stroke="#c0b068" stroke-width="0.7" opacity="0.40"/>
+
+  <!-- Marine snow -->
+  <circle cx="75"  cy="48"  r="0.8" fill="#ffffff" opacity="0.15"/>
+  <circle cx="195" cy="36"  r="0.7" fill="#ffffff" opacity="0.13"/>
+  <circle cx="330" cy="58"  r="0.8" fill="#ffffff" opacity="0.12"/>
+  <circle cx="435" cy="40"  r="0.6" fill="#ffffff" opacity="0.11"/>
+  <circle cx="125" cy="105" r="0.7" fill="#ffffff" opacity="0.10"/>
+  <circle cx="290" cy="88"  r="0.6" fill="#ffffff" opacity="0.10"/>
+
+  <!-- Fish: 黃鋤齒鯛 Evynnis tumifrons (Crimson sea bream / 赤鯮) -->
+  <!-- Sparidae body: horizontally oval, reddish-pink, row of gold spots on lateral line -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(255,112) rotate(-6)" opacity="0.91">
+    <!-- Body: oval sparid shape, deeper than wide? No — wider than tall for lateral view -->
+    <ellipse cx="0" cy="0" rx="35" ry="21" fill="#c86058"/>
+    <!-- Dorsal darker red zone -->
+    <ellipse cx="-2" cy="-11" rx="28" ry="10" fill="#a03030" opacity="0.52"/>
+    <!-- Ventral pale/silvery zone -->
+    <ellipse cx="3"  cy="13"  rx="27" ry="6"  fill="#f0c8a8" opacity="0.30"/>
+    <!-- Golden-yellow lateral line spots (diagnostic: 赤鯮 row of gold spots) -->
+    <circle cx="20"  cy="-4"  r="2.2" fill="#d8b030" opacity="0.75"/>
+    <circle cx="9"   cy="-3"  r="2.2" fill="#d8b030" opacity="0.70"/>
+    <circle cx="-2"  cy="-2"  r="2.0" fill="#d8b030" opacity="0.65"/>
+    <circle cx="-13" cy="-1"  r="1.8" fill="#d8b030" opacity="0.60"/>
+    <circle cx="-23" cy="0"   r="1.6" fill="#d8b030" opacity="0.50"/>
+    <!-- Spiny dorsal fin — high arc, typical sparid profile -->
+    <path d="M-26,-21 Q-14,-40 0,-43 Q14,-41 24,-32 Q30,-27 35,-21"
+          fill="none" stroke="#a03030" stroke-width="1.6"/>
+    <!-- Soft dorsal (continuous, lower profile) -->
+    <path d="M35,-21 Q38,-26 35,-18" fill="none" stroke="#a03030" stroke-width="1.4"/>
+    <!-- Anal fin -->
+    <path d="M-8,21 Q5,28 18,21" fill="none" stroke="#a03030" stroke-width="1.3"/>
+    <!-- Slightly forked caudal fin (sparid: moderately forked) -->
+    <path d="M-35,0 L-50,-16" stroke="#a03030" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+    <path d="M-35,0 L-50, 16" stroke="#a03030" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+    <path d="M-50,-16 Q-55,0 -50,16" fill="none" stroke="#a03030" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Pectoral fin -->
+    <path d="M22,11 Q33,20 35,11" fill="none" stroke="#a03030" stroke-width="1.3" opacity="0.78"/>
+    <!-- Eye: moderately large -->
+    <circle cx="29" cy="-6" r="4.8" fill="#181818"/>
+    <circle cx="30.5" cy="-7.5" r="1.6" fill="#806040" opacity="0.40"/>
+    <!-- Mouth: terminal, slightly downward-angled — typical sea bream -->
+    <path d="M35,-2 Q37,1 34,5" fill="none" stroke="#883030" stroke-width="1.3" stroke-linecap="round"/>
+    <!-- Operculum line -->
+    <path d="M22,-14 Q26,0 22,14" fill="none" stroke="#a03030" stroke-width="0.8" opacity="0.40"/>
+  </g>
+
+  <!-- Fish 2 (smaller, background) -->
+  <g transform="translate(120,135) rotate(-4)" opacity="0.72">
+    <ellipse cx="0" cy="0" rx="26" ry="16" fill="#c86058"/>
+    <ellipse cx="-2" cy="-8"  rx="21" ry="8" fill="#a03030" opacity="0.48"/>
+    <circle cx="13" cy="-3" r="1.8" fill="#d8b030" opacity="0.68"/>
+    <circle cx="4"  cy="-2" r="1.7" fill="#d8b030" opacity="0.63"/>
+    <circle cx="-5" cy="-1" r="1.5" fill="#d8b030" opacity="0.58"/>
+    <circle cx="-14" cy="0" r="1.4" fill="#d8b030" opacity="0.50"/>
+    <path d="M-20,-16 Q-10,-30 2,-32 Q12,-30 20,-24" fill="none" stroke="#a03030" stroke-width="1.3"/>
+    <path d="M-26,0 L-37,-12" stroke="#a03030" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M-26,0 L-37, 12" stroke="#a03030" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M-37,-12 Q-41,0 -37,12" fill="none" stroke="#a03030" stroke-width="2.8" stroke-linecap="round"/>
+    <circle cx="22" cy="-5" r="3.5" fill="#181818"/>
+    <path d="M5,16 Q15,21 22,16" fill="none" stroke="#a03030" stroke-width="1.1"/>
+  </g>
+
+  <!-- Depth ruler -->
+  <line x1="478" y1="8" x2="478" y2="168" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="49"  x2="478" y2="49"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="52"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">50</text>
+  <line x1="474" y1="89"  x2="478" y2="89"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="92"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">100</text>
+  <line x1="474" y1="129" x2="478" y2="129" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="132" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">150</text>
+  <line x1="474" y1="168" x2="478" y2="168" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="171" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">250</text>
+  <text x="481" y="25" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">大陸棚砂泥底・深水底棲型</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">50–250 m；深於同屬紅鋤齒鯛</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食底棲生物；側線有金黃點列</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">西北太平洋（台灣北部・東北部・澎湖・東海）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

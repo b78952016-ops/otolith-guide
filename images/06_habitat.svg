@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="wt06" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a9cb8"/>
+      <stop offset="100%" stop-color="#1e5870"/>
+    </linearGradient>
+    <linearGradient id="sk06" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3050"/>
+      <stop offset="100%" stop-color="#2a5878"/>
+    </linearGradient>
+    <linearGradient id="mt06" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a3040"/>
+      <stop offset="100%" stop-color="#1a2030"/>
+    </linearGradient>
+    <linearGradient id="gr06" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6a6858"/>
+      <stop offset="100%" stop-color="#484840"/>
+    </linearGradient>
+    <marker id="arr06" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0,0 6,2 0,4" fill="#c9a84c"/>
+    </marker>
+  </defs>
+
+  <rect width="500" height="195" fill="url(#sk06)" rx="6"/>
+  <polygon points="0,68 55,16 110,68" fill="url(#mt06)"/>
+  <polygon points="95,68 168,10 242,68" fill="#222830" opacity="0.9"/>
+  <polygon points="295,68 372,20 450,68" fill="#1e2430" opacity="0.85"/>
+
+  <rect x="0" y="68" width="500" height="127" fill="url(#wt06)"/>
+  <path d="M0,84 Q65,78 130,85 Q195,92 260,84 Q318,76 380,85 Q435,92 500,84"
+        fill="none" stroke="#7ad0e8" stroke-width="1.2" opacity="0.5"/>
+  <path d="M0,104 Q55,98 115,105 Q175,112 240,104 Q300,96 365,105 Q425,112 500,104"
+        fill="none" stroke="#7ad0e8" stroke-width="1.0" opacity="0.4"/>
+  <path d="M0,128 Q70,121 145,129 Q215,137 285,127 Q355,117 425,128 Q462,133 500,127"
+        fill="none" stroke="#6ac0d8" stroke-width="0.9" opacity="0.35"/>
+
+  <path d="M0,166 Q52,160 106,167 Q156,174 216,165 Q276,156 336,165 Q396,174 456,165 Q478,162 500,166 L500,195 L0,195 Z"
+        fill="url(#gr06)"/>
+  <ellipse cx="38"  cy="171" rx="15" ry="9"  fill="#585850" opacity="0.85"/>
+  <ellipse cx="82"  cy="175" rx="11" ry="7"  fill="#606058" opacity="0.80"/>
+  <ellipse cx="136" cy="170" rx="17" ry="10" fill="#525048" opacity="0.85"/>
+  <ellipse cx="188" cy="174" rx="12" ry="7"  fill="#5a5850" opacity="0.80"/>
+  <ellipse cx="242" cy="169" rx="19" ry="11" fill="#4e4c44" opacity="0.85"/>
+  <ellipse cx="294" cy="173" rx="13" ry="8"  fill="#585854" opacity="0.80"/>
+  <ellipse cx="342" cy="169" rx="16" ry="10" fill="#525048" opacity="0.85"/>
+  <ellipse cx="390" cy="174" rx="10" ry="6"  fill="#606060" opacity="0.75"/>
+  <ellipse cx="432" cy="170" rx="15" ry="9"  fill="#4e4c44" opacity="0.85"/>
+  <ellipse cx="468" cy="174" rx="12" ry="7"  fill="#585850" opacity="0.80"/>
+  <!-- Algae on rocks (香魚 scrapes algae) -->
+  <ellipse cx="38"  cy="163" rx="13" ry="4" fill="#3a7018" opacity="0.55"/>
+  <ellipse cx="136" cy="161" rx="15" ry="4" fill="#407020" opacity="0.52"/>
+  <ellipse cx="242" cy="160" rx="16" ry="5" fill="#3a6818" opacity="0.55"/>
+  <ellipse cx="342" cy="160" rx="13" ry="4" fill="#407020" opacity="0.50"/>
+  <ellipse cx="432" cy="161" rx="12" ry="4" fill="#3a7018" opacity="0.50"/>
+
+  <!-- Fish 1: Ayu – slender, golden lateral stripe -->
+  <g transform="translate(210,112) rotate(-5)" opacity="0.91">
+    <ellipse cx="0" cy="0" rx="29" ry="7" fill="#7a9048"/>
+    <path d="M-21,0.5 Q0,2.5 21,0" fill="none" stroke="#d4b840" stroke-width="2.8" opacity="0.78"/>
+    <path d="M-5,-7 Q2,-15 13,-7" fill="none" stroke="#6a8038" stroke-width="1.4"/>
+    <path d="M-22,-2 Q-26,-9 -21,-5" fill="#7a9048" stroke="#6a8038" stroke-width="0.8"/>
+    <path d="M-29,0 L-42,-12" stroke="#6a8038" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-29,0 L-42, 12" stroke="#6a8038" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M11,4 Q18,12 24,7" fill="none" stroke="#6a8038" stroke-width="1.2" opacity="0.8"/>
+    <path d="M-13,7.5 Q-2,14 9,7.5" fill="none" stroke="#6a8038" stroke-width="1.1"/>
+    <circle cx="25" cy="-1" r="3.2" fill="#1a1a08"/>
+    <circle cx="26" cy="-1.5" r="1.0" fill="#c0b060" opacity="0.5"/>
+  </g>
+  <!-- Fish 2: background -->
+  <g transform="translate(368,130) rotate(-4)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="23" ry="5.5" fill="#7a9048"/>
+    <path d="M-17,0.5 Q0,2 17,0" fill="none" stroke="#d4b840" stroke-width="2.2" opacity="0.70"/>
+    <path d="M-4,-5.5 Q2,-12 11,-5.5" fill="none" stroke="#6a8038" stroke-width="1.2"/>
+    <path d="M-18,-2 Q-21,-8 -17,-4.5" fill="#7a9048" stroke="#6a8038" stroke-width="0.7"/>
+    <path d="M-23,0 L-34,-10" stroke="#6a8038" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    <path d="M-23,0 L-34, 10" stroke="#6a8038" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    <circle cx="19" cy="-0.5" r="2.5" fill="#1a1a08"/>
+  </g>
+
+  <!-- Algae annotation -->
+  <line x1="322" y1="152" x2="294" y2="163" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arr06)"/>
+  <text x="324" y="150" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">石面藻類</text>
+
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">清澈溪流 ／ 河海迴游</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">壽命約一年（年魚）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">以石面藻類為食，領域性強</text>
+  <text x="250" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">台灣・日本</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

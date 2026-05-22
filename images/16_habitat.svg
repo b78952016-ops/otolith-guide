@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea16" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1868a0"/>
+      <stop offset="50%" stop-color="#0e4870"/>
+      <stop offset="100%" stop-color="#0a2848"/>
+    </linearGradient>
+    <linearGradient id="reef16a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#504030"/>
+      <stop offset="100%" stop-color="#302018"/>
+    </linearGradient>
+    <linearGradient id="reef16b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#504838"/>
+      <stop offset="100%" stop-color="#302820"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Reef water, moderate depth -->
+  <rect width="500" height="195" fill="url(#sea16)" rx="6"/>
+
+  <!-- Surface shimmer -->
+  <path d="M0,7 Q80,4 165,7 Q250,10 335,7 Q415,4 500,7"
+        fill="none" stroke="#4ad0f0" stroke-width="1.5" opacity="0.58"/>
+  <path d="M0,17 Q90,12 185,17 Q280,22 370,17 Q440,12 500,17"
+        fill="none" stroke="#38b8d8" stroke-width="1.0" opacity="0.42"/>
+
+  <!-- Light shafts (moderate depth) -->
+  <line x1="120" y1="0" x2="80"  y2="150" stroke="#c0e8ff" stroke-width="10" opacity="0.04"/>
+  <line x1="230" y1="0" x2="195" y2="155" stroke="#c0e8ff" stroke-width="7"  opacity="0.04"/>
+
+  <!-- Large rocky reef structure (left-center) -->
+  <path d="M0,148 Q30,125 70,130 Q110,135 145,120 Q175,108 200,122 Q225,135 240,148 L240,195 L0,195 Z"
+        fill="url(#reef16a)"/>
+  <!-- Rock lit surface -->
+  <path d="M40,130 Q85,120 130,125 Q165,128 195,116"
+        fill="none" stroke="#807060" stroke-width="2" opacity="0.50"/>
+  <!-- Rock cracks -->
+  <line x1="75"  y1="130" x2="82"  y2="148" stroke="#201008" stroke-width="1" opacity="0.6"/>
+  <line x1="140" y1="122" x2="148" y2="140" stroke="#201008" stroke-width="0.8" opacity="0.6"/>
+  <!-- Rock ledge / cave (grouper hide) -->
+  <path d="M155,120 Q175,112 195,118 Q205,122 210,135 L200,122 Q185,115 162,120 Z"
+        fill="#1a100a" opacity="0.82"/>
+
+  <!-- Right reef spur -->
+  <path d="M340,155 Q380,138 420,145 Q455,152 500,142 L500,195 L340,195 Z"
+        fill="url(#reef16b)"/>
+  <path d="M360,144 Q395,136 430,142 Q460,148 490,140"
+        fill="none" stroke="#706050" stroke-width="1.5" opacity="0.45"/>
+
+  <!-- Coral on reef -->
+  <!-- Branching coral -->
+  <g stroke="#b85020" fill="none" stroke-width="1.1" opacity="0.78">
+    <line x1="100" y1="128" x2="100" y2="108"/>
+    <line x1="100" y1="118" x2="90"  y2="105"/>
+    <line x1="100" y1="113" x2="110" y2="100"/>
+    <line x1="90"  y1="105" x2="84"  y2="94"/>
+    <line x1="110" y1="100" x2="116" y2="90"/>
+    <circle cx="84"  cy="94" r="1.5" fill="#d86030"/>
+    <circle cx="116" cy="90" r="1.5" fill="#d86030"/>
+    <circle cx="90"  cy="105" r="1.3" fill="#d86030"/>
+    <circle cx="110" cy="100" r="1.3" fill="#d86030"/>
+  </g>
+  <!-- Massive coral (right reef) -->
+  <ellipse cx="395" cy="145" rx="20" ry="9" fill="#7a5828"/>
+  <path d="M377,145 Q387,138 397,137 Q407,138 413,145" fill="none" stroke="#a07040" stroke-width="1" opacity="0.6"/>
+  <circle cx="388" cy="140" r="1.8" fill="#8a6030"/>
+  <circle cx="400" cy="138" r="1.8" fill="#8a6030"/>
+
+  <!-- Fish 1: 龍虎斑 (Grouper hybrid) — large oval body, brownish with spots -->
+  <g transform="translate(305,105) rotate(-3)" opacity="0.91">
+    <!-- Body: oval, brownish -->
+    <ellipse cx="0" cy="0" rx="30" ry="13" fill="#60482a"/>
+    <!-- Light spots (characteristic of 棕點石斑) -->
+    <circle cx="-15" cy="-4" r="3.5" fill="#a07848" opacity="0.65"/>
+    <circle cx="-5"  cy="-6" r="3"   fill="#a07848" opacity="0.60"/>
+    <circle cx="6"   cy="-5" r="3.5" fill="#a07848" opacity="0.65"/>
+    <circle cx="16"  cy="-3" r="3"   fill="#a07848" opacity="0.60"/>
+    <circle cx="-10" cy="3"  r="2.5" fill="#a07848" opacity="0.55"/>
+    <circle cx="2"   cy="5"  r="2.5" fill="#a07848" opacity="0.55"/>
+    <circle cx="14"  cy="4"  r="2.5" fill="#a07848" opacity="0.55"/>
+    <!-- Spiny dorsal fin -->
+    <path d="M-10,-13 L-7,-21 L-2,-23 L4,-22 L8,-21 L12,-13"
+          fill="none" stroke="#483010" stroke-width="1.5"/>
+    <!-- Soft dorsal -->
+    <path d="M12,-13 Q18,-18 24,-13" fill="none" stroke="#483010" stroke-width="1.3"/>
+    <!-- Tail (rounded) -->
+    <path d="M-30,0 L-42,-11" stroke="#483010" stroke-width="3.8" stroke-linecap="round" fill="none"/>
+    <path d="M-30,0 L-42, 11" stroke="#483010" stroke-width="3.8" stroke-linecap="round" fill="none"/>
+    <!-- Pectoral fin -->
+    <path d="M12,9 Q20,18 26,13" fill="none" stroke="#483010" stroke-width="1.4" opacity="0.8"/>
+    <!-- Anal fin -->
+    <path d="M-8,13 Q0,20 8,13" fill="none" stroke="#483010" stroke-width="1.3"/>
+    <!-- Eye -->
+    <circle cx="25" cy="-1" r="4.5" fill="#181008"/>
+    <circle cx="26.5" cy="-2" r="1.5" fill="#c0a060" opacity="0.5"/>
+  </g>
+
+  <!-- Fish 2: smaller, near cave -->
+  <g transform="translate(175,135) rotate(-2)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="22" ry="10" fill="#60482a"/>
+    <circle cx="-10" cy="-3" r="2.5" fill="#a07848" opacity="0.60"/>
+    <circle cx="0"   cy="-4" r="2.5" fill="#a07848" opacity="0.60"/>
+    <circle cx="10"  cy="-2" r="2.5" fill="#a07848" opacity="0.55"/>
+    <circle cx="-5"  cy="3"  r="2"   fill="#a07848" opacity="0.50"/>
+    <circle cx="8"   cy="3"  r="2"   fill="#a07848" opacity="0.50"/>
+    <path d="M-8,-10 L-4,-17 L2,-18 L6,-17 L8,-10" fill="none" stroke="#483010" stroke-width="1.3"/>
+    <path d="M-22,0 L-31,-9" stroke="#483010" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-22,0 L-31, 9" stroke="#483010" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <circle cx="19" cy="-0.5" r="3.5" fill="#181008"/>
+  </g>
+
+  <!-- Depth ruler (right side) — 0-60m -->
+  <line x1="478" y1="7" x2="478" y2="172" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="7"   x2="478" y2="7"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="10"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="62"  x2="478" y2="62"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="65"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">20</text>
+  <line x1="474" y1="117" x2="478" y2="117" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="120" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">40</text>
+  <line x1="474" y1="172" x2="478" y2="172" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="175" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">60</text>
+  <text x="481" y="24" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">礁區 ／ 近海沿岸・潟湖</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">1–60 m</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">伏擊型掠食者；以魚、蟹、頭足類為食</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">台灣養殖（屏東・雲林）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

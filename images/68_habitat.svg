@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea68" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1060a8"/>
+      <stop offset="40%" stop-color="#084878"/>
+      <stop offset="75%" stop-color="#042838"/>
+      <stop offset="100%" stop-color="#021018"/>
+    </linearGradient>
+    <linearGradient id="reef68" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a6850"/>
+      <stop offset="100%" stop-color="#303828"/>
+    </linearGradient>
+    <linearGradient id="sand68" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a09870"/>
+      <stop offset="100%" stop-color="#686040"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Coastal ocean with seagrass/reef mix -->
+  <rect width="500" height="195" fill="url(#sea68)" rx="6"/>
+
+  <!-- Surface shimmer -->
+  <path d="M0,8 Q80,5 165,8 Q250,11 335,8 Q415,5 500,8"
+        fill="none" stroke="#50b8d8" stroke-width="1.2" opacity="0.45"/>
+
+  <!-- Light shafts -->
+  <line x1="200" y1="8" x2="165" y2="155" stroke="#a8d8ff" stroke-width="10" opacity="0.045"/>
+
+  <!-- Sandy bottom with seagrass patches -->
+  <path d="M0,162 Q70,157 150,162 Q230,167 310,160 Q390,155 470,160 L500,161 L500,195 L0,195 Z"
+        fill="url(#sand68)"/>
+  <!-- Seagrass blades -->
+  <line x1="30"  y1="162" x2="26"  y2="148" stroke="#486030" stroke-width="1.4" opacity="0.70"/>
+  <line x1="38"  y1="162" x2="34"  y2="144" stroke="#486030" stroke-width="1.3" opacity="0.65"/>
+  <line x1="46"  y1="162" x2="42"  y2="150" stroke="#486030" stroke-width="1.2" opacity="0.62"/>
+  <line x1="200" y1="160" x2="196" y2="147" stroke="#486030" stroke-width="1.3" opacity="0.58"/>
+  <line x1="208" y1="160" x2="205" y2="144" stroke="#486030" stroke-width="1.2" opacity="0.55"/>
+  <line x1="380" y1="161" x2="376" y2="148" stroke="#486030" stroke-width="1.3" opacity="0.52"/>
+  <line x1="388" y1="161" x2="385" y2="145" stroke="#486030" stroke-width="1.2" opacity="0.50"/>
+  <!-- Coral rubble on bottom -->
+  <ellipse cx="100" cy="166" rx="9"  ry="3.5" fill="url(#reef68)" opacity="0.55"/>
+  <ellipse cx="260" cy="165" rx="7"  ry="3.0" fill="url(#reef68)" opacity="0.50"/>
+  <ellipse cx="440" cy="166" rx="8"  ry="3.0" fill="url(#reef68)" opacity="0.48"/>
+
+  <!-- Marine snow -->
+  <circle cx="90"  cy="45" r="0.8" fill="#ffffff" opacity="0.14"/>
+  <circle cx="260" cy="60" r="0.7" fill="#ffffff" opacity="0.12"/>
+  <circle cx="400" cy="38" r="0.8" fill="#ffffff" opacity="0.12"/>
+
+  <!-- Fish: 單角革單棘魨 Aluterus monoceros (Unicorn leatherjacket filefish) -->
+  <!-- DISTINCTIVE shape: very deep-bodied oval, strongly laterally compressed;
+       tiny terminal mouth on long pointed snout;
+       single dorsal spine ("單角") above eye;
+       NO pelvic fins (keeled belly);
+       rough leathery skin (sandpaper texture), no scales;
+       overall olive-grey/brown with faint pale spots and blue/grey lines;
+       long soft dorsal and anal fins of similar shape -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(250,108) rotate(-5)" opacity="0.92">
+    <!-- Body: deep oval, strongly compressed -->
+    <ellipse cx="0" cy="0" rx="35" ry="26" fill="#707858"/>
+    <!-- Darker dorsal region -->
+    <ellipse cx="-3" cy="-16" rx="26" ry="9" fill="#484f38" opacity="0.55"/>
+    <!-- Lighter ventral keel area -->
+    <ellipse cx="2" cy="18" rx="20" ry="7" fill="#909870" opacity="0.40"/>
+    <!-- Rough skin stippling (filefish texture) -->
+    <circle cx="-10" cy="-5" r="1.0" fill="#505840" opacity="0.28"/>
+    <circle cx="5"   cy="-8" r="0.9" fill="#505840" opacity="0.26"/>
+    <circle cx="15"  cy="2"  r="0.9" fill="#505840" opacity="0.24"/>
+    <circle cx="-5"  cy="8"  r="0.8" fill="#505840" opacity="0.22"/>
+    <circle cx="-20" cy="-2" r="0.8" fill="#505840" opacity="0.20"/>
+    <circle cx="0"   cy="12" r="0.8" fill="#505840" opacity="0.20"/>
+    <!-- Faint pale spots (diagnostic pattern) -->
+    <circle cx="-8"  cy="-2" r="2.5" fill="#909870" opacity="0.18"/>
+    <circle cx="10"  cy="5"  r="2.0" fill="#909870" opacity="0.16"/>
+    <circle cx="-22" cy="5"  r="2.0" fill="#909870" opacity="0.15"/>
+    <circle cx="-5"  cy="14" r="1.8" fill="#909870" opacity="0.14"/>
+    <!-- Caudal peduncle: narrow -->
+    <ellipse cx="-32" cy="0" rx="7" ry="15" fill="#686e50" opacity="0.75"/>
+    <!-- Long pointed snout area -->
+    <ellipse cx="34" cy="-4" rx="12" ry="11" fill="#686e50"/>
+    <!-- Tiny terminal mouth (at snout tip) -->
+    <path d="M45,-6 Q47,-4 45,-2" fill="none" stroke="#404830" stroke-width="1.0" stroke-linecap="round"/>
+    <!-- Eye: moderate size, set on profile -->
+    <circle cx="36" cy="-8" r="4.0" fill="#181818"/>
+    <circle cx="37" cy="-9" r="1.3" fill="#708060" opacity="0.38"/>
+    <!-- DIAGNOSTIC: Single dorsal spine ("單角"), erect above eye -->
+    <path d="M38,-18 L36,-35" stroke="#505838" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <!-- Spine tip slightly hooked -->
+    <path d="M36,-35 Q35,-38 33,-36" fill="none" stroke="#505838" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Long soft dorsal fin (posterior, many rays) -->
+    <path d="M-5,-26 Q-12,-32 -20,-30 Q-28,-28 -34,-20"
+          fill="none" stroke="#505838" stroke-width="1.2"/>
+    <!-- Long anal fin (mirrors dorsal, similar length/shape) -->
+    <path d="M-3,26 Q-10,32 -18,30 Q-26,28 -32,22"
+          fill="none" stroke="#505838" stroke-width="1.2"/>
+    <!-- Pectoral fin (small fan) -->
+    <path d="M22,12 Q30,20 32,12" fill="none" stroke="#505838" stroke-width="1.1" opacity="0.70"/>
+    <!-- NO pelvic fins (keeled belly instead) -->
+    <!-- Ventral keel line -->
+    <path d="M6,24 Q-8,26 -20,24" fill="none" stroke="#606848" stroke-width="0.8" opacity="0.35"/>
+    <!-- Caudal fin: rounded/truncate -->
+    <path d="M-38,-14 Q-46,0 -38,14" fill="none" stroke="#505838" stroke-width="2.0" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish 2 (background, tilted differently) -->
+  <g transform="translate(100,130) rotate(-8)" opacity="0.72">
+    <ellipse cx="0" cy="0" rx="28" ry="21" fill="#707858"/>
+    <ellipse cx="-3" cy="-13" rx="21" ry="7" fill="#484f38" opacity="0.50"/>
+    <ellipse cx="28" cy="-3" rx="10" ry="9" fill="#686e50"/>
+    <!-- Single spine -->
+    <path d="M30,-14 L28,-28" stroke="#505838" stroke-width="2.0" stroke-linecap="round" fill="none"/>
+    <!-- Eye -->
+    <circle cx="30" cy="-6" r="3.2" fill="#181818"/>
+    <!-- Dorsal fin -->
+    <path d="M-4,-21 Q-10,-26 -17,-24 Q-23,-22 -27,-16" fill="none" stroke="#505838" stroke-width="1.1"/>
+    <!-- Anal fin -->
+    <path d="M-2,21 Q-8,26 -15,24 Q-21,22 -25,16" fill="none" stroke="#505838" stroke-width="1.1"/>
+    <!-- Caudal -->
+    <path d="M-30,-11 Q-38,0 -30,11" fill="none" stroke="#505838" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Mouth -->
+    <path d="M37,-5 Q39,-3 37,-1" fill="none" stroke="#404830" stroke-width="1.0" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish 3 (far background) -->
+  <g transform="translate(400,120) rotate(-4)" opacity="0.55">
+    <ellipse cx="0" cy="0" rx="22" ry="17" fill="#707858"/>
+    <ellipse cx="22" cy="-2" rx="8"  ry="7"  fill="#686e50"/>
+    <path d="M23,-11 L21,-22" stroke="#505838" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+    <circle cx="24" cy="-5" r="2.5" fill="#181818"/>
+    <path d="M-22,-9 Q-28,0 -22,9" fill="none" stroke="#505838" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Depth ruler (0–80 m) -->
+  <line x1="478" y1="8" x2="478" y2="162" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="70"  x2="478" y2="70"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="73"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">25</text>
+  <line x1="474" y1="130" x2="478" y2="130" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="133" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">50</text>
+  <line x1="474" y1="162" x2="478" y2="162" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="165" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">80</text>
+  <text x="481" y="25" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">沿岸礁區・海草床・砂礫底</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">0–80 m；單角革質皮膚・無腹鰭（診斷）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食藻類・海草・附著生物；橄欖灰色體表</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">熱帶・亞熱帶各大洋（台灣周邊海域）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

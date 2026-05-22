@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea59" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1060a0"/>
+      <stop offset="40%" stop-color="#083870"/>
+      <stop offset="80%" stop-color="#041828"/>
+      <stop offset="100%" stop-color="#020c18"/>
+    </linearGradient>
+    <linearGradient id="sand59" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#989080"/>
+      <stop offset="100%" stop-color="#606060"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Coastal mid-water, sandy bottom -->
+  <rect width="500" height="195" fill="url(#sea59)" rx="6"/>
+
+  <!-- Surface shimmer -->
+  <path d="M0,8 Q80,5 165,8 Q250,11 335,8 Q415,5 500,8"
+        fill="none" stroke="#58b8d0" stroke-width="1.3" opacity="0.48"/>
+  <path d="M0,18 Q90,14 185,18 Q280,22 370,18 Q445,14 500,18"
+        fill="none" stroke="#40a0c0" stroke-width="0.9" opacity="0.36"/>
+
+  <!-- Light shafts -->
+  <line x1="155" y1="8" x2="124" y2="158" stroke="#c0d8ff" stroke-width="11" opacity="0.055"/>
+
+  <!-- Sandy bottom -->
+  <path d="M0,162 Q70,157 150,162 Q240,167 330,159 Q415,153 495,159 L500,159 L500,195 L0,195 Z"
+        fill="url(#sand59)"/>
+  <path d="M20,168 Q70,166 120,168" fill="none" stroke="#808060" stroke-width="0.7" opacity="0.36"/>
+  <path d="M165,170 Q215,168 265,170" fill="none" stroke="#808060" stroke-width="0.7" opacity="0.34"/>
+
+  <!-- Fish: 斯氏低鰭鯧 Peprilus snyderi (Pacific butterfish) -->
+  <!-- Stromateidae: oval-rounded compressed; silvery iridescent;
+       LOW PROFILE dorsal + anal fins (diagnostic: 低鰭 = low fins);
+       NO pelvic fins; moderately forked caudal; mid-water to bottom;
+       E. Pacific but identified from Taiwan waters -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(242,108) rotate(-6)" opacity="0.93">
+    <!-- Body: oval compressed — more rounded (less diamond-shaped than Pampus) -->
+    <ellipse cx="0" cy="0" rx="26" ry="20" fill="#d0d4d8"/>
+    <!-- Blue-grey back -->
+    <ellipse cx="-1" cy="-12" rx="20" ry="8" fill="#3a5068" opacity="0.48"/>
+    <!-- Brilliant silver flanks -->
+    <ellipse cx="3" cy="1" rx="20" ry="14" fill="#e8eef2" opacity="0.45"/>
+    <!-- Caudal peduncle -->
+    <ellipse cx="-22" cy="0" rx="5" ry="13" fill="#b0b8c0" opacity="0.82"/>
+    <!-- Head (small) -->
+    <ellipse cx="22" cy="0" rx="6.5" ry="12" fill="#b0b8c0"/>
+    <!-- Small mouth -->
+    <path d="M28,-1 Q31,2 28,5" fill="none" stroke="#506070" stroke-width="1.0" stroke-linecap="round"/>
+    <!-- Eye: small -->
+    <circle cx="23" cy="-4" r="3.2" fill="#181818"/>
+    <circle cx="24" cy="-5" r="1.0" fill="#809098" opacity="0.38"/>
+    <!-- LOW PROFILE dorsal fin (low arch, not tall like Pampus) -->
+    <path d="M-18,-20 Q-8,-28 0,-29 Q8,-27 15,-22 Q19,-18 20,-14"
+          fill="none" stroke="#607080" stroke-width="1.4"/>
+    <!-- LOW PROFILE anal fin (mirrors dorsal, equally low) -->
+    <path d="M-14,20 Q-4,27 3,28 Q11,26 16,21 Q19,17 20,14"
+          fill="none" stroke="#607080" stroke-width="1.3"/>
+    <!-- NO pelvic fins (Stromateidae diagnostic!) -->
+    <!-- Pectoral fin -->
+    <path d="M16,7 Q23,14 23,5" fill="none" stroke="#607080" stroke-width="1.1" opacity="0.68"/>
+    <!-- Moderately forked caudal (not as deeply forked as Pampus) -->
+    <path d="M-27,0 L-42,-20" stroke="#607080" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-27,0 L-42, 20" stroke="#607080" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-42,-20 Q-46,0 -42,20" fill="none" stroke="#607080" stroke-width="2.0" stroke-linecap="round"/>
+    <!-- Lateral line (faint) -->
+    <path d="M21,-6 Q2,-10 -18,-5" fill="none" stroke="#9098a0" stroke-width="0.6" opacity="0.28"/>
+  </g>
+
+  <!-- Fish 2 -->
+  <g transform="translate(135,126) rotate(-5)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="21" ry="16" fill="#d0d4d8"/>
+    <ellipse cx="-1" cy="-10" rx="16" ry="7" fill="#3a5068" opacity="0.44"/>
+    <ellipse cx="2" cy="1" rx="16" ry="11" fill="#e8eef2" opacity="0.40"/>
+    <ellipse cx="-18" cy="0" rx="4" ry="11" fill="#b0b8c0" opacity="0.80"/>
+    <ellipse cx="18" cy="0" rx="5.5" ry="10" fill="#b0b8c0"/>
+    <circle cx="19" cy="-3" r="2.6" fill="#181818"/>
+    <path d="M-14,-16 Q-6,-23 0,-24 Q6,-22 12,-17 Q15,-13 16,-11" fill="none" stroke="#607080" stroke-width="1.2"/>
+    <path d="M-11,16 Q-3,23 2,24 Q9,21 13,17 Q15,13 16,11" fill="none" stroke="#607080" stroke-width="1.2"/>
+    <path d="M-22,0 L-34,-16" stroke="#607080" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M-22,0 L-34, 16" stroke="#607080" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M-34,-16 Q-38,0 -34,16" fill="none" stroke="#607080" stroke-width="1.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Depth ruler (0–100 m) -->
+  <line x1="478" y1="8" x2="478" y2="159" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="84"  x2="478" y2="84"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="87"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">50</text>
+  <line x1="474" y1="159" x2="478" y2="159" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="162" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">100</text>
+  <text x="481" y="24" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">沿岸中底層・砂泥底</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">低矮背鰭臀鰭・無腹鰭（低鰭鯧診斷）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食小魚・無脊椎動物；肉食性</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">東太平洋（加利福尼亞灣至巴拿馬）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea19" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1870a8"/>
+      <stop offset="50%" stop-color="#0e4878"/>
+      <stop offset="100%" stop-color="#0a2850"/>
+    </linearGradient>
+    <linearGradient id="sand19" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b0a068"/>
+      <stop offset="100%" stop-color="#786840"/>
+    </linearGradient>
+    <linearGradient id="reef19" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#504030"/>
+      <stop offset="100%" stop-color="#302018"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Tropical lagoon water -->
+  <rect width="500" height="195" fill="url(#sea19)" rx="6"/>
+
+  <!-- Surface shimmer (shallow, clear) -->
+  <path d="M0,7 Q80,4 165,7 Q250,10 335,7 Q415,4 500,7"
+        fill="none" stroke="#60e0f8" stroke-width="1.6" opacity="0.62"/>
+  <path d="M0,17 Q90,12 185,17 Q280,22 370,17 Q440,12 500,17"
+        fill="none" stroke="#48c8e8" stroke-width="1.0" opacity="0.46"/>
+
+  <!-- Light shafts (clear tropical water) -->
+  <line x1="150" y1="0" x2="110" y2="140" stroke="#d0f0ff" stroke-width="11" opacity="0.05"/>
+  <line x1="280" y1="0" x2="245" y2="145" stroke="#d0f0ff" stroke-width="8"  opacity="0.04"/>
+  <line x1="390" y1="0" x2="360" y2="140" stroke="#d0f0ff" stroke-width="7"  opacity="0.04"/>
+
+  <!-- Sandy lagoon bottom -->
+  <path d="M0,172 Q80,167 170,172 Q260,177 350,170 Q420,163 500,170 L500,195 L0,195 Z"
+        fill="url(#sand19)"/>
+  <!-- Sand ripples -->
+  <path d="M20,179 Q90,177 160,179" fill="none" stroke="#d0b878" stroke-width="0.8" opacity="0.55"/>
+  <path d="M200,182 Q270,180 340,182" fill="none" stroke="#d0b878" stroke-width="0.8" opacity="0.55"/>
+  <path d="M360,179 Q430,177 490,179" fill="none" stroke="#d0b878" stroke-width="0.8" opacity="0.55"/>
+
+  <!-- Seagrass bed (left) -->
+  <g fill="#4a8020" opacity="0.75">
+    <path d="M50,172 Q52,155 54,172" stroke="#4a8020" stroke-width="1.5" fill="none"/>
+    <path d="M55,172 Q58,150 61,172" stroke="#4a8020" stroke-width="1.5" fill="none"/>
+    <path d="M62,172 Q64,158 67,172" stroke="#4a8020" stroke-width="1.5" fill="none"/>
+    <path d="M68,172 Q71,153 74,172" stroke="#4a8020" stroke-width="1.5" fill="none"/>
+    <path d="M75,172 Q77,160 80,172" stroke="#4a8020" stroke-width="1.5" fill="none"/>
+    <path d="M82,172 Q85,155 88,172" stroke="#4a8020" stroke-width="1.5" fill="none"/>
+    <path d="M90,172 Q92,162 95,172" stroke="#4a8020" stroke-width="1.5" fill="none"/>
+    <path d="M96,172 Q99,156 102,172" stroke="#4a8020" stroke-width="1.5" fill="none"/>
+    <path d="M104,172 Q106,164 109,172" stroke="#4a8020" stroke-width="1.5" fill="none"/>
+    <path d="M110,172 Q113,158 116,172" stroke="#4a8020" stroke-width="1.5" fill="none"/>
+    <path d="M118,172 Q120,166 123,172" stroke="#4a8020" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Reef spur (right side) -->
+  <path d="M360,165 Q395,148 430,155 Q460,162 500,152 L500,195 L360,195 Z"
+        fill="url(#reef19)"/>
+  <path d="M375,156 Q408,146 438,152 Q462,157 492,149"
+        fill="none" stroke="#706050" stroke-width="1.5" opacity="0.45"/>
+  <!-- Branching coral on reef -->
+  <g stroke="#c06020" fill="none" stroke-width="1.1" opacity="0.80">
+    <line x1="420" y1="152" x2="420" y2="132"/>
+    <line x1="420" y1="142" x2="410" y2="129"/>
+    <line x1="420" y1="138" x2="430" y2="126"/>
+    <circle cx="410" cy="129" r="1.5" fill="#e08040"/>
+    <circle cx="430" cy="126" r="1.5" fill="#e08040"/>
+    <circle cx="420" cy="132" r="1.3" fill="#e08040"/>
+  </g>
+
+  <!-- Fish 1: 青嘴龍占魚 (Spangled emperor, Lethrinus nebulosus) — grey-green, characteristic steep forehead -->
+  <g transform="translate(255,118) rotate(-4)" opacity="0.91">
+    <!-- Body: oval, grey-green -->
+    <ellipse cx="0" cy="0" rx="25" ry="11" fill="#708868"/>
+    <!-- Scale patterns (orange-red streaks) -->
+    <path d="M-20,-3 Q-10,0 0,-2 Q10,-4 20,-1" fill="none" stroke="#c07040" stroke-width="1.2" opacity="0.45"/>
+    <path d="M-18,3 Q-8,5 2,3 Q12,1 20,4" fill="none" stroke="#c07040" stroke-width="1.0" opacity="0.40"/>
+    <!-- Steep forehead (characteristic steep head profile) -->
+    <!-- Dorsal fin -->
+    <path d="M-8,-11 Q-2,-20 8,-11" fill="none" stroke="#506048" stroke-width="1.5"/>
+    <!-- Soft dorsal -->
+    <path d="M8,-11 Q15,-17 22,-11" fill="none" stroke="#506048" stroke-width="1.3"/>
+    <!-- Tail fin -->
+    <path d="M-25,0 L-36,-11" stroke="#506048" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-25,0 L-36, 11" stroke="#506048" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <!-- Pectoral fin -->
+    <path d="M10,8 Q17,15 23,10" fill="none" stroke="#506048" stroke-width="1.3" opacity="0.8"/>
+    <!-- Anal fin -->
+    <path d="M-7,11 Q1,17 9,11" fill="none" stroke="#506048" stroke-width="1.2"/>
+    <!-- Blue-green lips (distinctive feature of Lethrinus) -->
+    <path d="M21,2 Q23,4 24,2" fill="none" stroke="#3090a0" stroke-width="2" opacity="0.85"/>
+    <!-- Eye -->
+    <circle cx="21" cy="-2" r="3.8" fill="#181808"/>
+    <circle cx="22" cy="-3" r="1.2" fill="#c0c0a0" opacity="0.5"/>
+  </g>
+
+  <!-- Fish 2: smaller, foraging near seagrass -->
+  <g transform="translate(140,140) rotate(-2)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="19" ry="8.5" fill="#708868"/>
+    <path d="M-15,-2 Q-5,0 5,-1 Q12,-2 17,0" fill="none" stroke="#c07040" stroke-width="1.0" opacity="0.40"/>
+    <path d="M-6,-8.5 Q0,-15 9,-8.5" fill="none" stroke="#506048" stroke-width="1.3"/>
+    <path d="M-19,0 L-27,-9" stroke="#506048" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M-19,0 L-27, 9" stroke="#506048" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M16,2 Q18,4 19,2" fill="none" stroke="#3090a0" stroke-width="1.8" opacity="0.80"/>
+    <circle cx="16" cy="-1.5" r="3" fill="#181808"/>
+  </g>
+
+  <!-- Depth ruler (right side) — 0-75m -->
+  <line x1="478" y1="7" x2="478" y2="172" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="7"   x2="478" y2="7"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="10"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="51"  x2="478" y2="51"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="54"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">20</text>
+  <line x1="474" y1="95"  x2="478" y2="95"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="98"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">40</text>
+  <line x1="474" y1="139" x2="478" y2="139" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="142" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">60</text>
+  <line x1="474" y1="172" x2="478" y2="172" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="175" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">75</text>
+  <text x="481" y="24" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">珊瑚礁・潟湖・海草床</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">10–75 m</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">廣棲型；以軟體動物・甲殼類・小魚為食</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">紅海・波斯灣至日本南部・薩摩亞</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

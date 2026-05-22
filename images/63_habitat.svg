@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea63" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1878b8"/>
+      <stop offset="40%" stop-color="#0e5888"/>
+      <stop offset="80%" stop-color="#062838"/>
+      <stop offset="100%" stop-color="#031420"/>
+    </linearGradient>
+    <linearGradient id="rock63" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#505858"/>
+      <stop offset="100%" stop-color="#202428"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rocky reef, outer zone, 5–30 m -->
+  <rect width="500" height="195" fill="url(#sea63)" rx="6"/>
+
+  <!-- Surface shimmer -->
+  <path d="M0,8 Q80,5 165,8 Q250,11 335,8 Q415,5 500,8"
+        fill="none" stroke="#58c8e8" stroke-width="1.3" opacity="0.52"/>
+
+  <!-- Light shafts (clear reef water) -->
+  <line x1="150" y1="8" x2="120" y2="155" stroke="#c8eeff" stroke-width="13" opacity="0.065"/>
+  <line x1="380" y1="8" x2="355" y2="155" stroke="#c8eeff" stroke-width="8"  opacity="0.048"/>
+
+  <!-- PROMINENT ROCKY REEF (stronger, more rocks) -->
+  <path d="M0,148 Q38,128 95,140 Q152,152 210,126 Q268,100 335,126 Q392,152 445,130 Q470,118 500,122 L500,195 L0,195 Z"
+        fill="url(#rock63)"/>
+  <!-- Large rocky boulders (prominent!) -->
+  <ellipse cx="50"  cy="144" rx="36" ry="14" fill="#3c4048" opacity="0.80"/>
+  <ellipse cx="185" cy="132" rx="32" ry="12" fill="#3c4048" opacity="0.78"/>
+  <ellipse cx="338" cy="124" rx="30" ry="11" fill="#3c4048" opacity="0.75"/>
+  <ellipse cx="468" cy="126" rx="26" ry="10" fill="#3c4048" opacity="0.72"/>
+  <!-- Smaller rocks stacked -->
+  <ellipse cx="112" cy="148" rx="22" ry="9"  fill="#2e3438" opacity="0.72"/>
+  <ellipse cx="262" cy="136" rx="20" ry="8"  fill="#2e3438" opacity="0.68"/>
+  <ellipse cx="414" cy="138" rx="18" ry="7"  fill="#2e3438" opacity="0.65"/>
+  <!-- Rock crevice shadows -->
+  <path d="M142,146 Q175,132 208,146" fill="#0e1416" opacity="0.78"/>
+  <path d="M302,130 Q338,115 375,130" fill="#0e1416" opacity="0.74"/>
+  <!-- Algae on rocks -->
+  <ellipse cx="96"  cy="138" rx="20" ry="6"  fill="#2a5828" opacity="0.58"/>
+  <ellipse cx="250" cy="122" rx="18" ry="5.5" fill="#2a6030" opacity="0.54"/>
+  <ellipse cx="390" cy="124" rx="17" ry="5.5" fill="#2a5828" opacity="0.50"/>
+  <!-- Rock surface texture lines -->
+  <path d="M30,148 Q50,140 72,146" fill="none" stroke="#181c20" stroke-width="1.5" opacity="0.45"/>
+  <path d="M165,134 Q200,124 236,132" fill="none" stroke="#181c20" stroke-width="1.3" opacity="0.40"/>
+
+  <!-- Fish: 三線磯鱸 Parapristipoma trilineatum (Chicken grunt / Three-line grunt) -->
+  <!-- Haemulidae: oval body; brownish-olive overall;
+       THREE YELLOW/WHITE HORIZONTAL STRIPES on body (diagnostic!);
+       schooling reef fish; outer rocky reef; 5–30 m -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(240,105) rotate(-5)" opacity="0.93">
+    <!-- Body: oval, brownish-olive -->
+    <ellipse cx="0" cy="0" rx="32" ry="17" fill="#a09050"/>
+    <!-- Darker brownish back -->
+    <ellipse cx="2" cy="-10" rx="26" ry="7" fill="#605828" opacity="0.58"/>
+    <!-- THREE HORIZONTAL YELLOW/WHITE STRIPES (diagnostic!) -->
+    <!-- Stripe 1 (upper, below dorsal fin) -->
+    <path d="M26,-7 Q10,-9 -6,-8 Q-18,-7 -26,-5" fill="none" stroke="#e8d860" stroke-width="2.8" stroke-linecap="round" opacity="0.82"/>
+    <!-- Stripe 2 (mid-lateral line) -->
+    <path d="M28,-1 Q12,-2 -4,-1 Q-18,-0.5 -27,0" fill="none" stroke="#e8d860" stroke-width="2.5" stroke-linecap="round" opacity="0.75"/>
+    <!-- Stripe 3 (lower belly edge) -->
+    <path d="M25,5 Q10,7 -4,7 Q-16,7 -24,5" fill="none" stroke="#d8c850" stroke-width="2.0" stroke-linecap="round" opacity="0.65"/>
+    <!-- Caudal peduncle -->
+    <ellipse cx="-27" cy="0" rx="6" ry="12" fill="#857840" opacity="0.82"/>
+    <!-- Head: moderate -->
+    <ellipse cx="28" cy="0" rx="11" ry="15" fill="#857840"/>
+    <!-- Terminal mouth -->
+    <path d="M38,-2 Q42,2 38,6" fill="none" stroke="#604820" stroke-width="1.3" stroke-linecap="round"/>
+    <!-- Eye: moderate -->
+    <circle cx="30" cy="-5" r="4.2" fill="#181818"/>
+    <circle cx="31" cy="-6" r="1.5" fill="#a09040" opacity="0.38"/>
+    <!-- Dorsal fin (long, single continuous) -->
+    <path d="M18,-17 Q10,-26 3,-28 Q-4,-26 -10,-20 Q-15,-15 -17,-12 Q-20,-9 -22,-8"
+          fill="none" stroke="#604820" stroke-width="1.4"/>
+    <!-- Anal fin -->
+    <path d="M-6,17 Q-13,22 -18,20 Q-22,16 -23,12"
+          fill="none" stroke="#604820" stroke-width="1.2"/>
+    <!-- Pectoral fin -->
+    <path d="M20,8 Q30,16 33,9" fill="none" stroke="#706030" stroke-width="1.3" opacity="0.70"/>
+    <!-- Forked caudal fin -->
+    <path d="M-33,0 L-44,-12" stroke="#604820" stroke-width="3.0" stroke-linecap="round" fill="none"/>
+    <path d="M-33,0 L-44, 12" stroke="#604820" stroke-width="3.0" stroke-linecap="round" fill="none"/>
+    <path d="M-44,-12 Q-48,0 -44,12" fill="none" stroke="#604820" stroke-width="1.9" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish 2 (school) -->
+  <g transform="translate(128,128) rotate(-4)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="26" ry="13" fill="#a09050"/>
+    <ellipse cx="2" cy="-8" rx="21" ry="5.5" fill="#605828" opacity="0.55"/>
+    <!-- Three stripes -->
+    <path d="M21,-6 Q8,-7 -5,-6 Q-15,-5.5 -21,-4" fill="none" stroke="#e8d860" stroke-width="2.2" stroke-linecap="round" opacity="0.78"/>
+    <path d="M22,-1 Q10,-1.5 -4,-1 Q-14,-0.5 -21,0" fill="none" stroke="#e8d860" stroke-width="2.0" stroke-linecap="round" opacity="0.70"/>
+    <path d="M20,4 Q8,5.5 -3,5.5 Q-13,5 -19,4" fill="none" stroke="#d8c850" stroke-width="1.6" stroke-linecap="round" opacity="0.60"/>
+    <ellipse cx="-22" cy="0" rx="5" ry="9" fill="#857840" opacity="0.80"/>
+    <ellipse cx="22" cy="0" rx="8.5" ry="11" fill="#857840"/>
+    <circle cx="23" cy="-4" r="3.4" fill="#181818"/>
+    <path d="M14,-13 Q6,-21 0,-22 Q-5,-20 -9,-15 Q-12,-11 -13,-9" fill="none" stroke="#604820" stroke-width="1.2"/>
+    <path d="M-27,0 L-36,-10" stroke="#604820" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M-27,0 L-36, 10" stroke="#604820" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M-36,-10 Q-40,0 -36,10" fill="none" stroke="#604820" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish 3 -->
+  <g transform="translate(390,118) rotate(-6)" opacity="0.72">
+    <ellipse cx="0" cy="0" rx="21" ry="10" fill="#a09050"/>
+    <!-- Stripes -->
+    <path d="M17,-5 Q6,-6 -4,-5 Q-12,-4.5 -17,-3.5" fill="none" stroke="#e8d860" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+    <path d="M18,-1 Q7,-1 -3,-0.5 Q-12,0 -17,0" fill="none" stroke="#e8d860" stroke-width="1.6" stroke-linecap="round" opacity="0.68"/>
+    <ellipse cx="18" cy="0" rx="7" ry="10" fill="#857840"/>
+    <circle cx="19" cy="-3" r="3.0" fill="#181818"/>
+    <path d="M-21,0 L-29,-9" stroke="#604820" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <path d="M-21,0 L-29, 9" stroke="#604820" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Depth ruler (0–30 m) -->
+  <line x1="478" y1="8" x2="478" y2="148" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="78"  x2="478" y2="78"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="81"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">15</text>
+  <line x1="474" y1="148" x2="478" y2="148" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="151" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">30</text>
+  <text x="481" y="24" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">外圍岩礁・人工魚礁區</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">5–30 m；橄欖體三條黃縱紋（診斷）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">群游；食浮游生物・無脊椎動物</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">印度－西太平洋（台灣各礁區・日本南部・東海）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea78" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1878b8"/>
+      <stop offset="40%" stop-color="#0e5888"/>
+      <stop offset="80%" stop-color="#063848"/>
+      <stop offset="100%" stop-color="#031820"/>
+    </linearGradient>
+    <linearGradient id="bottom78" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a7870"/>
+      <stop offset="50%" stop-color="#484440"/>
+      <stop offset="100%" stop-color="#242020"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Coastal water, mixed sandy-mud bottom with rocky reef -->
+  <rect width="500" height="195" fill="url(#sea78)" rx="6"/>
+
+  <!-- Surface shimmer -->
+  <path d="M0,7 Q80,4 165,7 Q250,10 335,7 Q415,4 500,7"
+        fill="none" stroke="#60c8e8" stroke-width="1.3" opacity="0.52"/>
+
+  <!-- Light shafts -->
+  <line x1="160" y1="7" x2="132" y2="158" stroke="#c8eeff" stroke-width="12" opacity="0.055"/>
+  <line x1="390" y1="7" x2="365" y2="158" stroke="#c8eeff" stroke-width="8"  opacity="0.038"/>
+
+  <!-- Sandy-mud bottom with some rocky reef -->
+  <path d="M0,162 Q60,157 130,162 Q210,167 300,158 Q388,150 470,158 L500,160 L500,195 L0,195 Z"
+        fill="url(#bottom78)"/>
+  <!-- Sandy areas -->
+  <path d="M30,168 Q75,165 120,168"  fill="none" stroke="#8a8270" stroke-width="0.7" opacity="0.40"/>
+  <path d="M170,170 Q215,167 260,170" fill="none" stroke="#8a8270" stroke-width="0.7" opacity="0.38"/>
+  <!-- Rocky reef patches -->
+  <ellipse cx="60"  cy="162" rx="25" ry="8"  fill="#444038" opacity="0.65"/>
+  <ellipse cx="210" cy="158" rx="22" ry="7.5" fill="#444038" opacity="0.60"/>
+  <ellipse cx="360" cy="155" rx="22" ry="8"  fill="#444038" opacity="0.58"/>
+  <ellipse cx="460" cy="158" rx="18" ry="6.5" fill="#444038" opacity="0.55"/>
+
+  <!-- Fish: 大口逆鈎鰺 Scomberoides commersonnianus (Talang queenfish) -->
+  <!-- Carangidae: elongated, slightly compressed body;
+       5–6 OVAL DARK BLOTCHES along lateral line at mid-body height (diagnostic!);
+       LARGE OBLIQUE MOUTH (大口 = large mouth);
+       long falcate dorsal and anal fins;
+       deeply forked caudal; coastal sandy-mud + rocky reef 0–50 m -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(242,105) rotate(-6)" opacity="0.93">
+    <!-- Body: elongated, slightly compressed -->
+    <ellipse cx="0" cy="0" rx="34" ry="14" fill="#c0c8d0"/>
+    <!-- Greenish-blue back -->
+    <ellipse cx="-2" cy="-8" rx="28" ry="5" fill="#284858" opacity="0.65"/>
+    <!-- Bright silver flanks -->
+    <ellipse cx="5" cy="2" rx="26" ry="9" fill="#dce8f0" opacity="0.48"/>
+    <!-- Caudal peduncle -->
+    <ellipse cx="-31" cy="0" rx="5" ry="11" fill="#a8b8c0" opacity="0.78"/>
+    <!-- Head: pointed, LARGE oblique mouth -->
+    <ellipse cx="30" cy="0" rx="12" ry="13" fill="#284858"/>
+    <!-- LARGE oblique mouth (gaping) -->
+    <path d="M41,-4 Q45,0 41,6" fill="none" stroke="#18303e" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Eye -->
+    <circle cx="32" cy="-5" r="4.5" fill="#181818"/>
+    <circle cx="33" cy="-6" r="1.6" fill="#406080" opacity="0.40"/>
+    <!-- 5-6 OVAL DARK BLOTCHES along lateral line (diagnostic!) -->
+    <ellipse cx="22"  cy="-2" rx="3.5" ry="5" fill="#202830" opacity="0.75"/>
+    <ellipse cx="10"  cy="-2" rx="3.5" ry="5" fill="#202830" opacity="0.72"/>
+    <ellipse cx="-2"  cy="-1" rx="3.5" ry="5" fill="#202830" opacity="0.70"/>
+    <ellipse cx="-14" cy="-1" rx="3.2" ry="5" fill="#202830" opacity="0.68"/>
+    <ellipse cx="-24" cy="-0.5" rx="3.0" ry="4.5" fill="#202830" opacity="0.65"/>
+    <!-- Long falcate dorsal fin -->
+    <path d="M-2,-14 Q0,-24 4,-27 Q8,-25 12,-18"
+          fill="none" stroke="#2868a0" stroke-width="1.5"/>
+    <path d="M12,-18 Q16,-22 20,-18 Q22,-15 22,-10" fill="none" stroke="#2868a0" stroke-width="1.3"/>
+    <!-- First dorsal (spiny, separate) -->
+    <path d="M22,-10 Q26,-15 28,-16 Q30,-14 30,-10" fill="none" stroke="#2868a0" stroke-width="1.2"/>
+    <!-- Long falcate anal fin (mirrors dorsal) -->
+    <path d="M-2,14 Q0,24 4,27 Q8,25 12,18"
+          fill="none" stroke="#2868a0" stroke-width="1.5"/>
+    <path d="M12,18 Q16,22 20,17 Q22,14 22,10" fill="none" stroke="#2868a0" stroke-width="1.3"/>
+    <!-- Pectoral fin -->
+    <path d="M22,7 Q32,14 36,8" fill="none" stroke="#2868a0" stroke-width="1.3" opacity="0.68"/>
+    <!-- Deeply forked caudal fin -->
+    <path d="M-35,0 L-46,-20" stroke="#2868a0" stroke-width="3.8" stroke-linecap="round" fill="none"/>
+    <path d="M-35,0 L-46, 20" stroke="#2868a0" stroke-width="3.8" stroke-linecap="round" fill="none"/>
+    <path d="M-46,-20 Q-38,0 -46,20" fill="none" stroke="#2868a0" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish 2 (background) -->
+  <g transform="translate(118,128) rotate(-5)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="27" ry="11" fill="#c0c8d0"/>
+    <ellipse cx="-2" cy="-7" rx="22" ry="4.5" fill="#284858" opacity="0.62"/>
+    <ellipse cx="24" cy="0" rx="10" ry="11" fill="#284858"/>
+    <circle cx="25" cy="-4" r="3.8" fill="#181818"/>
+    <!-- Dark blotches -->
+    <ellipse cx="16" cy="-1.5" rx="2.8" ry="4" fill="#202830" opacity="0.68"/>
+    <ellipse cx="6"  cy="-1.5" rx="2.8" ry="4" fill="#202830" opacity="0.65"/>
+    <ellipse cx="-5" cy="-1"   rx="2.8" ry="4" fill="#202830" opacity="0.62"/>
+    <ellipse cx="-14" cy="-1"  rx="2.5" ry="3.8" fill="#202830" opacity="0.58"/>
+    <path d="M0,-11 Q0,-19 2,-20 Q5,-18 8,-14" fill="none" stroke="#2868a0" stroke-width="1.3"/>
+    <path d="M0,11 Q0,19 2,20 Q5,18 8,14" fill="none" stroke="#2868a0" stroke-width="1.3"/>
+    <path d="M-28,0 L-38,-17" stroke="#2868a0" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-28,0 L-38, 17" stroke="#2868a0" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-38,-17 Q-32,0 -38,17" fill="none" stroke="#2868a0" stroke-width="2.0" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish 3 (right) -->
+  <g transform="translate(400,122) rotate(-4)" opacity="0.65">
+    <ellipse cx="0" cy="0" rx="22" ry="9" fill="#c0c8d0"/>
+    <ellipse cx="19" cy="0" rx="8" ry="9.5" fill="#284858"/>
+    <!-- Dark blotches -->
+    <ellipse cx="13" cy="-1" rx="2.2" ry="3.5" fill="#202830" opacity="0.65"/>
+    <ellipse cx="4"  cy="-1" rx="2.2" ry="3.5" fill="#202830" opacity="0.62"/>
+    <ellipse cx="-6" cy="-1" rx="2.0" ry="3.2" fill="#202830" opacity="0.58"/>
+    <circle cx="20" cy="-3" r="3.2" fill="#181818"/>
+    <path d="M-22,0 L-30,-14" stroke="#2868a0" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M-22,0 L-30, 14" stroke="#2868a0" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Depth ruler (0–50 m) -->
+  <line x1="478" y1="7" x2="478" y2="162" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="7"   x2="478" y2="7"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="10"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="58"  x2="478" y2="58"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="61"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">15</text>
+  <line x1="474" y1="110" x2="478" y2="110" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="113" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">30</text>
+  <line x1="474" y1="162" x2="478" y2="162" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="165" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">50</text>
+  <text x="481" y="24" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">砂泥底沿岸・礁石岸・外海獨立礁</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">0–50 m；5–6枚橢圓黑斑沿側線・大口斜裂（診斷）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食魚類・頭足類；鰺科逆鈎鰺屬</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">印度－西太平洋（台灣各沿岸礁區）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

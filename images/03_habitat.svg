@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <!-- 深海水體 -->
+    <linearGradient id="w03" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0%"   stop-color="#183050"/>
+      <stop offset="35%"  stop-color="#0a1828"/>
+      <stop offset="100%" stop-color="#030810"/>
+    </linearGradient>
+    <!-- 礁岩坡：偏暖灰（珊瑚礁石灰岩色調） -->
+    <linearGradient id="r03" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#323228"/>
+      <stop offset="100%" stop-color="#181610"/>
+    </linearGradient>
+    <!-- 淺礁平台（稍亮） -->
+    <linearGradient id="p03" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#3a3a2e"/>
+      <stop offset="100%" stop-color="#28281e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 水體背景 -->
+  <rect width="500" height="195" fill="url(#w03)" rx="6"/>
+
+  <!-- 左上：淺礁平台（0–100m 區域提示） -->
+  <polygon points="0,0 85,0 85,49 0,49" fill="url(#p03)" opacity="0.6"/>
+
+  <!-- 礁岩坡主體（鋸齒上緣，比大陸棚更稜角）
+       礁岩坡：(85,49) → (375,195)，斜角約 26°
+       深海平原：x=375–500，y=195 -->
+  <polygon points="0,49 85,49 375,195 500,195 0,195"
+           fill="url(#r03)"/>
+
+  <!-- 礁岩坡上緣：不規則鋸齒（比沉積物更稜角） -->
+  <polygon points="85,49 375,195 370,195 340,178 318,166 295,157 265,145 238,134 208,122 178,111 148,99 115,87 85,74 85,49"
+           fill="#282818" opacity="0.4"/>
+
+  <!-- 岩石突出物（稜角型） -->
+  <polygon points="138,90 150,77 162,90"   fill="#202016" opacity="0.90"/>
+  <polygon points="165,100 178,86 190,100" fill="#202016" opacity="0.88"/>
+  <polygon points="228,125 242,110 254,125" fill="#1e1e14" opacity="0.85"/>
+  <polygon points="258,138 272,123 286,138" fill="#1e1e14" opacity="0.82"/>
+  <polygon points="318,163 332,148 345,163" fill="#1c1c12" opacity="0.80"/>
+
+  <!-- 礁岩裂縫線（增加石材感） -->
+  <line x1="115" y1="88"  x2="108" y2="100" stroke="#141410" stroke-width="1.5" opacity="0.6"/>
+  <line x1="162" y1="101" x2="155" y2="114" stroke="#141410" stroke-width="1.5" opacity="0.6"/>
+  <line x1="243" y1="128" x2="236" y2="141" stroke="#141410" stroke-width="1.4" opacity="0.55"/>
+  <line x1="296" y1="152" x2="289" y2="165" stroke="#141410" stroke-width="1.3" opacity="0.50"/>
+  <line x1="346" y1="175" x2="340" y2="187" stroke="#141410" stroke-width="1.2" opacity="0.45"/>
+
+  <!-- 岩層紋理線（平行坡面走向） -->
+  <path d="M110,70 Q155,82 200,94 Q240,104 280,114"
+        fill="none" stroke="#3a3828" stroke-width="1.1" opacity="0.50"/>
+  <path d="M148,98 Q195,110 240,122 Q285,133 325,143"
+        fill="none" stroke="#3a3828" stroke-width="1.0" opacity="0.45"/>
+  <path d="M196,127 Q245,138 290,149 Q335,159 370,168"
+        fill="none" stroke="#3a3828" stroke-width="0.9" opacity="0.38"/>
+
+  <!-- 棚坡轉折點標記 -->
+  <circle cx="85" cy="49" r="3.5" fill="#c9a84c" opacity="0.45"/>
+
+  <!-- 水面波紋（極淡） -->
+  <path d="M0,5 Q60,1 120,5 Q180,9 240,5 Q300,1 360,5 Q420,9 480,5"
+        fill="none" stroke="#4a9abc" stroke-width="1" opacity="0.28"/>
+
+  <!-- 主要棲息帶範圍線（100–400m）
+       深度尺：0m=y=0, 100m=y=49, 200m=y=97, 300m=y=146, 400m=y=195 -->
+  <line x1="0" y1="49"  x2="455" y2="49"
+        stroke="#c9a84c" stroke-width="0.7" stroke-dasharray="5,3" opacity="0.38"/>
+  <rect x="0" y="49" width="455" height="146" fill="#c9a84c" opacity="0.018"/>
+
+  <!-- 海雪粒子 -->
+  <circle cx="50"  cy="18"  r="1.1" fill="#fff" opacity="0.28"/>
+  <circle cx="140" cy="10"  r="0.9" fill="#fff" opacity="0.25"/>
+  <circle cx="210" cy="32"  r="1.0" fill="#fff" opacity="0.25"/>
+  <circle cx="320" cy="16"  r="0.8" fill="#fff" opacity="0.22"/>
+  <circle cx="410" cy="40"  r="1.0" fill="#fff" opacity="0.22"/>
+  <circle cx="160" cy="62"  r="0.8" fill="#fff" opacity="0.18"/>
+  <circle cx="280" cy="45"  r="0.8" fill="#fff" opacity="0.18"/>
+
+  <!-- 魚 1：約 200m（斜坡面上方 ~14px，沿坡向游）
+       斜坡在 x=163 時 y = 49 + 146*(163-85)/290 = 49+39.3 = 88.3 → 魚在 y≈75 -->
+  <g transform="translate(162,74) rotate(26)" opacity="0.92">
+    <!-- 身體：修長笛鯛型 -->
+    <ellipse cx="0" cy="0" rx="28" ry="9" fill="#8a2020"/>
+    <!-- 背鰭 -->
+    <path d="M-10,-9 Q0,-18 15,-9" fill="none" stroke="#6a1818" stroke-width="1.5"/>
+    <!-- 尾鰭 -->
+    <path d="M-28,0 L-40,-12" stroke="#6a1818" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-28,0 L-40, 12" stroke="#6a1818" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- 尾鰭上葉絲狀延伸（最大特徵！） -->
+    <path d="M-40,-12 L-68,-34" stroke="#6a1818" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+    <!-- 胸鰭 -->
+    <path d="M10,6 Q18,14 24,8" fill="none" stroke="#6a1818" stroke-width="1.2" opacity="0.8"/>
+    <!-- 眼 -->
+    <circle cx="24" cy="-1" r="3.5" fill="#1a0808"/>
+    <circle cx="25" cy="-1.5" r="1.1" fill="#6a4040" opacity="0.5"/>
+    <!-- 側線 -->
+    <path d="M-18,-3 Q0,-2 22,-3" fill="none" stroke="#b03030" stroke-width="0.7" opacity="0.5"/>
+  </g>
+
+  <!-- 魚 2：約 290m（深一點，沿坡）
+       斜坡在 x=263 時 y = 49 + 146*(263-85)/290 = 49+89.6 = 138.6 → 魚在 y≈126 -->
+  <g transform="translate(260,125) rotate(26)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="22" ry="7" fill="#8a2020"/>
+    <path d="M-8,-7 Q0,-14 12,-7" fill="none" stroke="#6a1818" stroke-width="1.3"/>
+    <path d="M-22,0 L-32,-9" stroke="#6a1818" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-22,0 L-32, 9" stroke="#6a1818" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <!-- 絲狀延伸 -->
+    <path d="M-32,-9 L-55,-26" stroke="#6a1818" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+    <circle cx="18" cy="-1" r="2.8" fill="#1a0808"/>
+    <circle cx="19" cy="-1.5" r="0.8" fill="#6a4040" opacity="0.5"/>
+  </g>
+
+  <!-- 深度尺 -->
+  <line x1="478" y1="0"   x2="478" y2="195" stroke="#8a9bb0" stroke-width="1" opacity="0.5"/>
+  <line x1="474" y1="0"   x2="478" y2="0"   stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="49"  x2="478" y2="49"  stroke="#c9a84c" stroke-width="1.2"/>
+  <line x1="474" y1="97"  x2="478" y2="97"  stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="146" x2="478" y2="146" stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="195" x2="478" y2="195" stroke="#8a9bb0" stroke-width="1"/>
+  <text x="480" y="9"   fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">  0 m</text>
+  <text x="480" y="53"  fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">100 m</text>
+  <text x="480" y="101" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">200 m</text>
+  <text x="480" y="150" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">300 m</text>
+  <text x="480" y="192" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">400 m</text>
+
+  <!-- 標籤 -->
+  <text x="8"   y="32"  fill="#9ab0c8" font-size="9"   font-family="Microsoft JhengHei,sans-serif">淺礁區</text>
+  <text x="102" y="44"  fill="#c9a84c" font-size="9.5" font-weight="bold" font-family="Microsoft JhengHei,sans-serif">深海礁岩陡坡</text>
+  <line x1="100" y1="47" x2="90" y2="56" stroke="#c9a84c" stroke-width="0.9" stroke-dasharray="2,2" opacity="0.6"/>
+  <text x="8"   y="90"  fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">主要棲息帶</text>
+  <text x="8"   y="101" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">100–400 m</text>
+
+  <!-- 框線 -->
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

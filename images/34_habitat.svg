@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea34" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1060a0"/>
+      <stop offset="30%" stop-color="#083870"/>
+      <stop offset="70%" stop-color="#041830"/>
+      <stop offset="100%" stop-color="#020810"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep open ocean -->
+  <rect width="500" height="195" fill="url(#sea34)" rx="6"/>
+
+  <!-- Surface shimmer -->
+  <path d="M0,8 Q80,5 165,8 Q250,11 335,8 Q415,5 500,8"
+        fill="none" stroke="#70d0f0" stroke-width="1.5" opacity="0.65"/>
+  <path d="M0,18 Q90,13 185,18 Q280,23 370,18 Q440,13 500,18"
+        fill="none" stroke="#50b8d8" stroke-width="1.0" opacity="0.48"/>
+
+  <!-- Thermocline boundary -->
+  <path d="M0,82 Q120,78 240,82 Q360,86 500,82"
+        fill="none" stroke="#3080b0" stroke-width="1.0" opacity="0.28" stroke-dasharray="8,4"/>
+  <text x="12" y="80" fill="#4a80a8" font-size="7" font-family="Microsoft JhengHei,sans-serif" opacity="0.60">— 躍溫層 —</text>
+
+  <!-- Marine snow -->
+  <circle cx="80"  cy="50"  r="0.9" fill="#ffffff" opacity="0.18"/>
+  <circle cx="200" cy="38"  r="1.0" fill="#ffffff" opacity="0.16"/>
+  <circle cx="360" cy="55"  r="0.8" fill="#ffffff" opacity="0.17"/>
+  <circle cx="440" cy="38"  r="0.9" fill="#ffffff" opacity="0.16"/>
+  <circle cx="120" cy="100" r="0.7" fill="#ffffff" opacity="0.12"/>
+  <circle cx="300" cy="108" r="0.8" fill="#ffffff" opacity="0.13"/>
+
+  <!-- Fish 1: 立翅旗魚 (Istiompax indica, Indo-Pacific blue marlin) -->
+  <!-- Massive elongated torpedo body, very long bill, ultra-tall first dorsal, crescent tail -->
+  <g transform="translate(240,78) rotate(-6)" opacity="0.93">
+    <!-- Body: massive elongated torpedo -->
+    <ellipse cx="0" cy="0" rx="60" ry="15" fill="#1a3060"/>
+    <!-- Blue-black upper flank -->
+    <ellipse cx="0" cy="-8" rx="53" ry="6" fill="#102040" opacity="0.75"/>
+    <!-- Silver-white belly -->
+    <ellipse cx="6" cy="8" rx="46" ry="5.5" fill="#d0e0f0" opacity="0.28"/>
+    <!-- Lateral line -->
+    <path d="M52,2 Q18,0 -38,2" fill="none" stroke="#3060a0" stroke-width="0.8" opacity="0.42"/>
+    <!-- Bill (long, pointed, diagnostic feature) -->
+    <path d="M60,0 L100,-3" stroke="#283858" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- Ultra-tall first dorsal fin (DIAGNOSTIC: nearly vertical, very tall) -->
+    <path d="M38,-15 L42,-50 Q48,-54 55,-44 L57,-15" fill="#1a2848" stroke="#102030" stroke-width="0.5"/>
+    <!-- Second dorsal (small, near tail) -->
+    <path d="M-22,-15 Q-16,-21 -10,-15" fill="none" stroke="#283858" stroke-width="1.2"/>
+    <!-- Anal fin (mirror of second dorsal) -->
+    <path d="M-22,15 Q-16,21 -10,15" fill="none" stroke="#283858" stroke-width="1.2"/>
+    <!-- Deep forked crescent tail -->
+    <path d="M-60,0 L-80,-32" stroke="#283858" stroke-width="4.0" stroke-linecap="round" fill="none"/>
+    <path d="M-60,0 L-80, 32" stroke="#283858" stroke-width="4.0" stroke-linecap="round" fill="none"/>
+    <!-- Narrow caudal peduncle keels -->
+    <path d="M-56,-5 L-60,0 L-56,5" fill="none" stroke="#1a2848" stroke-width="2.5"/>
+    <!-- Pectoral fin (large, sickle-shaped) -->
+    <path d="M44,10 Q58,24 66,13" fill="none" stroke="#283858" stroke-width="1.5" opacity="0.8"/>
+    <!-- Eye -->
+    <circle cx="56" cy="-2" r="4.5" fill="#181818"/>
+    <circle cx="57.5" cy="-3" r="1.5" fill="#4060a0" opacity="0.5"/>
+  </g>
+
+  <!-- Depth ruler (right side) — 0-200m -->
+  <line x1="478" y1="8" x2="478" y2="172" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="49"  x2="478" y2="49"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="52"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">50</text>
+  <line x1="474" y1="90"  x2="478" y2="90"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="93"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">100</text>
+  <line x1="474" y1="131" x2="478" y2="131" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="134" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">150</text>
+  <line x1="474" y1="172" x2="478" y2="172" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="175" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">200</text>
+  <text x="481" y="25" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">大洋中上層／躍溫層以上</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">0–200 m（最深 915 m）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">高速迴游；捕食鯖・鮪幼魚及頭足類</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">印度—太平洋熱帶及亞熱帶（台灣東部延繩釣）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

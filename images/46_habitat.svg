@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea46" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1878b8"/>
+      <stop offset="40%" stop-color="#0e5890"/>
+      <stop offset="80%" stop-color="#063848"/>
+      <stop offset="100%" stop-color="#031c24"/>
+    </linearGradient>
+    <linearGradient id="rock46" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#484e58"/>
+      <stop offset="100%" stop-color="#1e2228"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Coastal to open water, mid-water pelagic -->
+  <rect width="500" height="195" fill="url(#sea46)" rx="6"/>
+
+  <!-- Surface shimmer -->
+  <path d="M0,7 Q80,4 165,7 Q250,10 335,7 Q415,4 500,7"
+        fill="none" stroke="#68d0f0" stroke-width="1.3" opacity="0.52"/>
+
+  <!-- Light shafts -->
+  <line x1="160" y1="7" x2="132" y2="158" stroke="#c8eeff" stroke-width="12" opacity="0.055"/>
+  <line x1="390" y1="7" x2="365" y2="158" stroke="#c8eeff" stroke-width="8"  opacity="0.038"/>
+
+  <!-- Rocky reef bottom (faint, deep) -->
+  <path d="M0,165 Q50,155 110,163 Q180,170 260,160 Q340,150 420,160 L500,163 L500,195 L0,195 Z"
+        fill="url(#rock46)"/>
+  <ellipse cx="80"  cy="165" rx="25" ry="8" fill="#3a4048" opacity="0.60"/>
+  <ellipse cx="240" cy="160" rx="22" ry="7" fill="#3a4048" opacity="0.55"/>
+  <ellipse cx="400" cy="162" rx="20" ry="7" fill="#3a4048" opacity="0.52"/>
+
+  <!-- Marine snow (mid-water) -->
+  <circle cx="70"  cy="60" r="0.8" fill="#ffffff" opacity="0.12"/>
+  <circle cx="230" cy="45" r="0.8" fill="#ffffff" opacity="0.11"/>
+  <circle cx="360" cy="75" r="0.8" fill="#ffffff" opacity="0.11"/>
+
+  <!-- Fish: 無斑圓鰺 Decapterus kurroides (Redtail scad / 紅尾冬) -->
+  <!-- Carangidae: slender fusiform scad body;
+       KEY: red/orange-red caudal fin and caudal peduncle (紅尾 = red tail);
+       small finlet after dorsal fin and after anal fin (Decapterus diagnostic);
+       dark scutes along lateral line near tail;
+       greenish-blue back, silvery sides; mid-water schooling -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(240,105) rotate(-5)" opacity="0.93">
+    <!-- Body: slender fusiform -->
+    <ellipse cx="0" cy="0" rx="33" ry="10" fill="#b8c8d8"/>
+    <!-- Dark blue-green back -->
+    <ellipse cx="-2" cy="-6" rx="28" ry="4" fill="#204868" opacity="0.72"/>
+    <!-- Silver sides -->
+    <ellipse cx="4" cy="2" rx="26" ry="6" fill="#d8e8f0" opacity="0.44"/>
+    <!-- Caudal peduncle: REDDISH-ORANGE (diagnostic!) -->
+    <ellipse cx="-30" cy="0" rx="5" ry="8" fill="#c04020" opacity="0.85"/>
+    <!-- Head -->
+    <ellipse cx="29" cy="0" rx="8" ry="9" fill="#2a5878"/>
+    <!-- Small terminal mouth -->
+    <path d="M36,0 Q39,2 36,4" fill="none" stroke="#183848" stroke-width="1.0" stroke-linecap="round"/>
+    <!-- Eye -->
+    <circle cx="30" cy="-3" r="3.5" fill="#181818"/>
+    <circle cx="31" cy="-4" r="1.2" fill="#5090b0" opacity="0.38"/>
+    <!-- Dorsal fin (first, small spiny) -->
+    <path d="M10,-10 Q6,-16 0,-17 Q-5,-16 -8,-12" fill="none" stroke="#4878a0" stroke-width="1.3"/>
+    <!-- Second dorsal fin (soft-rayed, smaller) -->
+    <path d="M-12,-10 Q-16,-14 -20,-13 Q-22,-11 -22,-8" fill="none" stroke="#4878a0" stroke-width="1.2"/>
+    <!-- Finlet after second dorsal (single small finlet — Decapterus diagnostic!) -->
+    <line x1="-26" y1="-8" x2="-25" y2="-4" stroke="#c04020" stroke-width="2.0" stroke-linecap="round"/>
+    <!-- Anal fin -->
+    <path d="M-6,10 Q-12,15 -18,14 Q-22,12 -22,8" fill="none" stroke="#4878a0" stroke-width="1.1"/>
+    <!-- Finlet after anal fin -->
+    <line x1="-26" y1="8" x2="-25" y2="4" stroke="#c04020" stroke-width="2.0" stroke-linecap="round"/>
+    <!-- Pectoral fin -->
+    <path d="M22,5 Q30,12 34,6" fill="none" stroke="#4878a0" stroke-width="1.2" opacity="0.70"/>
+    <!-- Scutes (enlarged lateral line scales near tail) -->
+    <path d="M-18,-2 Q-22,-2 -26,-1 Q-28,-0.5 -30,0" fill="none" stroke="#8090a0" stroke-width="1.5" opacity="0.50"/>
+    <!-- Caudal fin: RED-ORANGE forked (diagnostic!) -->
+    <path d="M-34,0 L-44,-19" stroke="#c04020" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-34,0 L-44, 19" stroke="#c04020" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-44,-19 Q-38,0 -44,19" fill="none" stroke="#c04020" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish 2 (background) -->
+  <g transform="translate(118,128) rotate(-4)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="26" ry="8" fill="#b8c8d8"/>
+    <ellipse cx="-2" cy="-5" rx="22" ry="3.5" fill="#204868" opacity="0.68"/>
+    <ellipse cx="23" cy="0" rx="6.5" ry="7.5" fill="#2a5878"/>
+    <!-- Reddish caudal peduncle -->
+    <ellipse cx="-24" cy="0" rx="4" ry="6.5" fill="#c04020" opacity="0.80"/>
+    <circle cx="24" cy="-2.5" r="2.8" fill="#181818"/>
+    <path d="M8,-8 Q4,-13 0,-14 Q-4,-13 -6,-10" fill="none" stroke="#4878a0" stroke-width="1.1"/>
+    <!-- Finlet -->
+    <line x1="-20" y1="-6" x2="-19" y2="-3" stroke="#c04020" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Red caudal -->
+    <path d="M-28,0 L-36,-16" stroke="#c04020" stroke-width="3.0" stroke-linecap="round" fill="none"/>
+    <path d="M-28,0 L-36, 16" stroke="#c04020" stroke-width="3.0" stroke-linecap="round" fill="none"/>
+    <path d="M-36,-16 Q-30,0 -36,16" fill="none" stroke="#c04020" stroke-width="1.9" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish 3 (right) -->
+  <g transform="translate(398,120) rotate(-6)" opacity="0.62">
+    <ellipse cx="0" cy="0" rx="22" ry="7" fill="#b8c8d8"/>
+    <ellipse cx="19" cy="0" rx="5.5" ry="7" fill="#2a5878"/>
+    <ellipse cx="-20" cy="0" rx="3.5" ry="5.5" fill="#c04020" opacity="0.78"/>
+    <circle cx="20" cy="-2" r="2.4" fill="#181818"/>
+    <!-- Red caudal -->
+    <path d="M-23,0 L-30,-13" stroke="#c04020" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <path d="M-23,0 L-30, 13" stroke="#c04020" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Depth ruler (0–300 m) -->
+  <line x1="478" y1="7" x2="478" y2="165" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="7"   x2="478" y2="7"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="10"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="60"  x2="478" y2="60"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="63"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">100</text>
+  <line x1="474" y1="114" x2="478" y2="114" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="117" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">200</text>
+  <line x1="474" y1="165" x2="478" y2="165" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="168" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">300</text>
+  <text x="481" y="24" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">沿海中水層・開放水域成群洄游</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">0–300 m；紅色尾鰭・尾柄・背後小鰭（診斷）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食浮游動物；鰺科圓鰺屬</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">印度－西太平洋（台灣東部礁坡海域）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

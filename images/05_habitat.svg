@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="h-water-05" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a9cb8"/>
+      <stop offset="100%" stop-color="#1e5870"/>
+    </linearGradient>
+    <linearGradient id="h-sky-05" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3050"/>
+      <stop offset="100%" stop-color="#2a5878"/>
+    </linearGradient>
+    <linearGradient id="h-mtn-05" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a3040"/>
+      <stop offset="100%" stop-color="#1a2030"/>
+    </linearGradient>
+    <linearGradient id="h-gravel-05" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6a6858"/>
+      <stop offset="100%" stop-color="#484840"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky / above-water background -->
+  <rect width="500" height="195" fill="url(#h-sky-05)" rx="6"/>
+
+  <!-- Mountain silhouettes at top -->
+  <!-- Peak 1 (left) -->
+  <polygon points="0,68 55,10 110,68" fill="url(#h-mtn-05)"/>
+  <!-- Peak 2 (center) -->
+  <polygon points="90,68 165,5 240,68" fill="#222830" opacity="0.9"/>
+  <!-- Peak 3 (right, partial) -->
+  <polygon points="300,68 390,18 460,68" fill="#1e2430" opacity="0.85"/>
+  <!-- Snow caps -->
+  <polygon points="55,10 45,28 65,28" fill="#d8e8f0" opacity="0.5"/>
+  <polygon points="165,5 152,25 178,25" fill="#d8e8f0" opacity="0.5"/>
+  <polygon points="390,18 378,36 402,36" fill="#d8e8f0" opacity="0.45"/>
+
+  <!-- Water surface -->
+  <rect x="0" y="68" width="500" height="127" fill="url(#h-water-05)"/>
+
+  <!-- Water flow lines (stream movement) -->
+  <path d="M0,85  Q60,80 120,86 Q180,92 240,85 Q300,78 360,86 Q420,94 500,85"
+        fill="none" stroke="#7ad0e8" stroke-width="1.2" opacity="0.5"/>
+  <path d="M0,102 Q50,97 110,104 Q170,111 230,103 Q295,95  360,104 Q420,112 500,103"
+        fill="none" stroke="#7ad0e8" stroke-width="1.0" opacity="0.4"/>
+  <path d="M0,122 Q70,116 140,123 Q210,130 280,121 Q350,112 420,122 Q460,127 500,121"
+        fill="none" stroke="#6ac0d8" stroke-width="0.9" opacity="0.35"/>
+
+  <!-- Gravel/boulder bottom -->
+  <path d="M0,168 Q50,162 100,168 Q150,174 210,166 Q270,158 330,166 Q390,174 450,166 Q475,163 500,167 L500,195 L0,195 Z"
+        fill="url(#h-gravel-05)"/>
+
+  <!-- Individual boulders/cobbles on bottom -->
+  <ellipse cx="40"  cy="172" rx="14" ry="8"  fill="#585850" opacity="0.85"/>
+  <ellipse cx="80"  cy="176" rx="10" ry="6"  fill="#606058" opacity="0.80"/>
+  <ellipse cx="125" cy="171" rx="16" ry="9"  fill="#525048" opacity="0.85"/>
+  <ellipse cx="175" cy="175" rx="11" ry="7"  fill="#5a5850" opacity="0.80"/>
+  <ellipse cx="225" cy="170" rx="18" ry="10" fill="#4e4c44" opacity="0.85"/>
+  <ellipse cx="275" cy="174" rx="12" ry="7"  fill="#585854" opacity="0.80"/>
+  <ellipse cx="320" cy="170" rx="15" ry="9"  fill="#525048" opacity="0.85"/>
+  <ellipse cx="368" cy="175" rx="9"  ry="5"  fill="#606060" opacity="0.75"/>
+  <ellipse cx="410" cy="171" rx="14" ry="8"  fill="#4e4c44" opacity="0.85"/>
+  <ellipse cx="455" cy="174" rx="11" ry="6"  fill="#585850" opacity="0.80"/>
+  <!-- Smaller pebbles -->
+  <ellipse cx="55"  cy="180" rx="6"  ry="4"  fill="#6a6860" opacity="0.7"/>
+  <ellipse cx="150" cy="180" rx="7"  ry="4"  fill="#646460" opacity="0.7"/>
+  <ellipse cx="248" cy="178" rx="5"  ry="3"  fill="#686860" opacity="0.65"/>
+  <ellipse cx="345" cy="180" rx="6"  ry="4"  fill="#646060" opacity="0.7"/>
+  <ellipse cx="440" cy="179" rx="7"  ry="4"  fill="#686060" opacity="0.65"/>
+
+  <!-- Fish 1: Oncorhynchus masou — streamlined salmon-trout body -->
+  <g transform="translate(220,118) rotate(-6)" opacity="0.90">
+    <!-- Body: streamlined -->
+    <ellipse cx="0" cy="0" rx="30" ry="9" fill="#5a6830"/>
+    <!-- Pink-red lateral stripe (key feature!) -->
+    <path d="M-22,-1 Q-5,3 22,-1" fill="none" stroke="#c05060" stroke-width="3.5" opacity="0.55"/>
+    <!-- Parr marks (oval spots along side) -->
+    <ellipse cx="-18" cy="-1" rx="4" ry="6" fill="#3e4820" opacity="0.45"/>
+    <ellipse cx=" -6" cy="-1" rx="4" ry="6" fill="#3e4820" opacity="0.45"/>
+    <ellipse cx="  7" cy="-1" rx="4" ry="6" fill="#3e4820" opacity="0.45"/>
+    <ellipse cx=" 18" cy="-1" rx="3.5" ry="5.5" fill="#3e4820" opacity="0.40"/>
+    <!-- Dorsal fin -->
+    <path d="M-8,-9 Q0,-17 14,-9" fill="none" stroke="#485828" stroke-width="1.5"/>
+    <!-- Adipose fin (small bump near tail — key feature!) -->
+    <path d="M-22,-3 Q-26,-9 -20,-6" fill="#486030" stroke="#384820" stroke-width="0.8"/>
+    <!-- Forked tail -->
+    <path d="M-30,0 L-44,-12" stroke="#485828" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-30,0 L-44, 12" stroke="#485828" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- Pectoral fin -->
+    <path d="M12,5 Q20,12 26,7" fill="none" stroke="#485828" stroke-width="1.3" opacity="0.8"/>
+    <!-- Eye -->
+    <circle cx="26" cy="-1" r="3.5" fill="#1a1a08"/>
+    <circle cx="27" cy="-1.5" r="1.2" fill="#6a7830" opacity="0.5"/>
+    <!-- Anal fin -->
+    <path d="M-14,9 Q-4,16 8,9" fill="none" stroke="#485828" stroke-width="1.2"/>
+  </g>
+
+  <!-- Fish 2: smaller, lower in stream -->
+  <g transform="translate(360,132) rotate(-4)" opacity="0.82">
+    <ellipse cx="0" cy="0" rx="24" ry="7.5" fill="#5a6830"/>
+    <path d="M-18,-1 Q-4,2.5 18,-1" fill="none" stroke="#c05060" stroke-width="2.8" opacity="0.55"/>
+    <!-- Parr marks -->
+    <ellipse cx="-14" cy="-1" rx="3.2" ry="5" fill="#3e4820" opacity="0.42"/>
+    <ellipse cx=" -4" cy="-1" rx="3.2" ry="5" fill="#3e4820" opacity="0.42"/>
+    <ellipse cx="  7" cy="-1" rx="3"   ry="4.5" fill="#3e4820" opacity="0.38"/>
+    <ellipse cx=" 16" cy="-1" rx="2.8" ry="4.5" fill="#3e4820" opacity="0.35"/>
+    <path d="M-6,-7.5 Q1,-14 11,-7.5" fill="none" stroke="#485828" stroke-width="1.3"/>
+    <!-- Adipose fin -->
+    <path d="M-17,-3 Q-21,-8 -16,-5" fill="#486030" stroke="#384820" stroke-width="0.7"/>
+    <path d="M-24,0 L-35,-9" stroke="#485828" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-24,0 L-35,  9" stroke="#485828" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="20" cy="-1" r="2.8" fill="#1a1a08"/>
+  </g>
+
+  <!-- Labels — no depth ruler, use elevation instead -->
+  <text x="12"  y="18" fill="#8a9bb0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">高山溪流 ／ 日本山地</text>
+  <text x="12"  y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">標高 1,500 m＋</text>
+  <text x="12"  y="56" fill="#8a9bb0" font-size="9"   font-family="Microsoft JhengHei,sans-serif">水溫 15℃ 以下</text>
+  <text x="280" y="88" fill="#7ad0e8" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">清澈冷涼淡水</text>
+  <text x="240" y="187" fill="#909888" font-size="9"  font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">礫石底質</text>
+
+  <!-- Frame -->
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

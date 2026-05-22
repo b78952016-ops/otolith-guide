@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="w01" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0%"   stop-color="#1a3a5c"/>
+      <stop offset="35%"  stop-color="#0a1828"/>
+      <stop offset="100%" stop-color="#020610"/>
+    </linearGradient>
+    <linearGradient id="r01" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#2e3a4a"/>
+      <stop offset="100%" stop-color="#14181e"/>
+    </linearGradient>
+    <linearGradient id="shelf01" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#303e50"/>
+      <stop offset="100%" stop-color="#222e3c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 水體背景 -->
+  <rect width="500" height="195" fill="url(#w01)" rx="6"/>
+
+  <!-- 左上：大陸棚淺水提示 -->
+  <polygon points="0,0 95,0 95,58 0,58" fill="#1a3050" opacity="0.5"/>
+
+  <!-- 大陸棚斜坡主體（緩坡 ~18°）
+       斜坡面：(70,55) → (470,185) -->
+  <polygon points="0,55 70,55 470,185 500,185 500,195 0,195"
+           fill="url(#r01)"/>
+
+  <!-- 大陸棚頂面 -->
+  <polygon points="0,50 70,50 70,60 0,60" fill="url(#shelf01)" opacity="0.9"/>
+
+  <!-- 斜坡面岩層紋理（平行坡面走向） -->
+  <path d="M127,84 Q172,97 217,111 Q257,124 292,136"
+        fill="none" stroke="#3a4858" stroke-width="1.2" opacity="0.55"/>
+  <path d="M158,104 Q203,118 248,132 Q291,146 333,159"
+        fill="none" stroke="#3a4858" stroke-width="1.2" opacity="0.50"/>
+  <path d="M198,127 Q245,141 290,156 Q315,164 330,169"
+        fill="none" stroke="#3a4858" stroke-width="1" opacity="0.40"/>
+
+  <!-- 斜坡面岩石突出物 -->
+  <polygon points="175,88  185,76  194,88"  fill="#252c38" opacity="0.85"/>
+  <polygon points="258,117 268,106 277,117" fill="#252c38" opacity="0.85"/>
+  <polygon points="338,148 348,137 357,148" fill="#252c38" opacity="0.85"/>
+  <polygon points="215,104 222,96  229,104" fill="#252c38" opacity="0.75"/>
+  <polygon points="295,133 302,125 309,133" fill="#252c38" opacity="0.75"/>
+
+  <!-- 大陸棚轉折點標記 -->
+  <circle cx="70" cy="56" r="3.5" fill="#c9a84c" opacity="0.5"/>
+
+  <!-- 水面波紋 -->
+  <path d="M0,6 Q60,2 120,6 Q180,10 240,6 Q300,2 360,6 Q420,10 480,6 Q495,5 500,6"
+        fill="none" stroke="#4a9abc" stroke-width="1" opacity="0.3"/>
+
+  <!-- 主要棲息帶範圍線（200–500 m） -->
+  <line x1="0" y1="65"  x2="455" y2="65"
+        stroke="#c9a84c" stroke-width="0.7" stroke-dasharray="5,3" opacity="0.38"/>
+  <line x1="0" y1="162" x2="455" y2="162"
+        stroke="#c9a84c" stroke-width="0.7" stroke-dasharray="5,3" opacity="0.25"/>
+  <rect x="0" y="65" width="455" height="97" fill="#c9a84c" opacity="0.025"/>
+
+  <!-- 海雪粒子 -->
+  <circle cx="55"  cy="22"  r="1.2" fill="#fff" opacity="0.32"/>
+  <circle cx="135" cy="11"  r="0.9" fill="#fff" opacity="0.28"/>
+  <circle cx="195" cy="35"  r="1.0" fill="#fff" opacity="0.26"/>
+  <circle cx="310" cy="18"  r="0.8" fill="#fff" opacity="0.24"/>
+  <circle cx="415" cy="45"  r="1.0" fill="#fff" opacity="0.24"/>
+  <circle cx="145" cy="72"  r="0.8" fill="#fff" opacity="0.20"/>
+  <circle cx="235" cy="50"  r="0.9" fill="#fff" opacity="0.18"/>
+  <circle cx="375" cy="36"  r="0.7" fill="#fff" opacity="0.18"/>
+  <circle cx="80"  cy="80"  r="0.8" fill="#fff" opacity="0.15"/>
+
+  <!-- 魚 1（約 280m，沿坡面游，rotate 改為 18°） -->
+  <g transform="translate(215,88) rotate(18)" opacity="0.90">
+    <ellipse cx="0" cy="0" rx="26" ry="12" fill="#9a6840"/>
+    <circle cx="20" cy="-2" r="8.5" fill="#160a02"/>
+    <circle cx="22" cy="-3" r="3.5" fill="#301808" opacity="0.9"/>
+    <circle cx="23" cy="-4" r="1.5" fill="#6a8090" opacity="0.55"/>
+    <path d="M-6,-12 Q4,-21 15,-12" fill="none" stroke="#7a5030" stroke-width="1.5"/>
+    <path d="M-26,0 L-38,-11" stroke="#7a5030" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-26,0 L-38, 11" stroke="#7a5030" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M8,8 Q16,16 23,11" fill="none" stroke="#7a5030" stroke-width="1.2" opacity="0.7"/>
+  </g>
+
+  <!-- 魚 2（約 380m） -->
+  <g transform="translate(345,130) rotate(18)" opacity="0.78">
+    <ellipse cx="0" cy="0" rx="20" ry="9" fill="#9a6840"/>
+    <circle cx="15" cy="-1" r="6.5" fill="#160a02"/>
+    <circle cx="17" cy="-2" r="2.5" fill="#301808" opacity="0.9"/>
+    <circle cx="18" cy="-2.5" r="1.0" fill="#6a8090" opacity="0.5"/>
+    <path d="M-4,-9 Q4,-16 13,-9" fill="none" stroke="#7a5030" stroke-width="1.3"/>
+    <path d="M-20,0 L-30,-8" stroke="#7a5030" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-20,0 L-30, 8" stroke="#7a5030" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- 深度尺 -->
+  <line x1="478" y1="0"   x2="478" y2="195" stroke="#8a9bb0" stroke-width="1" opacity="0.5"/>
+  <line x1="474" y1="0"   x2="478" y2="0"   stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="65"  x2="478" y2="65"  stroke="#c9a84c" stroke-width="1.2"/>
+  <line x1="474" y1="130" x2="478" y2="130" stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="195" x2="478" y2="195" stroke="#8a9bb0" stroke-width="1"/>
+  <text x="480" y="9"   fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">  0 m</text>
+  <text x="480" y="69"  fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">200 m</text>
+  <text x="480" y="134" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">400 m</text>
+  <text x="480" y="192" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">600 m</text>
+
+  <!-- 標籤 -->
+  <text x="8"  y="40" fill="#9ab0c8" font-size="9"   font-family="Microsoft JhengHei,sans-serif">大陸棚</text>
+  <text x="88" y="60" fill="#c9a84c" font-size="9.5" font-weight="bold" font-family="Microsoft JhengHei,sans-serif">大陸棚斜坡</text>
+  <line x1="86" y1="63" x2="75" y2="72" stroke="#c9a84c" stroke-width="0.9" stroke-dasharray="2,2" opacity="0.6"/>
+  <text x="8"  y="104" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">主要棲息帶</text>
+  <text x="8"  y="115" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">200–500 m</text>
+
+  <!-- 框線 -->
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sky53" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#58b0e0"/>
+      <stop offset="100%" stop-color="#3898c8"/>
+    </linearGradient>
+    <linearGradient id="water53" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a9868"/>
+      <stop offset="55%" stop-color="#2a6848"/>
+      <stop offset="100%" stop-color="#1a3828"/>
+    </linearGradient>
+    <linearGradient id="mud53" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#808858"/>
+      <stop offset="100%" stop-color="#505030"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky — flat lowland agricultural landscape -->
+  <rect width="500" height="195" fill="url(#sky53)" rx="6"/>
+
+  <!-- Flat horizon: rice paddies / fish ponds -->
+  <!-- Very flat terrain (unlike mountain streams) -->
+  <!-- Low embankment left -->
+  <rect x="0" y="45" width="80" height="12" fill="#608040" opacity="0.80"/>
+  <rect x="420" y="45" width="80" height="12" fill="#608040" opacity="0.80"/>
+  <!-- Aquatic vegetation at water edges -->
+  <!-- Cattails / bulrushes (left) -->
+  <line x1="20" y1="57" x2="20" y2="32" stroke="#405028" stroke-width="2.5" opacity="0.85"/>
+  <ellipse cx="20" cy="28" rx="3" ry="7" fill="#602818" opacity="0.80"/>
+  <line x1="35" y1="57" x2="35" y2="28" stroke="#405028" stroke-width="2.5" opacity="0.80"/>
+  <ellipse cx="35" cy="24" rx="3" ry="8" fill="#602818" opacity="0.78"/>
+  <line x1="50" y1="57" x2="50" y2="35" stroke="#405028" stroke-width="2.5" opacity="0.75"/>
+  <ellipse cx="50" cy="31" rx="2.5" ry="6" fill="#602818" opacity="0.75"/>
+  <!-- Cattails (right) -->
+  <line x1="480" y1="57" x2="480" y2="30" stroke="#405028" stroke-width="2.5" opacity="0.85"/>
+  <ellipse cx="480" cy="26" rx="3" ry="7" fill="#602818" opacity="0.80"/>
+  <line x1="465" y1="57" x2="465" y2="26" stroke="#405028" stroke-width="2.5" opacity="0.80"/>
+  <ellipse cx="465" cy="22" rx="3" ry="8" fill="#602818" opacity="0.78"/>
+  <line x1="450" y1="57" x2="450" y2="32" stroke="#405028" stroke-width="2.5" opacity="0.75"/>
+  <ellipse cx="450" cy="28" rx="2.5" ry="6" fill="#602818" opacity="0.75"/>
+  <!-- Water hyacinth patches -->
+  <ellipse cx="90"  cy="63" rx="18" ry="7" fill="#5a9048" opacity="0.70"/>
+  <ellipse cx="420" cy="65" rx="18" ry="7" fill="#5a9048" opacity="0.70"/>
+  <ellipse cx="200" cy="66" rx="14" ry="5" fill="#6a9850" opacity="0.55"/>
+  <ellipse cx="320" cy="64" rx="12" ry="5" fill="#6a9850" opacity="0.52"/>
+
+  <!-- Shallow murky pond/channel water -->
+  <rect x="0" y="57" width="500" height="138" fill="url(#water53)"/>
+
+  <!-- Calm surface ripples (still/slow water) -->
+  <path d="M0,62 Q120,58 250,62 Q380,66 500,62" fill="none" stroke="#88c898" stroke-width="1.0" opacity="0.38"/>
+  <path d="M0,75 Q130,71 265,75 Q400,79 500,75" fill="none" stroke="#70b888" stroke-width="0.8" opacity="0.28"/>
+
+  <!-- Surface reflected patches (still water) -->
+  <ellipse cx="150" cy="67" rx="40" ry="4" fill="#68b888" opacity="0.12"/>
+  <ellipse cx="360" cy="70" rx="35" ry="4" fill="#68b888" opacity="0.10"/>
+
+  <!-- Muddy bottom (very shallow, 0.5-1m) -->
+  <path d="M0,160 Q80,156 160,160 Q240,164 320,158 Q400,152 480,158 Q490,159 500,159 L500,195 L0,195 Z"
+        fill="url(#mud53)"/>
+  <path d="M15,166 Q65,164 115,166" fill="none" stroke="#909060" stroke-width="0.7" opacity="0.42"/>
+  <path d="M165,168 Q215,166 265,168" fill="none" stroke="#909060" stroke-width="0.7" opacity="0.40"/>
+  <path d="M310,166 Q360,164 410,166" fill="none" stroke="#909060" stroke-width="0.7" opacity="0.40"/>
+
+  <!-- Fish: 食蚊魚 (Gambusia affinis) — VERY SMALL fish, mostly at surface -->
+  <!-- Female fish with gravid spot (dark belly area when pregnant) -->
+
+  <!-- School of tiny fish at surface -->
+  <g transform="translate(200,72) rotate(-3)" opacity="0.90">
+    <ellipse cx="0" cy="0" rx="8" ry="3" fill="#908070"/>
+    <ellipse cx="0" cy="-1.5" rx="6.5" ry="1.2" fill="#606050" opacity="0.65"/>
+    <!-- Gravid spot (black belly patch for pregnant female) -->
+    <ellipse cx="-2" cy="1.5" rx="2.5" ry="1.5" fill="#181818" opacity="0.55"/>
+    <!-- Tiny forked tail -->
+    <path d="M-8,0 L-12,-4" stroke="#706060" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M-8,0 L-12, 4" stroke="#706060" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <circle cx="6.5" cy="-0.5" r="1.2" fill="#181818"/>
+  </g>
+
+  <g transform="translate(235,78) rotate(-2)" opacity="0.85">
+    <ellipse cx="0" cy="0" rx="8" ry="2.8" fill="#908070"/>
+    <ellipse cx="-1.5" cy="1.2" rx="2" ry="1.2" fill="#181818" opacity="0.50"/>
+    <path d="M-8,0 L-11,-3.5" stroke="#706060" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+    <path d="M-8,0 L-11, 3.5" stroke="#706060" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+    <circle cx="6.5" cy="0" r="1.1" fill="#181818"/>
+  </g>
+
+  <g transform="translate(262,73) rotate(-4)" opacity="0.82">
+    <ellipse cx="0" cy="0" rx="7" ry="2.5" fill="#908070"/>
+    <ellipse cx="-1.5" cy="1.0" rx="1.8" ry="1.0" fill="#181818" opacity="0.48"/>
+    <path d="M-7,0 L-10,-3" stroke="#706060" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+    <path d="M-7,0 L-10, 3" stroke="#706060" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+    <circle cx="5.5" cy="0" r="1.0" fill="#181818"/>
+  </g>
+
+  <!-- Males (smaller, more slender) -->
+  <g transform="translate(185,80) rotate(-5)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="6" ry="2" fill="#787060"/>
+    <path d="M-6,0 L-9,-2.5" stroke="#606050" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <path d="M-6,0 L-9, 2.5" stroke="#606050" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <circle cx="4.5" cy="0" r="0.9" fill="#181818"/>
+  </g>
+
+  <g transform="translate(300,76) rotate(-3)" opacity="0.78">
+    <ellipse cx="0" cy="0" rx="6.5" ry="2.2" fill="#787060"/>
+    <ellipse cx="-1" cy="0.8" rx="1.5" ry="0.8" fill="#181818" opacity="0.45"/>
+    <path d="M-6.5,0 L-9.5,-2.8" stroke="#606050" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <path d="M-6.5,0 L-9.5, 2.8" stroke="#606050" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <circle cx="5" cy="0" r="0.9" fill="#181818"/>
+  </g>
+
+  <!-- Background school (deeper) -->
+  <g transform="translate(350,95) rotate(-2)" opacity="0.65">
+    <ellipse cx="0" cy="0" rx="7" ry="2.5" fill="#808070"/>
+    <path d="M-7,0 L-10,-3" stroke="#606050" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <path d="M-7,0 L-10, 3" stroke="#606060" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <circle cx="5.5" cy="0" r="1.0" fill="#181818"/>
+  </g>
+
+  <!-- Labels (no depth ruler — very shallow pond) -->
+  <text x="80" y="18" fill="#d0f0ff" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">淡水緩流・池塘・田間渠道</text>
+  <text x="80" y="32" fill="#f0f060" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">表層；可進入半淡鹹水域</text>
+  <text x="80" y="45" fill="#c0e8d0" font-size="9" font-family="Microsoft JhengHei,sans-serif">耐污性強；食孑孓・浮游動物</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">北美原產，台灣1913年引入（世界百大入侵種）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

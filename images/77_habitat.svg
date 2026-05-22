@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sky77" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3878b8"/>
+      <stop offset="100%" stop-color="#2060a0"/>
+    </linearGradient>
+    <linearGradient id="sea77" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1898d0"/>
+      <stop offset="40%" stop-color="#0e70a8"/>
+      <stop offset="100%" stop-color="#063858"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky (above horizon) -->
+  <rect width="500" height="28" fill="url(#sky77)" rx="6"/>
+
+  <!-- Tropical open ocean -->
+  <rect x="0" y="28" width="500" height="167" fill="url(#sea77)"/>
+
+  <!-- Surface -->
+  <path d="M0,28 Q120,24 250,28 Q380,32 500,28"
+        fill="none" stroke="#80e0f8" stroke-width="1.4" opacity="0.58"/>
+  <path d="M0,38 Q90,33 185,38 Q280,43 370,38 Q440,33 500,38"
+        fill="none" stroke="#60c8e8" stroke-width="1.0" opacity="0.44"/>
+
+  <!-- Light shafts -->
+  <line x1="180" y1="28" x2="148" y2="170" stroke="#d0f4ff" stroke-width="14" opacity="0.08"/>
+  <line x1="400" y1="28" x2="374" y2="175" stroke="#d0f4ff" stroke-width="9"  opacity="0.05"/>
+
+  <!-- Floating driftwood / debris at surface (where mahi-mahi aggregates) -->
+  <rect x="50" y="22" width="95" height="10" fill="#8a6838" rx="3" opacity="0.85"/>
+  <!-- Bark texture on log -->
+  <path d="M60,25 L70,25 M80,24 L90,24 M100,25 L110,25 M125,24 L135,24"
+        fill="none" stroke="#6a5028" stroke-width="0.7" opacity="0.55"/>
+  <!-- Floating algae/seaweed on debris -->
+  <ellipse cx="80"  cy="32" rx="16" ry="4" fill="#508040" opacity="0.60"/>
+  <ellipse cx="118" cy="34" rx="12" ry="3.5" fill="#608850" opacity="0.55"/>
+  <!-- Shadow under log -->
+  <ellipse cx="97" cy="38" rx="42" ry="5" fill="#0a4060" opacity="0.22"/>
+
+  <!-- Fish: 鬼頭刀 (Coryphaena hippurus, Mahi-mahi) — very distinctive fish -->
+  <!-- Male: high blunt forehead, iridescent blue-green/gold, very compressed body -->
+
+  <!-- Main fish (foreground, adult male) -->
+  <g transform="translate(230,75) rotate(-5)" opacity="0.93">
+    <!-- Body: laterally compressed, strongly tapered -->
+    <ellipse cx="0" cy="0" rx="40" ry="12" fill="#3898a0"/>
+    <!-- Brilliant iridescent blue-green flank -->
+    <ellipse cx="0" cy="-5" rx="34" ry="6" fill="#1a7080" opacity="0.60"/>
+    <!-- Gold-yellow lower flank/belly -->
+    <ellipse cx="5" cy="7" rx="32" ry="4.5" fill="#d0a030" opacity="0.50"/>
+    <!-- Bright blue-green back -->
+    <ellipse cx="-5" cy="-9" rx="30" ry="4" fill="#0a5060" opacity="0.65"/>
+    <!-- Gold spots on flank (diagnostic) -->
+    <circle cx="10" cy="-2" r="2.2" fill="#e0b040" opacity="0.55"/>
+    <circle cx="-5" cy="-4" r="2.0" fill="#e0b040" opacity="0.50"/>
+    <circle cx="-20" cy="-2" r="1.8" fill="#e0b040" opacity="0.48"/>
+    <circle cx="22" cy="2" r="1.8" fill="#e0b040" opacity="0.50"/>
+    <!-- High continuous dorsal fin from forehead to near tail (very distinctive) -->
+    <path d="M-35,-12 Q-20,-22 0,-25 Q18,-24 28,-18 Q36,-14 40,-10"
+          fill="none" stroke="#0a5060" stroke-width="1.5"/>
+    <!-- Anal fin (shorter, from mid-body to near tail) -->
+    <path d="M8,12 Q24,18 38,10" fill="none" stroke="#0a5060" stroke-width="1.3"/>
+    <!-- Deeply forked lunate tail -->
+    <path d="M-40,0 L-56,-20" stroke="#0a5060" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M-40,0 L-56, 20" stroke="#0a5060" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <!-- Pectoral fin -->
+    <path d="M22,8 Q34,18 38,10" fill="none" stroke="#0a5060" stroke-width="1.3" opacity="0.80"/>
+    <!-- Blunt steep forehead (adult male diagnostic) -->
+    <path d="M40,-10 Q44,-15 40,-3" fill="#3898a0" stroke="#2888a0" stroke-width="0.8"/>
+    <!-- Eye -->
+    <circle cx="38" cy="-4" r="3.5" fill="#181818"/>
+    <circle cx="39" cy="-5" r="1.2" fill="#80a0a0" opacity="0.45"/>
+  </g>
+
+  <!-- Fish 2 (juvenile female — less steep forehead, similar but smaller) -->
+  <g transform="translate(360,100) rotate(-4)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="28" ry="9" fill="#3898a0"/>
+    <ellipse cx="0" cy="-5" rx="24" ry="4" fill="#1a7080" opacity="0.55"/>
+    <ellipse cx="3" cy="6" rx="22" ry="3.5" fill="#d0a030" opacity="0.42"/>
+    <path d="M-24,-9 Q-15,-17 0,-18 Q14,-16 22,-12" fill="none" stroke="#0a5060" stroke-width="1.3"/>
+    <path d="M-28,0 L-38,-15" stroke="#0a5060" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-28,0 L-38, 15" stroke="#0a5060" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <circle cx="26" cy="-2" r="2.8" fill="#181818"/>
+  </g>
+
+  <!-- Depth ruler -->
+  <line x1="478" y1="28" x2="478" y2="168" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="28"  x2="478" y2="28"  stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="31"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="75"  x2="478" y2="75"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="78"  fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">30</text>
+  <line x1="474" y1="121" x2="478" y2="121" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="124" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">60</text>
+  <line x1="474" y1="168" x2="478" y2="168" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="171" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">85</text>
+  <text x="481" y="44" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="165" y="18" fill="#c8e8ff" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">大洋表層・漂流物聚集區</text>
+  <text x="165" y="42" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">0–85 m；日行性強游者</text>
+  <text x="165" y="55" fill="#c0d8e0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食飛魚・沙丁類；雄魚額頭高聳</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">全球熱帶・亞熱帶海洋（台灣東部・澎湖）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

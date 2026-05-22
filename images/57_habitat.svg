@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea57" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#102040"/>
+      <stop offset="30%" stop-color="#081020"/>
+      <stop offset="65%" stop-color="#040810"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </linearGradient>
+    <linearGradient id="rock57" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#484850"/>
+      <stop offset="100%" stop-color="#202028"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep rocky reef, 60–400 m (dark) -->
+  <rect width="500" height="195" fill="url(#sea57)" rx="6"/>
+
+  <!-- Barely visible surface -->
+  <path d="M0,5 Q250,3 500,5" fill="none" stroke="#204080" stroke-width="0.8" opacity="0.20"/>
+
+  <!-- Sparse bioluminescence / deep marine particles -->
+  <circle cx="70"  cy="42"  r="0.9" fill="#80c0ff" opacity="0.18"/>
+  <circle cx="185" cy="58"  r="0.8" fill="#80c0ff" opacity="0.15"/>
+  <circle cx="310" cy="35"  r="0.8" fill="#80c0ff" opacity="0.16"/>
+  <circle cx="430" cy="68"  r="0.7" fill="#80c0ff" opacity="0.14"/>
+  <circle cx="120" cy="100" r="0.7" fill="#80d0ff" opacity="0.12"/>
+  <circle cx="380" cy="110" r="0.6" fill="#80c0ff" opacity="0.11"/>
+
+  <!-- Deep rocky reef bottom -->
+  <path d="M0,148 Q45,130 105,142 Q165,154 225,130 Q285,106 355,132 Q415,158 465,138 Q488,126 500,120 L500,195 L0,195 Z"
+        fill="url(#rock57)"/>
+  <!-- Large deep-sea boulders -->
+  <ellipse cx="55"  cy="144" rx="32" ry="12" fill="#282830" opacity="0.75"/>
+  <ellipse cx="200" cy="134" rx="28" ry="10" fill="#282830" opacity="0.70"/>
+  <ellipse cx="350" cy="130" rx="26" ry="10" fill="#282830" opacity="0.68"/>
+  <ellipse cx="470" cy="128" rx="22" ry="9"  fill="#282830" opacity="0.65"/>
+  <!-- Caves/crevices (big-eye hides here) -->
+  <path d="M148,146 Q178,134 210,146" fill="#080810" opacity="0.82"/>
+  <path d="M315,135 Q345,120 378,135" fill="#080810" opacity="0.78"/>
+  <!-- Sponge/soft coral hints -->
+  <ellipse cx="104" cy="138" rx="8"  ry="5"  fill="#483050" opacity="0.55"/>
+  <ellipse cx="260" cy="122" rx="7"  ry="4.5" fill="#484080" opacity="0.50"/>
+  <ellipse cx="398" cy="128" rx="6"  ry="4"  fill="#483050" opacity="0.48"/>
+
+  <!-- Fish: 日本紅目大眼鯛 Cookeolus japonicus (Longfinned bigeye) -->
+  <!-- Priacanthidae: large oval body; VERY LARGE RED EYE (diagnostic!);
+       reddish-pink overall body; LONG pectoral fins (past anal fin origin);
+       moderately forked caudal; rocky reef/caves 60–400 m -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(240,106) rotate(-5)" opacity="0.92">
+    <!-- Body: large oval, reddish-pink -->
+    <ellipse cx="0" cy="0" rx="32" ry="19" fill="#c04848"/>
+    <!-- Darker reddish back -->
+    <ellipse cx="1" cy="-11" rx="26" ry="8" fill="#882020" opacity="0.58"/>
+    <!-- Paler pink flanks -->
+    <ellipse cx="3" cy="3" rx="24" ry="11" fill="#e07070" opacity="0.38"/>
+    <!-- Caudal peduncle -->
+    <ellipse cx="-27" cy="0" rx="6.5" ry="13" fill="#a03838" opacity="0.82"/>
+    <!-- Head -->
+    <ellipse cx="28" cy="0" rx="12" ry="17" fill="#a03838"/>
+    <!-- Small mouth (upturned, typical priacanthid) -->
+    <path d="M39,-4 Q43,0 39,4" fill="none" stroke="#702020" stroke-width="1.3" stroke-linecap="round"/>
+    <!-- VERY LARGE RED EYE (diagnostic!) -->
+    <circle cx="28" cy="-6" r="8.5" fill="#b01010"/>
+    <circle cx="28" cy="-6" r="7.0" fill="#181010"/>
+    <circle cx="29" cy="-8" r="2.8" fill="#c82020" opacity="0.40"/>
+    <!-- Eye highlight -->
+    <circle cx="26" cy="-9" r="1.2" fill="#ff8080" opacity="0.55"/>
+    <!-- Dorsal fin (long-based) -->
+    <path d="M18,-19 Q8,-30 0,-32 Q-7,-30 -14,-24 Q-19,-18 -21,-14 Q-23,-10 -25,-8"
+          fill="none" stroke="#803020" stroke-width="1.5"/>
+    <!-- Anal fin -->
+    <path d="M-8,19 Q-15,26 -20,24 Q-24,20 -25,15"
+          fill="none" stroke="#803020" stroke-width="1.3"/>
+    <!-- LONG pectoral fin (reaching past anal fin — diagnostic!) -->
+    <path d="M20,10 Q34,24 40,14 Q36,8 28,8" fill="none" stroke="#903028" stroke-width="1.5" opacity="0.72"/>
+    <!-- Pelvic fin (long, reaching) -->
+    <path d="M18,14 Q20,22 22,18" fill="none" stroke="#803020" stroke-width="1.1" opacity="0.65"/>
+    <!-- Moderately forked caudal fin -->
+    <path d="M-33,0 L-44,-14" stroke="#803020" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-33,0 L-44, 14" stroke="#803020" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-44,-14 Q-48,0 -44,14" fill="none" stroke="#803020" stroke-width="2.0" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fish 2 (near crevice) -->
+  <g transform="translate(360,140) rotate(-3)" opacity="0.68">
+    <ellipse cx="0" cy="0" rx="24" ry="14" fill="#c04848"/>
+    <ellipse cx="1" cy="-8" rx="19" ry="6" fill="#882020" opacity="0.52"/>
+    <ellipse cx="-20" cy="0" rx="5" ry="10" fill="#a03838" opacity="0.80"/>
+    <ellipse cx="20" cy="0" rx="9" ry="13" fill="#a03838"/>
+    <!-- Big eye -->
+    <circle cx="20" cy="-5" r="6.5" fill="#b01010"/>
+    <circle cx="20" cy="-5" r="5.5" fill="#181010"/>
+    <circle cx="21" cy="-7" r="2.0" fill="#c82020" opacity="0.38"/>
+    <path d="M13,-14 Q5,-23 0,-25 Q-5,-23 -10,-17 Q-14,-12 -15,-10" fill="none" stroke="#803020" stroke-width="1.3"/>
+    <path d="M-25,0 L-33,-11" stroke="#803020" stroke-width="2.7" stroke-linecap="round" fill="none"/>
+    <path d="M-25,0 L-33, 11" stroke="#803020" stroke-width="2.7" stroke-linecap="round" fill="none"/>
+    <path d="M-33,-11 Q-37,0 -33,11" fill="none" stroke="#803020" stroke-width="1.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Depth ruler (0–400 m) -->
+  <line x1="478" y1="8" x2="478" y2="148" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="46"  x2="478" y2="46"  stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="49"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">60</text>
+  <line x1="474" y1="98"  x2="478" y2="98"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="101" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">200</text>
+  <line x1="474" y1="148" x2="478" y2="148" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="151" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">400</text>
+  <text x="481" y="24" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">深水礁岩・洞穴陡壁</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">60–400 m；紅體・超大紅眼（診斷）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食甲殼類；通常單獨活動</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">全球熱帶亞熱帶（台灣各礁區岩礁）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

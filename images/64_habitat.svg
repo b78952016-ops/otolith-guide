@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea64" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1828"/>
+      <stop offset="30%" stop-color="#060e18"/>
+      <stop offset="65%" stop-color="#030810"/>
+      <stop offset="100%" stop-color="#010408"/>
+    </linearGradient>
+    <linearGradient id="rock64" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#404848"/>
+      <stop offset="100%" stop-color="#181c20"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep rocky slope, 100–500 m (very dark) -->
+  <rect width="500" height="195" fill="url(#sea64)" rx="6"/>
+
+  <!-- Very faint distant surface -->
+  <path d="M0,4 Q250,2 500,4" fill="none" stroke="#102040" stroke-width="0.7" opacity="0.18"/>
+
+  <!-- Sparse bioluminescent particles -->
+  <circle cx="65"  cy="35"  r="0.9" fill="#80c0f0" opacity="0.20"/>
+  <circle cx="180" cy="52"  r="0.8" fill="#80d0ff" opacity="0.18"/>
+  <circle cx="305" cy="38"  r="0.8" fill="#80c0f0" opacity="0.17"/>
+  <circle cx="420" cy="62"  r="0.7" fill="#80d0ff" opacity="0.16"/>
+  <circle cx="115" cy="98"  r="0.7" fill="#80c0f0" opacity="0.13"/>
+  <circle cx="260" cy="85"  r="0.8" fill="#80d0ff" opacity="0.14"/>
+  <circle cx="390" cy="108" r="0.6" fill="#80c0f0" opacity="0.12"/>
+
+  <!-- Deep rocky slope bottom -->
+  <path d="M0,150 Q42,132 100,144 Q162,156 222,130 Q285,104 355,130 Q415,156 468,136 Q490,124 500,118 L500,195 L0,195 Z"
+        fill="url(#rock64)"/>
+  <!-- Large deep-sea boulders -->
+  <ellipse cx="55"  cy="146" rx="34" ry="13" fill="#282c30" opacity="0.78"/>
+  <ellipse cx="200" cy="134" rx="30" ry="11" fill="#282c30" opacity="0.74"/>
+  <ellipse cx="350" cy="128" rx="28" ry="11" fill="#282c30" opacity="0.70"/>
+  <ellipse cx="470" cy="126" rx="24" ry="9"  fill="#282c30" opacity="0.68"/>
+  <!-- Deep-sea rocky overhangs -->
+  <path d="M145,150 Q182,136 220,150" fill="#101418" opacity="0.80"/>
+  <path d="M312,136 Q348,120 386,136" fill="#101418" opacity="0.76"/>
+  <!-- Sponge/hydroid colonies on deep rocks -->
+  <ellipse cx="100" cy="140" rx="9"  ry="5"  fill="#3a2848" opacity="0.58"/>
+  <ellipse cx="258" cy="122" rx="8"  ry="4.5" fill="#3a4880" opacity="0.52"/>
+  <ellipse cx="400" cy="126" rx="7"  ry="4"  fill="#3a2848" opacity="0.50"/>
+
+  <!-- Fish: 史氏紅諧魚 Erythrocles schlegelii (Seetail/Japanese rover) -->
+  <!-- Emmelichthyidae: medium elongated-oval; BRIGHT RED/ORANGE-RED overall;
+       large eyes (deep water); small slightly protrusible mouth;
+       forked tail; deep rocky slope 100–500 m -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(242,108) rotate(-6)" opacity="0.92">
+    <!-- Body: elongated-oval, BRIGHT RED -->
+    <ellipse cx="0" cy="0" rx="33" ry="15" fill="#c82020"/>
+    <!-- Darker red-brown back -->
+    <ellipse cx="2" cy="-8" rx="27" ry="7" fill="#901010" opacity="0.60"/>
+    <!-- Orange-red flanks sheen -->
+    <ellipse cx="3" cy="2" rx="24" ry="9" fill="#e84828" opacity="0.38"/>
+    <!-- Caudal peduncle (slim) -->
+    <ellipse cx="-28" cy="0" rx="6" ry="11" fill="#a81818" opacity="0.82"/>
+    <!-- Head: moderate size -->
+    <ellipse cx="29" cy="0" rx="11" ry="14" fill="#a81818"/>
+    <!-- SMALL SLIGHTLY PROTRUSIBLE MOUTH (emmelichthyid) -->
+    <path d="M39,-2 Q42,1 39,4" fill="none" stroke="#701010" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Circle at mouth tip (protrusible hint) -->
+    <circle cx="41" cy="1" r="1.5" fill="#801010" opacity="0.50"/>
+    <!-- LARGE EYE (deep water adaptation) -->
+    <circle cx="30" cy="-5" r="5.5" fill="#181010"/>
+    <circle cx="31" cy="-6" r="2.0" fill="#c04030" opacity="0.42"/>
+    <!-- Eye highlight -->
+    <circle cx="29" cy="-7" r="1.0" fill="#ff8060" opacity="0.50"/>
+    <!-- Dorsal fin (two dorsal fins slightly separated) -->
+    <path d="M18,-15 Q10,-24 3,-26 Q-3,-24 -8,-18 Q-12,-13 -13,-11"
+          fill="none" stroke="#901010" stroke-width="1.4"/>
+    <path d="M-16,-11 Q-20,-14 -23,-12 Q-25,-9 -26,-7"
+          fill="none" stroke="#901010" stroke-width="1.2"/>
+    <!-- Anal fin -->
+    <path d="M-7,15 Q-13,20 -18,18 Q-22,14 -23,11"
+          fill="none" stroke="#901010" stroke-width="1.2"/>
+    <!-- Pectoral fin (orange-red) -->
+    <path d="M22,7 Q30,15 33,8" fill="none" stroke="#a81818" stroke-width="1.3" opacity="0.70"/>
+    <!-- Forked caudal fin -->
+    <path d="M-34,0 L-45,-13" stroke="#901010" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-34,0 L-45, 13" stroke="#901010" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-45,-13 Q-49,0 -45,13" fill="none" stroke="#901010" stroke-width="2.0" stroke-linecap="round"/>
+    <!-- Lateral line -->
+    <path d="M32,-7 Q15,-10 0,-8 Q-14,-6 -27,-3" fill="none" stroke="#e07060" stroke-width="0.7" opacity="0.35"/>
+  </g>
+
+  <!-- Fish 2 (background) -->
+  <g transform="translate(130,132) rotate(-5)" opacity="0.70">
+    <ellipse cx="0" cy="0" rx="26" ry="12" fill="#c82020"/>
+    <ellipse cx="2" cy="-7" rx="21" ry="5.5" fill="#901010" opacity="0.55"/>
+    <ellipse cx="-22" cy="0" rx="5" ry="9" fill="#a81818" opacity="0.80"/>
+    <ellipse cx="23" cy="0" rx="9" ry="12" fill="#a81818"/>
+    <!-- Large eye -->
+    <circle cx="24" cy="-4" r="4.5" fill="#181010"/>
+    <path d="M14,-12 Q7,-19 1,-21 Q-3,-19 -7,-14 Q-10,-10 -11,-8" fill="none" stroke="#901010" stroke-width="1.2"/>
+    <path d="M-27,0 L-35,-11" stroke="#901010" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    <path d="M-27,0 L-35, 11" stroke="#901010" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    <path d="M-35,-11 Q-39,0 -35,11" fill="none" stroke="#901010" stroke-width="1.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Depth ruler (0–500 m) -->
+  <line x1="478" y1="8" x2="478" y2="150" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="8"   x2="478" y2="8"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="11"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="48"  x2="478" y2="48"  stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="51"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">100</text>
+  <line x1="474" y1="98"  x2="478" y2="98"  stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="101" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">300</text>
+  <line x1="474" y1="150" x2="478" y2="150" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="153" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">500</text>
+  <text x="481" y="24" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">大陸棚邊坡深岩礁</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">100–500 m；鮮紅橙體・大眼（診斷）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食深海蝦・燈籠魚；幼魚近岸礁</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">印度－西太平洋（台灣東北部岩礁海域）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

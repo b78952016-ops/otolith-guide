@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sky21" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a58"/>
+      <stop offset="100%" stop-color="#2a6080"/>
+    </linearGradient>
+    <linearGradient id="water21" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a7888"/>
+      <stop offset="60%" stop-color="#1a4860"/>
+      <stop offset="100%" stop-color="#102838"/>
+    </linearGradient>
+    <linearGradient id="mud21" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#685840"/>
+      <stop offset="100%" stop-color="#403828"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky background (freshwater/estuary scene) -->
+  <rect width="500" height="195" fill="url(#sky21)" rx="6"/>
+
+  <!-- Rolling hills / low land at top -->
+  <polygon points="0,68 70,30 140,68" fill="#2a3840" opacity="0.85"/>
+  <polygon points="120,68 210,22 300,68" fill="#243238" opacity="0.80"/>
+  <polygon points="320,68 420,35 500,68" fill="#2a3840" opacity="0.85"/>
+  <!-- Vegetation on hills (tropical scrub) -->
+  <ellipse cx="70"  cy="30" rx="20" ry="8"  fill="#2a5020" opacity="0.55"/>
+  <ellipse cx="210" cy="22" rx="25" ry="8"  fill="#265020" opacity="0.55"/>
+  <ellipse cx="420" cy="35" rx="22" ry="8"  fill="#2a5020" opacity="0.50"/>
+
+  <!-- Calm freshwater / brackish water surface -->
+  <rect x="0" y="68" width="500" height="127" fill="url(#water21)"/>
+  <!-- Calm ripples (slow-moving water) -->
+  <path d="M0,74 Q100,71 200,74 Q300,77 400,74 Q450,72 500,74"
+        fill="none" stroke="#50c8e0" stroke-width="1.2" opacity="0.45"/>
+  <path d="M0,85 Q110,81 220,85 Q330,89 440,85 Q470,83 500,85"
+        fill="none" stroke="#40b8d0" stroke-width="0.9" opacity="0.35"/>
+  <path d="M0,100 Q120,96 240,100 Q360,104 480,100"
+        fill="none" stroke="#30a0b8" stroke-width="0.8" opacity="0.28"/>
+
+  <!-- Light penetration -->
+  <line x1="160" y1="68" x2="120" y2="150" stroke="#b0e0f0" stroke-width="7" opacity="0.04"/>
+  <line x1="300" y1="68" x2="265" y2="155" stroke="#b0e0f0" stroke-width="5" opacity="0.04"/>
+
+  <!-- Muddy / silty bottom -->
+  <path d="M0,170 Q80,164 160,170 Q240,176 320,168 Q400,160 480,168 Q490,169 500,169 L500,195 L0,195 Z"
+        fill="url(#mud21)"/>
+  <!-- Mud texture / soft bottom -->
+  <path d="M15,178 Q65,176 115,178" fill="none" stroke="#887060" stroke-width="0.8" opacity="0.50"/>
+  <path d="M145,181 Q195,179 245,181" fill="none" stroke="#887060" stroke-width="0.8" opacity="0.50"/>
+  <path d="M275,178 Q330,176 385,178" fill="none" stroke="#887060" stroke-width="0.8" opacity="0.50"/>
+  <path d="M415,181 Q455,179 490,181" fill="none" stroke="#887060" stroke-width="0.8" opacity="0.50"/>
+
+  <!-- Aquatic plants / algae near bank -->
+  <g fill="none" stroke="#3a7030" stroke-width="1.3" opacity="0.70">
+    <path d="M30,170 Q32,155 35,170"/>
+    <path d="M36,170 Q39,150 42,170"/>
+    <path d="M43,170 Q46,158 49,170"/>
+    <path d="M52,170 Q54,160 57,170"/>
+    <path d="M58,170 Q61,152 64,170"/>
+  </g>
+  <g fill="none" stroke="#3a7030" stroke-width="1.3" opacity="0.65">
+    <path d="M430,170 Q432,157 435,170"/>
+    <path d="M436,170 Q439,150 442,170"/>
+    <path d="M443,170 Q446,160 449,170"/>
+    <path d="M450,170 Q453,154 456,170"/>
+    <path d="M458,170 Q461,162 464,170"/>
+  </g>
+
+  <!-- Fish 1: 吳郭魚 (Tilapia / Oreochromis mossambicus) — deep oval body, cichlid -->
+  <g transform="translate(215,118) rotate(-3)" opacity="0.91">
+    <!-- Body: deep oval, olive-gray -->
+    <ellipse cx="0" cy="0" rx="25" ry="12" fill="#607848"/>
+    <!-- Dark vertical bars along body -->
+    <line x1="-12" y1="-11" x2="-12" y2="11" stroke="#404828" stroke-width="2.5" opacity="0.45"/>
+    <line x1="0"   y1="-12" x2="0"   y2="12" stroke="#404828" stroke-width="2.5" opacity="0.45"/>
+    <line x1="12"  y1="-11" x2="12"  y2="11" stroke="#404828" stroke-width="2.5" opacity="0.45"/>
+    <!-- Spiny dorsal fin (long continuous, cichlid-style) -->
+    <path d="M-15,-12 L-12,-20 L-6,-23 L0,-24 L6,-22 L10,-20 L14,-12"
+          fill="none" stroke="#485830" stroke-width="1.5"/>
+    <!-- Soft dorsal continuation -->
+    <path d="M14,-12 Q18,-16 22,-12" fill="none" stroke="#485830" stroke-width="1.3"/>
+    <!-- Rounded tail (cichlid) -->
+    <path d="M-25,0 L-35,-12" stroke="#485830" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M-25,0 L-35, 12" stroke="#485830" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- Pectoral fin -->
+    <path d="M10,9 Q18,17 24,12" fill="none" stroke="#485830" stroke-width="1.3" opacity="0.8"/>
+    <!-- Pelvic fin -->
+    <path d="M4,12 L8,20" stroke="#485830" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+    <!-- Anal fin (3 spines, cichlid) -->
+    <path d="M-10,12 Q-2,18 8,12" fill="none" stroke="#485830" stroke-width="1.3"/>
+    <!-- Eye -->
+    <circle cx="21" cy="-1.5" r="3.5" fill="#181808"/>
+    <circle cx="22" cy="-2.5" r="1.0" fill="#9090a0" opacity="0.4"/>
+  </g>
+
+  <!-- Fish 2: smaller, background -->
+  <g transform="translate(360,135) rotate(-2)" opacity="0.80">
+    <ellipse cx="0" cy="0" rx="19" ry="9.5" fill="#607848"/>
+    <line x1="-9"  y1="-8.5" x2="-9"  y2="8.5" stroke="#404828" stroke-width="2" opacity="0.40"/>
+    <line x1="2"   y1="-9"   x2="2"   y2="9"   stroke="#404828" stroke-width="2" opacity="0.40"/>
+    <path d="M-10,-9.5 L-7,-16 L0,-18 L5,-16 L8,-9.5" fill="none" stroke="#485830" stroke-width="1.3"/>
+    <path d="M-19,0 L-27,-10" stroke="#485830" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M-19,0 L-27, 10" stroke="#485830" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="16" cy="-1" r="2.8" fill="#181808"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">淡水 ／ 河口・半淡鹹水</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">廣鹽廣溫；適應多樣水體</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">雜食性；耐低溶氧・混濁水</text>
+  <text x="250" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">非洲原產，台灣廣泛引入養殖</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

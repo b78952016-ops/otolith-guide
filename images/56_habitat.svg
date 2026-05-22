@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea56" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1060a8"/>
+      <stop offset="35%" stop-color="#084880"/>
+      <stop offset="75%" stop-color="#041e38"/>
+      <stop offset="100%" stop-color="#020e1c"/>
+    </linearGradient>
+    <linearGradient id="sand56" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#988870"/>
+      <stop offset="100%" stop-color="#686050"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sandy-mud bottom, 50–200 m (medium depth) -->
+  <rect width="500" height="195" fill="url(#sea56)" rx="6"/>
+
+  <!-- Surface shimmer (distant) -->
+  <path d="M0,7 Q250,5 500,7" fill="none" stroke="#3090c0" stroke-width="0.8" opacity="0.20"/>
+
+  <!-- Light shafts (moderate depth — some light) -->
+  <line x1="160" y1="7" x2="124" y2="158" stroke="#a0c8e8" stroke-width="12" opacity="0.05"/>
+  <line x1="390" y1="7" x2="358" y2="158" stroke="#a0c8e8" stroke-width="8"  opacity="0.04"/>
+
+  <!-- Sandy-mud bottom -->
+  <path d="M0,162 Q70,157 150,162 Q240,167 330,159 Q420,153 495,159 L500,159 L500,195 L0,195 Z"
+        fill="url(#sand56)"/>
+  <path d="M20,168 Q70,166 120,168" fill="none" stroke="#806858" stroke-width="0.7" opacity="0.40"/>
+  <path d="M165,170 Q215,168 265,170" fill="none" stroke="#806858" stroke-width="0.7" opacity="0.38"/>
+  <path d="M310,168 Q360,166 410,168" fill="none" stroke="#806858" stroke-width="0.7" opacity="0.36"/>
+  <!-- Some shell/detritus on bottom -->
+  <ellipse cx="90"  cy="166" rx="8"  ry="2.5" fill="#706050" opacity="0.48"/>
+  <ellipse cx="220" cy="165" rx="6"  ry="2"   fill="#706050" opacity="0.44"/>
+  <ellipse cx="370" cy="165" rx="7"  ry="2"   fill="#706050" opacity="0.44"/>
+
+  <!-- Fish: 黃背牙鯛 Dentex hypselosomus (Yellow-back dentex / Crimson sea bream) -->
+  <!-- Sparidae: moderately deep oval; YELLOW-GOLDEN BACK (diagnostic: 黃背 = yellow back);
+       pinkish-red body; large eyes (deeper water); strong dentex-type teeth;
+       sandy-mud 50–200 m; temperate NW Pacific -->
+
+  <!-- Main fish (foreground) -->
+  <g transform="translate(242,112) rotate(-5)" opacity="0.93">
+    <!-- Body: moderately deep oval (sparid) -->
+    <ellipse cx="0" cy="0" rx="30" ry="18" fill="#c88060"/>
+    <!-- YELLOW-GOLDEN back region (diagnostic!) -->
+    <ellipse cx="2" cy="-13" rx="24" ry="7" fill="#d8a818" opacity="0.78"/>
+    <!-- Pinkish-red flanks (central body) -->
+    <ellipse cx="2" cy="0" rx="22" ry="11" fill="#d07858" opacity="0.45"/>
+    <!-- Pale belly -->
+    <ellipse cx="2" cy="10" rx="18" ry="5" fill="#e8d0b0" opacity="0.38"/>
+    <!-- Caudal peduncle -->
+    <ellipse cx="-26" cy="0" rx="5.5" ry="13" fill="#a06048" opacity="0.82"/>
+    <!-- Head: moderately large -->
+    <ellipse cx="26" cy="0" rx="11" ry="16" fill="#a06048"/>
+    <!-- Strong terminal mouth (dentex-type) -->
+    <path d="M36,-2 Q40,2 36,7" fill="none" stroke="#784030" stroke-width="1.4" stroke-linecap="round"/>
+    <!-- LARGE EYE (deeper water sparid, larger than shallow Pagrus) -->
+    <circle cx="27" cy="-6" r="5.5" fill="#181818"/>
+    <circle cx="28" cy="-7" r="2.0" fill="#d0a040" opacity="0.40"/>
+    <!-- Eye highlight -->
+    <circle cx="26" cy="-8" r="1.0" fill="#ffe0a0" opacity="0.50"/>
+    <!-- Dorsal fin (long-based, continuous) -->
+    <path d="M18,-18 Q8,-28 0,-30 Q-7,-28 -13,-22 Q-18,-17 -20,-14 Q-22,-11 -24,-10"
+          fill="none" stroke="#7a4028" stroke-width="1.5"/>
+    <!-- Dorsal fin soft rays (lower posterior section) -->
+    <path d="M-24,-10 Q-27,-12 -28,-8" fill="none" stroke="#7a4028" stroke-width="1.3"/>
+    <!-- Anal fin -->
+    <path d="M-6,18 Q-13,24 -18,22 Q-22,18 -23,14"
+          fill="none" stroke="#7a4028" stroke-width="1.3"/>
+    <!-- Pectoral fin -->
+    <path d="M20,9 Q30,17 33,9" fill="none" stroke="#8a4830" stroke-width="1.4" opacity="0.70"/>
+    <!-- Pelvic fin -->
+    <path d="M18,12 Q20,18 22,14" fill="none" stroke="#7a4028" stroke-width="1.1" opacity="0.65"/>
+    <!-- Forked caudal fin -->
+    <path d="M-31,0 L-42,-13" stroke="#7a4028" stroke-width="3.0" stroke-linecap="round" fill="none"/>
+    <path d="M-31,0 L-42, 13" stroke="#7a4028" stroke-width="3.0" stroke-linecap="round" fill="none"/>
+    <path d="M-42,-13 Q-46,0 -42,13" fill="none" stroke="#7a4028" stroke-width="1.9" stroke-linecap="round"/>
+    <!-- Lateral line -->
+    <path d="M30,-8 Q14,-12 0,-10 Q-14,-8 -26,-5" fill="none" stroke="#c09070" stroke-width="0.7" opacity="0.35"/>
+  </g>
+
+  <!-- Fish 2 (background) -->
+  <g transform="translate(128,138) rotate(-4)" opacity="0.74">
+    <ellipse cx="0" cy="0" rx="24" ry="14" fill="#c88060"/>
+    <!-- Yellow back -->
+    <ellipse cx="2" cy="-10" rx="19" ry="5.5" fill="#d8a818" opacity="0.72"/>
+    <ellipse cx="-20" cy="0" rx="4.5" ry="10" fill="#a06048" opacity="0.80"/>
+    <ellipse cx="20" cy="0" rx="9" ry="13" fill="#a06048"/>
+    <circle cx="21" cy="-5" r="4.5" fill="#181818"/>
+    <path d="M14,-14 Q6,-22 0,-24 Q-5,-22 -10,-17 Q-13,-13 -15,-11" fill="none" stroke="#7a4028" stroke-width="1.3"/>
+    <path d="M-25,0 L-34,-11" stroke="#7a4028" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    <path d="M-25,0 L-34, 11" stroke="#7a4028" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    <path d="M-34,-11 Q-38,0 -34,11" fill="none" stroke="#7a4028" stroke-width="1.7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Depth ruler (0–200 m) -->
+  <line x1="478" y1="7" x2="478" y2="162" stroke="#3a5070" stroke-width="1"/>
+  <line x1="474" y1="7"   x2="478" y2="7"   stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="10"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <line x1="474" y1="60"  x2="478" y2="60"  stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="63"  fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">50</text>
+  <line x1="474" y1="110" x2="478" y2="110" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="113" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">100</text>
+  <line x1="474" y1="162" x2="478" y2="162" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="165" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">200</text>
+  <text x="481" y="24" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">大陸棚砂泥底・底棲</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">50–200 m；黃金背・粉紅紅體・大眼（診斷）</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">食甲殼類・軟體動物・小魚</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">西北太平洋（台灣西部・中國・韓國・日本）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

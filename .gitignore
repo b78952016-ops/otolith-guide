@@ -1,0 +1,8 @@
+# 系統檔案
+.DS_Store
+Thumbs.db
+
+# 暫存檔
+*.tmp
+*_new.html
+*_backup.*

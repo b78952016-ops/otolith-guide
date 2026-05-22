@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea08" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a5c"/>
+      <stop offset="28%" stop-color="#0e2038"/>
+      <stop offset="100%" stop-color="#06101e"/>
+    </linearGradient>
+    <linearGradient id="sed08" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a7858"/>
+      <stop offset="100%" stop-color="#5a4838"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Water body (whole scene is underwater) -->
+  <rect width="500" height="195" fill="url(#sea08)" rx="6"/>
+
+  <!-- Surface shimmer at very top -->
+  <path d="M0,8 Q80,5 160,8 Q240,11 320,8 Q400,5 500,8"
+        fill="none" stroke="#3abcd8" stroke-width="1.4" opacity="0.55"/>
+  <path d="M0,18 Q90,13 185,18 Q275,23 365,18 Q435,13 500,18"
+        fill="none" stroke="#2aa8c8" stroke-width="1.0" opacity="0.38"/>
+
+  <!-- Marine snow particles (deep water) -->
+  <circle cx="60"  cy="40"  r="1.0" fill="#ffffff" opacity="0.18"/>
+  <circle cx="130" cy="65"  r="0.8" fill="#ffffff" opacity="0.14"/>
+  <circle cx="200" cy="35"  r="1.1" fill="#ffffff" opacity="0.20"/>
+  <circle cx="280" cy="55"  r="0.9" fill="#ffffff" opacity="0.16"/>
+  <circle cx="350" cy="42"  r="1.0" fill="#ffffff" opacity="0.18"/>
+  <circle cx="420" cy="70"  r="0.8" fill="#ffffff" opacity="0.15"/>
+  <circle cx="100" cy="90"  r="0.7" fill="#ffffff" opacity="0.12"/>
+  <circle cx="320" cy="85"  r="0.9" fill="#ffffff" opacity="0.14"/>
+
+  <!-- Sandy-mud bottom -->
+  <path d="M0,172 Q80,168 160,173 Q240,178 320,171 Q400,164 480,172 Q490,173 500,172 L500,195 L0,195 Z"
+        fill="url(#sed08)"/>
+  <!-- Sand texture lines -->
+  <path d="M10,180 Q70,178 130,180" fill="none" stroke="#a09070" stroke-width="0.7" opacity="0.55"/>
+  <path d="M160,183 Q220,181 280,183" fill="none" stroke="#a09070" stroke-width="0.7" opacity="0.55"/>
+  <path d="M310,180 Q370,178 430,180" fill="none" stroke="#a09070" stroke-width="0.7" opacity="0.55"/>
+  <!-- Mud mounds on bottom -->
+  <ellipse cx="80"  cy="177" rx="20" ry="5" fill="#706050" opacity="0.55"/>
+  <ellipse cx="220" cy="176" rx="16" ry="4" fill="#686050" opacity="0.50"/>
+  <ellipse cx="360" cy="177" rx="18" ry="5" fill="#706050" opacity="0.55"/>
+
+  <!-- Fish 1: 黑䱛 (Atrobucca nibe) — elongated, dark charcoal-gray -->
+  <g transform="translate(195,115) rotate(-4)" opacity="0.91">
+    <!-- Body: elongated drum shape -->
+    <ellipse cx="0" cy="0" rx="33" ry="9" fill="#384858"/>
+    <!-- Darker dorsal area -->
+    <ellipse cx="0" cy="-5" rx="28" ry="4" fill="#283038" opacity="0.70"/>
+    <!-- Lighter belly -->
+    <ellipse cx="4" cy="4" rx="22" ry="3.5" fill="#607080" opacity="0.35"/>
+    <!-- Spinous dorsal fin (front part) -->
+    <path d="M-5,-9 Q0,-17 8,-9" fill="none" stroke="#283040" stroke-width="1.5"/>
+    <!-- Soft dorsal fin (rear part) -->
+    <path d="M8,-9 Q15,-15 22,-9" fill="none" stroke="#283040" stroke-width="1.4"/>
+    <!-- Forked tail -->
+    <path d="M-33,0 L-47,-12" stroke="#283040" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-33,0 L-47, 12" stroke="#283040" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <!-- Pectoral fin -->
+    <path d="M14,6 Q22,13 28,8" fill="none" stroke="#283040" stroke-width="1.2" opacity="0.8"/>
+    <!-- Eye -->
+    <circle cx="29" cy="-1" r="3.5" fill="#181818"/>
+    <circle cx="30" cy="-1.5" r="1.0" fill="#7888a0" opacity="0.5"/>
+  </g>
+
+  <!-- Fish 2: smaller, background -->
+  <g transform="translate(360,133) rotate(-3)" opacity="0.78">
+    <ellipse cx="0" cy="0" rx="25" ry="7" fill="#384858"/>
+    <ellipse cx="0" cy="-4" rx="21" ry="3" fill="#283038" opacity="0.65"/>
+    <path d="M-4,-7 Q1,-14 9,-7" fill="none" stroke="#283040" stroke-width="1.3"/>
+    <path d="M9,-7 Q14,-12 18,-7" fill="none" stroke="#283040" stroke-width="1.2"/>
+    <path d="M-25,0 L-36,-9" stroke="#283040" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    <path d="M-25,0 L-36, 9" stroke="#283040" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    <circle cx="21" cy="-0.5" r="2.8" fill="#181818"/>
+  </g>
+
+  <!-- Depth ruler (right side) -->
+  <line x1="478" y1="6" x2="478" y2="183" stroke="#3a5070" stroke-width="1"/>
+  <!-- 0 m -->
+  <line x1="474" y1="6" x2="478" y2="6" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="9" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <!-- 50 m -->
+  <line x1="474" y1="49" x2="478" y2="49" stroke="#4a6080" stroke-width="1"/>
+  <text x="480" y="52" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">50</text>
+  <!-- 100 m -->
+  <line x1="474" y1="93" x2="478" y2="93" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="96" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">100</text>
+  <!-- 150 m -->
+  <line x1="474" y1="136" x2="478" y2="136" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="139" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">150</text>
+  <!-- 200 m -->
+  <line x1="474" y1="180" x2="478" y2="180" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="480" y="183" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">200</text>
+  <text x="481" y="24" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">近海砂泥底 ／ 大陸棚</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">45–200 m</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">追逐小魚、蝦蟹為食；夏初繁殖集結</text>
+  <text x="230" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">非洲東岸至日本・菲律賓・澳洲</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

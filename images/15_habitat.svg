@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="sea15" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a5c"/>
+      <stop offset="25%" stop-color="#0e2038"/>
+      <stop offset="100%" stop-color="#030a14"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep open ocean -->
+  <rect width="500" height="195" fill="url(#sea15)" rx="6"/>
+
+  <!-- Surface at very top (fish spend daytime at depth) -->
+  <path d="M0,8 Q80,5 160,8 Q240,11 320,8 Q400,5 500,8"
+        fill="none" stroke="#3abcd8" stroke-width="1.5" opacity="0.55"/>
+  <path d="M0,18 Q90,13 185,18 Q275,23 365,18 Q435,13 500,18"
+        fill="none" stroke="#2aa8c8" stroke-width="1.0" opacity="0.40"/>
+
+  <!-- Marine snow (deep water) -->
+  <circle cx="55"  cy="55"  r="1.0" fill="#ffffff" opacity="0.20"/>
+  <circle cx="130" cy="38"  r="0.8" fill="#ffffff" opacity="0.16"/>
+  <circle cx="210" cy="70"  r="1.1" fill="#ffffff" opacity="0.22"/>
+  <circle cx="300" cy="45"  r="0.9" fill="#ffffff" opacity="0.18"/>
+  <circle cx="390" cy="62"  r="1.0" fill="#ffffff" opacity="0.20"/>
+  <circle cx="450" cy="38"  r="0.7" fill="#ffffff" opacity="0.14"/>
+  <circle cx="80"  cy="105" r="0.8" fill="#ffffff" opacity="0.14"/>
+  <circle cx="340" cy="95"  r="0.9" fill="#ffffff" opacity="0.15"/>
+
+  <!-- Fish 1: 白帶魚 (Trichiurus lepturus) — ribbon-like, silvery, vertical orientation by day -->
+  <!-- Main fish, large, at depth (daytime) -->
+  <g transform="translate(195,118) rotate(88)" opacity="0.91">
+    <!-- Long ribbon body — very narrow, elongated -->
+    <ellipse cx="0" cy="0" rx="58" ry="5.5" fill="#b8c8d8"/>
+    <!-- Metallic silver sheen -->
+    <ellipse cx="0" cy="-1.5" rx="55" ry="2.5" fill="#e0f0ff" opacity="0.55"/>
+    <!-- Continuous dorsal fin along back (characteristic) -->
+    <path d="M50,-5.5 Q25,-12 0,-12 Q-25,-12 -50,-5.5"
+          fill="none" stroke="#90a8c0" stroke-width="1.4"/>
+    <!-- Tapering tail tip (no caudal fin, tapers to filament) -->
+    <path d="M-58,0 L-70,0" stroke="#9ab0c8" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Pectoral fins -->
+    <path d="M40,5 Q46,12 50,7" fill="none" stroke="#90a8c0" stroke-width="1.2" opacity="0.8"/>
+    <!-- Eye (prominent) -->
+    <circle cx="52" cy="-0.5" r="3" fill="#181818"/>
+    <circle cx="53" cy="-1.2" r="1.0" fill="#c8d8e8" opacity="0.5"/>
+    <!-- Lower jaw (large mouth) -->
+    <path d="M48,1 Q53,5 56,2" fill="none" stroke="#9ab0c8" stroke-width="1.2"/>
+  </g>
+
+  <!-- Fish 2: rising toward surface (evening behavior) — at shallower depth, tilted upward -->
+  <g transform="translate(360,72) rotate(-15)" opacity="0.72">
+    <ellipse cx="0" cy="0" rx="45" ry="4.5" fill="#b8c8d8"/>
+    <ellipse cx="0" cy="-1" rx="42" ry="2" fill="#e0f0ff" opacity="0.50"/>
+    <path d="M40,-4.5 Q20,-10 0,-10 Q-20,-10 -40,-4.5"
+          fill="none" stroke="#90a8c0" stroke-width="1.2"/>
+    <path d="M-45,0 L-54,0" stroke="#9ab0c8" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+    <circle cx="41" cy="-0.5" r="2.4" fill="#181818"/>
+  </g>
+
+  <!-- Arrow and label indicating vertical migration -->
+  <defs>
+    <marker id="arr15up" markerWidth="5" markerHeight="4" refX="4" refY="2" orient="auto">
+      <polygon points="0,0 5,2 0,4" fill="#c9a84c"/>
+    </marker>
+    <marker id="arr15dn" markerWidth="5" markerHeight="4" refX="4" refY="2" orient="auto">
+      <polygon points="0,0 5,2 0,4" fill="#6a88a8"/>
+    </marker>
+  </defs>
+  <line x1="455" y1="68" x2="455" y2="32" stroke="#c9a84c" stroke-width="1.2" stroke-dasharray="4,2" marker-end="url(#arr15up)"/>
+  <line x1="455" y1="68" x2="455" y2="105" stroke="#6a88a8" stroke-width="1.2" stroke-dasharray="4,2" marker-end="url(#arr15dn)"/>
+  <text x="458" y="54" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">黃昏↑</text>
+  <text x="458" y="91" fill="#6a88a8" font-size="8" font-family="Microsoft JhengHei,sans-serif">白天↓</text>
+
+  <!-- Depth ruler (right side) — 0-350m -->
+  <line x1="435" y1="7" x2="435" y2="183" stroke="#3a5070" stroke-width="1"/>
+  <!-- 0 m -->
+  <line x1="431" y1="7" x2="435" y2="7" stroke="#4a6080" stroke-width="1"/>
+  <text x="437" y="10" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">0</text>
+  <!-- 100 m -->
+  <line x1="431" y1="56" x2="435" y2="56" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="437" y="59" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">100</text>
+  <!-- 200 m -->
+  <line x1="431" y1="104" x2="435" y2="104" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="437" y="107" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">200</text>
+  <!-- 300 m -->
+  <line x1="431" y1="152" x2="435" y2="152" stroke="#c9a84c" stroke-width="1.2"/>
+  <text x="437" y="155" fill="#c9a84c" font-size="8" font-family="Microsoft JhengHei,sans-serif">300</text>
+  <!-- 350 m -->
+  <line x1="431" y1="176" x2="435" y2="176" stroke="#4a6080" stroke-width="1"/>
+  <text x="437" y="179" fill="#8a9bb0" font-size="8" font-family="Microsoft JhengHei,sans-serif">350</text>
+  <text x="438" y="24" fill="#5a7090" font-size="7.5" font-family="sans-serif">m</text>
+
+  <!-- Labels -->
+  <text x="12" y="18" fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">開放大洋 ／ 中底層</text>
+  <text x="12" y="32" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">60–350 m</text>
+  <text x="12" y="55" fill="#8a9bb0" font-size="9" font-family="Microsoft JhengHei,sans-serif">晝夜垂直洄游；白天深潛，黃昏上游</text>
+  <text x="200" y="188" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">全球暖溫帶水域</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>
