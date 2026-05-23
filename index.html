@@ -3509,8 +3509,9 @@ const fishData = [
     const grid = document.getElementById('fishGrid');
     const fish = filteredFish();
     const total = fishData.length;
+    const uniqueSpecies = new Set(fishData.map(f => f.scientificName)).size;
     document.getElementById('statsText').textContent =
-      `共收錄 ${total} 種　目前顯示 ${fish.length} 筆`;
+      `共收錄 ${uniqueSpecies} 種（${total} 筆）　目前顯示 ${fish.length} 筆`;
 
     if (fish.length === 0) {
       grid.innerHTML = '<div class="empty-state">找不到符合的魚種</div>';
