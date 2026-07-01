@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="w107" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a6a90"/>
+      <stop offset="100%" stop-color="#0c2c48"/>
+    </linearGradient>
+    <linearGradient id="sand107" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a6a50"/>
+      <stop offset="100%" stop-color="#4c3c30"/>
+    </linearGradient>
+    <linearGradient id="est107" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5a7458"/>
+      <stop offset="100%" stop-color="#2a6a90" stop-opacity="0"/>
+    </linearGradient>
+    <marker id="arr107" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <polygon points="0,0 6,3 0,6" fill="#c9a84c"/>
+    </marker>
+  </defs>
+
+  <rect width="500" height="195" fill="url(#w107)" rx="6"/>
+
+  <!-- 左側河口／半淡鹹水淺灘 -->
+  <polygon points="0,0 96,0 96,40 62,92 0,150" fill="url(#est107)" opacity="0.75"/>
+  <!-- 紅樹林根系提示 -->
+  <path d="M20,44 L20,70 M14,52 L20,60 M26,52 L20,60" stroke="#4a6440" stroke-width="1.4" opacity="0.55" fill="none"/>
+  <path d="M44,50 L44,74 M38,58 L44,66 M50,58 L44,66" stroke="#4a6440" stroke-width="1.4" opacity="0.5" fill="none"/>
+
+  <!-- 水面波紋 -->
+  <path d="M0,40 Q28,34 56,40 Q84,46 112,40 Q140,34 168,40 Q196,46 224,40 Q252,34 280,40 Q308,46 336,40 Q364,34 392,40 Q420,46 448,40 Q474,44 500,40"
+        fill="none" stroke="#4a9abc" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- 沙泥底 -->
+  <path d="M0,164 Q80,158 170,166 Q260,174 360,171 Q430,169 500,168 L500,195 L0,195 Z" fill="url(#sand107)"/>
+  <!-- 沙紋 -->
+  <path d="M120,167 Q140,164 160,167" fill="none" stroke="#a09070" stroke-width="0.8" opacity="0.55"/>
+  <path d="M240,170 Q260,167 280,170" fill="none" stroke="#a09070" stroke-width="0.8" opacity="0.55"/>
+  <path d="M360,170 Q380,167 400,170" fill="none" stroke="#a09070" stroke-width="0.8" opacity="0.55"/>
+
+  <!-- 烏魚群（中層洄游） -->
+  <g transform="translate(200,96) rotate(-4)" opacity="0.9">
+    <ellipse cx="0" cy="0" rx="30" ry="7.5" fill="#8ea6b4"/>
+    <path d="M-28,2.5 Q0,7 28,2 Q6,4 -28,2.5Z" fill="#e6eef2" opacity="0.4"/>
+    <!-- 兩背鰭 -->
+    <path d="M-2,-7.5 Q4,-13 10,-7.5" fill="none" stroke="#5e7684" stroke-width="1.4"/>
+    <path d="M-16,-7 Q-11,-12 -6,-7" fill="none" stroke="#5e7684" stroke-width="1.3"/>
+    <!-- 尾（叉狀） -->
+    <path d="M-30,0 L-42,-10" stroke="#5e7684" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <path d="M-30,0 L-42,10"  stroke="#5e7684" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+    <!-- 胸鰭 -->
+    <path d="M10,4 Q17,11 23,6" fill="none" stroke="#5e7684" stroke-width="1.2" opacity="0.8"/>
+    <!-- 側面銀光縱紋 -->
+    <path d="M-20,1 Q0,2 22,0.5" fill="none" stroke="#eef6fa" stroke-width="0.8" opacity="0.5"/>
+    <circle cx="25" cy="-1.5" r="3.1" fill="#14222c"/>
+    <circle cx="26" cy="-2" r="1" fill="#7aa0b4" opacity="0.5"/>
+  </g>
+  <g transform="translate(300,120) rotate(-3)" opacity="0.8">
+    <ellipse cx="0" cy="0" rx="24" ry="6" fill="#82a0ae"/>
+    <path d="M-2,-6 Q3,-11 9,-6" fill="none" stroke="#586e7c" stroke-width="1.2"/>
+    <path d="M-14,-5.6 Q-9,-10 -5,-5.6" fill="none" stroke="#586e7c" stroke-width="1.1"/>
+    <path d="M-24,0 L-34,-8" stroke="#586e7c" stroke-width="2.7" stroke-linecap="round" fill="none"/>
+    <path d="M-24,0 L-34,8"  stroke="#586e7c" stroke-width="2.7" stroke-linecap="round" fill="none"/>
+    <circle cx="20" cy="-1" r="2.6" fill="#14222c"/>
+  </g>
+  <g transform="translate(150,138) rotate(-2)" opacity="0.72">
+    <ellipse cx="0" cy="0" rx="19" ry="4.8" fill="#7a98a6"/>
+    <path d="M-19,0 L-27,-6" stroke="#526876" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <path d="M-19,0 L-27,6"  stroke="#526876" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <circle cx="16" cy="-0.5" r="2.1" fill="#14222c"/>
+  </g>
+
+  <!-- 洄游箭頭（幼魚入河口／成魚游向外洋） -->
+  <line x1="150" y1="74" x2="86" y2="58" stroke="#c9a84c" stroke-width="1.3" stroke-dasharray="4,3" marker-end="url(#arr107)"/>
+  <text x="70" y="52" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">幼魚入</text>
+  <text x="70" y="63" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">河口</text>
+
+  <!-- 深度尺 0–120m -->
+  <line x1="478" y1="40" x2="478" y2="168" stroke="#8a9bb0" stroke-width="1" opacity="0.6"/>
+  <line x1="474" y1="40"  x2="478" y2="40"  stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="83"  x2="478" y2="83"  stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="125" x2="478" y2="125" stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="168" x2="478" y2="168" stroke="#8a9bb0" stroke-width="1"/>
+  <text x="480" y="44"  fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">  0 m</text>
+  <text x="480" y="87"  fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif"> 40 m</text>
+  <text x="480" y="129" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif"> 80 m</text>
+  <text x="480" y="172" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">120 m</text>
+
+  <!-- 標籤 -->
+  <text x="104" y="26" fill="#8a9bb0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">沿岸砂泥底 ／ 河口半淡鹹水</text>
+  <text x="18"  y="80" fill="#7ab890" font-size="9" font-family="Microsoft JhengHei,sans-serif">河口紅樹林</text>
+  <text x="240" y="188" fill="#b09868" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">砂泥底 ・ 廣溫廣鹽洄游</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>

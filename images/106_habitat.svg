@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 195">
+  <defs>
+    <linearGradient id="w106" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a6a98"/>
+      <stop offset="55%" stop-color="#123a5c"/>
+      <stop offset="100%" stop-color="#0a2038"/>
+    </linearGradient>
+    <linearGradient id="sq106" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d89a86"/>
+      <stop offset="100%" stop-color="#b06a58"/>
+    </linearGradient>
+    <linearGradient id="beam106" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe9a8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffe9a8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="500" height="195" fill="url(#w106)" rx="6"/>
+
+  <!-- 集魚燈光錐（誘捕趨光性鎖管） -->
+  <polygon points="150,0 190,0 300,195 40,195" fill="url(#beam106)"/>
+  <ellipse cx="170" cy="4" rx="22" ry="5" fill="#ffe9a8" opacity="0.85"/>
+
+  <!-- 水面波紋 -->
+  <path d="M0,12 Q60,6 120,12 Q180,18 240,12 Q300,6 360,12 Q420,18 480,12 Q490,13 500,12"
+        fill="none" stroke="#7ad0e8" stroke-width="1.3" opacity="0.55"/>
+  <path d="M0,30 Q65,24 130,31 Q195,37 260,29 Q320,23 385,31 Q445,37 500,30"
+        fill="none" stroke="#6ac0d8" stroke-width="1" opacity="0.35"/>
+
+  <!-- 浮游微粒 -->
+  <circle cx="80"  cy="60"  r="1"   fill="#fff" opacity="0.22"/>
+  <circle cx="360" cy="50"  r="0.9" fill="#fff" opacity="0.2"/>
+  <circle cx="420" cy="90"  r="0.9" fill="#fff" opacity="0.18"/>
+  <circle cx="330" cy="120" r="0.8" fill="#fff" opacity="0.16"/>
+
+  <!-- 透抽 1（趨光聚集，往光錐游） -->
+  <g transform="translate(210,95) rotate(-8)" opacity="0.93">
+    <path d="M-16,-8 L34,-3 Q43,0 34,3 L-16,8 Q-23,0 -16,-8 Z" fill="url(#sq106)"/>
+    <path d="M25,-3 L46,-12 L38,0 Z" fill="#b06a58" opacity="0.85"/>
+    <path d="M25,3 L46,12 L38,0 Z" fill="#b06a58" opacity="0.85"/>
+    <!-- 外套膜斑點 -->
+    <circle cx="0" cy="-2" r="1" fill="#8a4438" opacity="0.6"/>
+    <circle cx="10" cy="2" r="0.9" fill="#8a4438" opacity="0.6"/>
+    <circle cx="-6" cy="3" r="0.8" fill="#8a4438" opacity="0.5"/>
+    <!-- 眼 -->
+    <circle cx="-13" cy="-2.5" r="2.6" fill="#12202c"/>
+    <circle cx="-12.5" cy="-3" r="0.8" fill="#8ab0c0" opacity="0.5"/>
+    <!-- 腕與觸腕 -->
+    <path d="M-16,-4 L-33,-7" stroke="#c07a68" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+    <path d="M-16,-1 L-35,-2" stroke="#c07a68" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+    <path d="M-16,2 L-33,4"  stroke="#c07a68" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+    <path d="M-16,0 L-44,-1" stroke="#b06a58" stroke-width="1" stroke-linecap="round" fill="none"/>
+    <path d="M-16,1 L-44,3"  stroke="#b06a58" stroke-width="1" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- 透抽 2（背景，較深） -->
+  <g transform="translate(330,140) rotate(-6)" opacity="0.78">
+    <path d="M-12,-6 L26,-2.4 Q33,0 26,2.4 L-12,6 Q-18,0 -12,-6 Z" fill="#c88474"/>
+    <path d="M19,-2.4 L35,-9 L29,0 Z" fill="#a5604e" opacity="0.85"/>
+    <path d="M19,2.4 L35,9 L29,0 Z" fill="#a5604e" opacity="0.85"/>
+    <circle cx="-10" cy="-2" r="2" fill="#12202c"/>
+    <path d="M-12,-3 L-26,-5" stroke="#b06a58" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+    <path d="M-12,0 L-30,-1" stroke="#b06a58" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+    <path d="M-12,2 L-26,4"  stroke="#b06a58" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- 洄游方向箭頭 -->
+  <line x1="120" y1="150" x2="175" y2="118" stroke="#c9a84c" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <polygon points="175,118 167,120 172,126" fill="#c9a84c"/>
+
+  <!-- 深度尺 0–100m（近岸淺海／表中層） -->
+  <line x1="478" y1="12" x2="478" y2="185" stroke="#8a9bb0" stroke-width="1" opacity="0.55"/>
+  <line x1="474" y1="12"  x2="478" y2="12"  stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="69"  x2="478" y2="69"  stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="127" x2="478" y2="127" stroke="#8a9bb0" stroke-width="1"/>
+  <line x1="474" y1="185" x2="478" y2="185" stroke="#8a9bb0" stroke-width="1"/>
+  <text x="480" y="16"  fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">  0 m</text>
+  <text x="480" y="73"  fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif"> 30 m</text>
+  <text x="480" y="131" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif"> 60 m</text>
+  <text x="480" y="182" fill="#8a9bb0" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">100 m</text>
+
+  <!-- 標籤 -->
+  <text x="12" y="18"  fill="#8ab8d0" font-size="9.5" font-family="Microsoft JhengHei,sans-serif">近岸表層～中層 ／ 洄游性頭足類</text>
+  <text x="200" y="30" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">集魚燈</text>
+  <text x="12" y="176" fill="#c9a84c" font-size="8.5" font-family="Microsoft JhengHei,sans-serif">趨光性・夜間誘捕</text>
+  <text x="250" y="190" fill="#b09040" font-size="9" font-family="Microsoft JhengHei,sans-serif" text-anchor="middle">印度-西太平洋 ・ 台灣近海（澎湖為多）</text>
+
+  <rect width="500" height="195" fill="none" stroke="#2a4060" stroke-width="1.5" rx="6"/>
+</svg>
